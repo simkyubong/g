@@ -2,20 +2,20 @@
 <!DOCTYPE>
 <html>
 <head>
-<title>Document</title>
-<meta charset="utf-8">
-<link href="resources/css/reset.css" rel="stylesheet">
-<link href="resources/css/style2.css" rel="stylesheet">
-<link href="resources/css/style_live_best.css" rel="stylesheet">
-<link href="resources/css/header.css" rel="stylesheet">
-<link href="resources/css/footer.css" rel="stylesheet">
-<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-
+	<title>Sally</title>
+	<meta charset="utf-8">
+	<link href="resources/css/reset.css" rel="stylesheet">
+	<link href="resources/css/style2.css" rel="stylesheet">
+	<link href="resources/css/style_live_best.css" rel="stylesheet">
+	<link href="resources/css/header.css" rel="stylesheet">
+	<link href="resources/css/footer.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
 
 <body>
     <div id="header">
         <div class="header_in">
+        
             <div class="header_banner">
                 <a href="">
                     <p>
@@ -24,23 +24,27 @@
                     </p>
                 </a>
             </div>
+            
             <div class="logo">
                 <div class="logo_in">
-                    <a href=""><p class="h_logo_name">Sally</p>
+                    <a href="">
+                    	<img src="resources/img/mainLogo.png" alt="">
+                    	<p class="h_logo_name">Sally</p>
                     </a>
-                </div>
+                </div><!-- logo_in -->
                 <div class="serach_box">
                     <input type="text" placeholder="" class="ser_box_text">
                     <Button class="serach_box_btn">
                             <img src="resources/css/img/gnb_icon/ic_search.svg" alt="">
                     </Button>
                 </div>
-            </div>
+            </div><!-- logo -->
+            
             <div class="gnb">
                 <div class="gnb_in">
                     <div class="g_logo">
-                        <a href="">
-                            <!-- <img src="./h_logo_2.svg" alt=""> -->
+                        <a href="#">
+                            <!-- <img src="" alt=""> -->
                         </a>
                     </div ><!-- g_logo -->
                     <div class="h_gnb">

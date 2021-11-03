@@ -7,6 +7,7 @@
 	<div id="wrap">
 	
 		<div id="container">
+		
 			<div class="main_slide">
 				<div class="main_silde_in">
 					<a href=""> <img src="resources/css/img/main05.jpg" alt="">
@@ -584,6 +585,8 @@
 
 		</div>
 		<!-- container -->
+		
+<jsp:include page="footer.jsp"></jsp:include>
+		
 	</div>
 	<!-- wrap -->
-	<jsp:include page="footer.jsp"></jsp:include>

@@ -10,17 +10,63 @@
 /* 메인 메뉴 */
 
 #wrap{
+    position: relative;
+    width: 100%;
+}
+
+#header{    
     width: 1240px;
     margin: 0 auto;
 }
 
-#header{
-    position: relative;
-}
-
-#header_in{
+.header_in{
     width: 1220px;
     margin: 0 auto;
+}
+/* 로고 */
+.header_in .logo {
+    position: relative;
+}
+.header_in .logo .logo_in a img{
+    width: 50px;
+}
+
+.header_in .logo .logo_in .h_logo_name{
+    position:absolute;
+    top: 25px;
+    left: 42px;
+    font-size: 30px;
+    color: rgb(189, 31, 84);
+}
+
+/* 검색박스 */
+.header_in .logo .serach_box{
+    position: absolute;
+    display: flex;
+    border: 0;
+    top: 10px;
+    right: 0px;
+    border-bottom: 2px solid black;
+}
+
+.header_in .logo .serach_box .ser_box_text{
+    outline: none;
+    font-size: 18px;
+    border: 0;
+    width: 300px;
+    height: 32px;
+}
+
+.header_in .serach_box ::placeholder{
+    /* text-align: center; */
+}
+
+.header_in .serach_box .serach_box_btn{
+    outline: none;
+    border: 0;
+    width: 36px;
+    height: 32px;
+    background-color: rgb(255, 255, 255);
 }
 
 /* 배너 */
@@ -40,58 +86,9 @@
     width: 16px;
 }
 
-/* 검색박스 */
-.header_in .serach_box{
-    position: absolute;
-    display: flex;
-    border: 0;
-    top: 48px;
-    right: 15px;
-    border-bottom: 2px solid black;
-}
 
-.header_in .serach_box input{
-    outline: none;
-    font-size: 18px;
-}
 
-.header_in .serach_box ::placeholder{
-    /* text-align: center; */
-}
 
-.header_in .serach_box .ser_box_text{
-    border: 0;
-    width: 300px;
-    height: 32px;
-}    
-
-.header_in .serach_box .serach_box_btn{
-    outline: none;
-    border: 0;
-    width: 36px;
-    height: 32px;
-    background-color: rgb(255, 255, 255);
-}
-
-/* 로고 */
-.header_in .logo{
-    background-color: rgb(255, 255, 255);
-
-}
-.header_in .logo .logo in a img{
-	disply:inline-block;
-    background-color: rgb(255, 255, 255);
-    width: 100px;
-    
-}
-
-.header_in .logo .h_logo_name{
-    position:absolute;
-    top: 65px;
-    left: 46px;
-    font-size: 30px;
-    color: rgb(189, 31, 84);
-}
 
 
 /* gnb */
@@ -107,8 +104,8 @@
     height: 44px; 
     display: block;
     /* position: fixed; */
-/*     margin-top: -30px;*/    
-	margin-top: 40px;
+    /* margin-top: -30px; */
+    /* margin-top: 50px; */
 }
 
 .gnb .gnb_in .h_gnb{
