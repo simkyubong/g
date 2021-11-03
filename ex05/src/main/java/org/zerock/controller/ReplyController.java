@@ -40,6 +40,7 @@ public class ReplyController {
 		return insertcount==1?new ResponseEntity<>("success",HttpStatus.OK)
 				             :new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
 	}// 댓글쓰기 끝
+	
 	@GetMapping(value="pages/{bno}/{page}",produces= {MediaType.APPLICATION_XML_VALUE,MediaType.APPLICATION_JSON_UTF8_VALUE})
 	public ResponseEntity<ReplyPageDTO> getList(@PathVariable("bno") int bno,@PathVariable("page") int page){
 		Criteria cri = new Criteria(page,10);
@@ -54,6 +55,7 @@ public class ReplyController {
 		return new ResponseEntity<>(service.get(rno),HttpStatus.OK);
 		
 	}// 댓글 상세 페이지 끝
+	
 	@DeleteMapping(value="/{rno}",produces= {MediaType.TEXT_PLAIN_VALUE})
 	public ResponseEntity<String> remove(@PathVariable("rno") int rno){
 		//int removecount = service.remove(rno);
@@ -61,6 +63,7 @@ public class ReplyController {
 		return service.remove(rno)==1?new ResponseEntity<>("success",HttpStatus.OK)
 				                     :new ResponseEntity<>(HttpStatus.INTERNAL_SERVER_ERROR);
 	}// 댓글 삭제 끝
+	
 	@PutMapping(value="/{rno}",consumes="application/json",produces= {MediaType.TEXT_PLAIN_VALUE})
 	public ResponseEntity<String> modify(@PathVariable("rno") int rno,
 										 @RequestBody ReplyVO vo){
