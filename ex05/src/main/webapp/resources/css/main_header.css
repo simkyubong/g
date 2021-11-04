@@ -27,7 +27,10 @@
 .header_in .logo {
     position: relative;
 }
-.header_in .logo .logo_in a img{
+.header_in .logo img {
+    width: 30px ;
+}    
+.header_in .logo .logo_in img{
     width: 50px;
 }
 

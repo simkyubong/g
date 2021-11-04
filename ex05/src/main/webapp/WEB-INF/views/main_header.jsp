@@ -26,10 +26,8 @@
             
             <div class="logo">
                 <div class="logo_in">
-                    <a href="">
                     	<img src="resources/img/main/mainlogo1.jpg" alt="">
                     	<p class="h_logo_name">Sally</p>
-                    </a>
                 </div><!-- logo_in -->
                 <div class="serach_box">
                     <input type="text" placeholder="" class="ser_box_text">
