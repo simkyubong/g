@@ -1,0 +1,118 @@
+@charset "UTF-8";
+		
+*{
+	margin: 0;
+	padding:0;
+}
+
+a { text-decoration: none; }
+
+
+/* content 랩 */
+.wrap{
+	width : 800px;
+	margin: 0 auto;
+}
+
+/* 페이지 로고 */
+h2{
+	text-align: center;	
+	margin: 100px 0;
+	font-size:30px;	
+}
+
+/* 로그인 area */
+.id_wrap{
+	width: 100%;
+    margin-top: 20px;
+}
+.id_name{
+	font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.id_input_box{
+	border: 1px solid black;
+	height:31px;
+	padding: 10px 14px;	
+	
+}
+.id_input{
+	width:100%;
+	height:100%;
+	border:none;
+	font-size:18px;
+}
+
+
+.pw_wrap{
+	width: 100%;
+    margin-top: 20px;
+}
+.pw_name{
+	font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.pw_input_box{
+	border: 1px solid black;
+	height:31px;
+	padding: 10px 14px;	
+	
+}
+.pw_input{
+	width:100%;
+	height:100%;
+	border:none;
+	font-size:18px;
+}
+
+
+.login_button_wrap{
+	margin-top: 40px;
+	text-align: center;
+}
+.login_button{
+	width: 50%;
+    height: 50px;
+    border: 1px solid #ccc;
+    background-color: #e5e5e5;
+    margin: 0 10px;
+}
+
+.Login_find{
+	margin: 40px 0;
+	text-align: center;
+}
+
+.Login_find a{
+	margin: 10px 5px;
+	font-size: 25px;
+}
+
+.Login_join_button{
+   margin-top: 40px;
+   text-align: center;
+}
+
+.Login_join_button a{ 
+    display: inline-block;
+    line-height: 50px;
+    text-align: center;
+    border: 1px solid #ccc;
+    background-color: #e5e5e5;
+    margin: 0 10px;
+    width: 50%;
+}
+
+/* 로그인 실패시 경고글 */
+.login_warn{
+    margin-top: 30px;
+    text-align: center;
+    color : red;
+}
+
+/* float 속성 해제 */
+.clearfix{
+	clear: both;
+}

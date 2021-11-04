@@ -1,0 +1,224 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    color: #222;
+}
+ul{
+    list-style: none;
+}
+img{
+    vertical-align: top;
+    border: 0;
+}
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.container_in{
+    margin: 0 40px;
+}
+
+h2{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 45px;
+    margin-bottom: 30px;
+}
+
+.order_tab{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.order_tab li{
+    width: 33.33%;
+}
+
+.order_tab a{
+    display: block;
+    color: #555;
+    padding: 10px 0;
+    border: 1px solid #ccc;
+    background-color: #eeee;
+}
+
+.order_tab .on a{
+    color: #000;
+    border-bottom: 0;
+    background-color: #fff;
+}
+
+fieldset{
+    border: 1px solid #ccc;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    margin-bottom: 10px;
+}
+
+legend{
+    display: none;
+}
+
+#order_state{
+    margin: 0 10px 0 30px;
+    border: 1px solid #ccc;
+    height: 30px;
+    color: #333;
+}
+
+.order_period{
+    margin: 0 20px;
+}
+
+.order_period ul{
+    display: flex;
+}
+
+.order_period a{
+    display: block;
+    background-color: #eeee;
+    color: #999;
+    border: 1px solid #ccc;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 28px;
+    padding: 2px 5px;
+}
+
+#order_start_date, #order_end_date{
+    width: 100px;
+    height: 20px;
+    outline: none;
+    margin: 5px;
+    border: 1px solid #ccc;
+}
+
+.order_date_btn{
+    width: 40px;
+    outline: none;
+    outline-offset: none;
+    font-size: 12px;
+    padding: 3px 0;
+    background-color: #444;
+    border: 0;
+    color: #fff;
+}
+
+.order_attention{
+    color: #666;
+    font-size: 13px;
+    margin-bottom: 45px;
+}
+
+.order_info{
+    margin-bottom: 30px;
+}
+
+h3{
+    margin-bottom: 10px;
+}
+
+table{
+    border: 0;
+    border-spacing: 0;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+th{
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    font-size: 12px;
+    font-weight: 400;
+    color: #555;
+    padding: 10px 0;
+}
+
+td{
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    color: #555;
+    font-size: 12px;
+}
+
+.order_info_date{
+    width: 15%;
+}
+
+.order_info_date a{
+    display: block;
+    color: #333;
+}
+
+.order_info_image{
+    width: 5%;
+}
+
+.order_info_image img{
+    width: 100%;
+}
+
+.order_info_info{
+    width: 40%;
+}
+
+.order_info_quantity{
+    width: 10%;
+}
+
+.order_info_price{
+    width: 10%;
+}
+
+.order_info_state{
+    width: 10%;
+}
+
+.order_info_do{
+    width: 10%;
+}
+
+.order_pager{
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 150px;
+}
+
+.order_pager_in{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 530px
+}
+
+.order_pager ul{
+    display: flex;
+    margin: 5px 10px 0 10px;
+}
+
+.order_pager li a{
+    color: #999;
+}
+
+.order_pager .on a{
+    color: #222;
+}

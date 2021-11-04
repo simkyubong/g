@@ -1,0 +1,501 @@
+@charset "utf-8";
+
+#wrap {
+  position: relative;
+  margin: 0 auto;
+}
+
+#container {
+  margin: 0 auto;
+}
+
+#contents {
+  position: relative;
+  width: 90%;
+  max-width: 1350px;
+  min-height: 500px;
+  margin: 0 auto;
+}
+
+.detailHead {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  padding: 50px 0 0;
+  overflow: hidden;
+  max-width: 1050px;
+}
+
+.detailHead .dhImg {
+  width: 50%;
+  margin: 0;
+}
+
+.detailHead .productInfo {
+  width: 42%;
+  /* border: 1px transparent solid; */
+  padding: 0;
+}
+
+.detailHead .productInfo h2 {
+  margin: 0 0 8px;
+  padding: 0 0 10px;
+  font-size: 16px;
+  line-height: 24px;
+  border-bottom: 1px solid #eee;
+}
+
+.detailHead .productInfo table {
+  display: table;
+  width: 100%;
+  font-size: 14px;
+  text-align: left;
+  border-spacing: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.detailHead .productInfo table th {
+  width: 120px;
+  font-weight: bold;
+  padding: 7px 0;
+}
+
+.detailHead .productInfo table td {
+  /* vertical-align: middle; */
+  line-height: 20px;
+  padding: 7px 0;
+}
+
+.detailHead .productInfo table td ul li {
+  overflow: hidden;
+  display: inline-block;
+  margin: 0 5px 3px 0;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+.detailHead .productInfo table td ul li a {
+  display: block;
+  color: #555;
+  min-width: 30px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.detailHead .productInfo table td p {
+  font-size: 11px;
+  color: #555;
+}
+
+.totalPrice {
+  font-size: 14px;
+  border-top: 1px solid #eee;
+  margin: 0;
+  padding: 20px 0;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  padding: 3px 0;
+}
+
+.buttons a {
+  font-size: 12px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin: 0 2px;
+  padding: 14px 0;
+}
+
+.buttons .btnBuy {
+  flex: 2;
+  color: #fff;
+  background-color: #222;
+}
+
+.buttons .btnCart {
+  flex: 1;
+  color: #fff;
+  background: #888;
+}
+
+.buttons .btnWish {
+  flex: 1;
+  color: #111;
+}
+
+.pdMenu {
+  text-align: center;
+  line-height: 1.5;
+  margin: 10% 0 0;
+  padding: 20px 0;
+}
+
+.pdMenu li {
+  display: inline-block;
+  font-size: 13px;
+  position: relative;
+}
+
+.pdMenu li::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  background: #ccc;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -6px;
+}
+
+.pdMenu li:first-child:after {
+  display: none;
+}
+
+.pdMenu li a {
+  color: #aaa;
+  padding: 8px 15px;
+}
+
+.pdMenu .selected a {
+  color: #111;
+  font-weight: bold;
+}
+
+.pdMain {
+  text-align: center;
+  padding: 50px 10px 50px 9px;
+}
+
+.productRelated {
+  color: #555;
+  line-height: 18px;
+  margin: 0 auto 100px auto;
+  position: relative;
+}
+
+.productRelated .pdrList {
+  width: 1100px;
+  height: 360px;
+  margin: 50px auto 20px auto;
+  padding: 0 25px;
+}
+
+.productRelated .pdrList .pdrListIn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.productRelated .pdrList .pdrListIn .box {
+  width: 170px;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: left;
+  margin: 0 8px;
+}
+
+.productRelated .pdrList .pdrListIn .box .pdrImg img {
+  width: 100%;
+  margin: 0 0 10px;
+}
+
+.productRelated .pdrList .pdrListIn .box .pdrName a {
+  color: #111;
+  font-weight: bold;
+  margin: 0 0 5px;
+}
+
+.productRelated .pdrList .pdrListIn .box .pdrPrice {
+  color: #555;
+  font-weight: bold;
+  margin: 0 0 5px;
+}
+
+.productRelated .pdrList .pdrListIn .box .pdrOption {
+  margin: 5px 0;
+}
+
+.productRelated .pdrList .pdrListIn .box .pdrOption select {
+  width: 100%;
+  height: 24px;
+  min-width: 100px;
+  line-height: 24px;
+  border: 1px solid #ddd;
+  padding: 0 0 0 5px;
+}
+
+.productRelated .pdrList .pdrListIn .box .pdrAmount {
+  width: 50px;
+  position: relative;
+}
+
+.productRelated .pdrList .pdrListIn .box .pdrAmount input {
+  width: 22px;
+  height: 23px;
+  font-size: 12px;
+  line-height: 23px;
+  border: 1px solid #ddd;
+  padding: 0 2px 0 3px;
+}
+
+.productRelated .pdrList .pdrListIn .box .pdrAmount .updown .up {
+  position: absolute;
+  top: 0;
+  left: 28px;
+}
+
+.productRelated .pdrList .pdrListIn .box .pdrAmount .updown .down {
+  position: absolute;
+  bottom: 0;
+  left: 28px;
+}
+
+.productRelated .prev,
+.productRelated .next {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  cursor: pointer;
+}
+
+.productRelated .prev {
+  left: -30px;
+  background: url(https://flymodel.co.kr/plain/img/prev.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  text-indent: -999999px;
+}
+
+.productRelated .next {
+  right: -30px;
+  background: url(https://flymodel.co.kr/plain/img/next.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  text-indent: -999999px;
+}
+
+.productRelated .pdrBtn {
+  text-align: center;
+  margin-top: 80px;
+  padding: 10px 0;
+}
+
+.productRelated .pdrBtn a {
+  background-color: #eee;
+  color: #333;
+  font-size: 13px;
+  line-height: 18px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  padding: 14px 16px;
+}
+
+.productReview {
+  position: relative;
+  margin: 0 auto;
+  padding: 27px 0 40px;
+  max-width: 1200px;
+}
+
+.productReview h3 {
+  font-size: 17px;
+  text-align: center;
+  padding: 0 0 5px;
+}
+
+.productReview .st {
+  color: #555;
+  font-size: 12px;
+  text-align: center;
+  padding: 0 0 30px;
+}
+
+.productReview .rvList li {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 30px;
+}
+
+.productReview .rvList .rvListIn {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.productReview .rvList .rvListIn .rvBody {
+  width: 100%;
+  min-height: 200px;
+}
+
+.productReview .rvList .rvListIn .rvBody .rvScore {
+  color: #555;
+}
+
+.productReview .rvList .rvListIn .rvContent {
+  width: 100%;
+  padding: 12px 0 13px 0;
+}
+
+.productReview .rvList .rvListIn .rvContent a {
+  color: #111;
+}
+
+.productReview .rvList .rvListIn .rvContent .rvImg {
+  width: 100%;
+  max-width: 130px;
+  margin: 20px 0;
+}
+
+.productReview .rvList .rvListIn .rvContent .rvImg img {
+  width: 128px;
+  height: 128px;
+  border: 1px solid #eeeeee;
+}
+
+.productReview .rvList .rvListIn .rvInfo {
+  width: 200px;
+  line-height: 18px;
+  margin-bottom: 30px;
+}
+
+.productReview .rvList .rvListIn .rvInfo .rviTitle {
+  color: #777;
+}
+
+.productReview .rvList .rvListIn .rvInfo .rviText {
+  font-weight: bold;
+}
+
+.productReview .pdrPager {
+  display: flex;
+  justify-content: center;
+}
+
+.productReview .pdrPager a {
+  color: #111;
+}
+
+.productReview .pdrPager .active {
+  color: #ccc;
+}
+
+.productReview .pdrPager ul {
+  display: flex;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+.productReview .pdrPager ul li {
+  margin: 0 10px;
+}
+
+.productQna .pdQna {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 27px 0 40px;
+}
+
+.productQna .pdQna h3 {
+  color: #000;
+  font-size: 17px;
+  text-align: center;
+  padding: 0 0 5px;
+}
+
+.productQna .pdQna p {
+  color: #555;
+  font-size: 12px;
+  text-align: center;
+  padding: 0 0 30px;
+}
+
+.productQna .pdQna table {
+  width: 100%;
+  border: 1px solid #eee;
+  border-left: 0;
+  border-right: 0;
+  margin: 10px 0 0;
+  position: relative;
+}
+
+.productQna .pdQna table th {
+  color: #333;
+  font-size: 12px;
+  padding: 12px 0;
+}
+
+.productQna .pdQna table td {
+  border-top: 1px solid #eee;
+  margin: 14px 10px;
+}
+
+.productQna .pdQna table td a {
+  color: #222;
+}
+
+.productQna .pdQna table .t_num {
+  width: 70px;
+}
+
+.productQna .pdQna table .t_title {
+  width: auto;
+}
+
+.productQna .pdQna table .t_writer {
+  width: 120px;
+}
+
+.productQna .pdQna table .t_date {
+  width: 120px;
+}
+
+.productQna .pdQna table .t_view {
+  width: 55px;
+}
+
+.productQna .pdQna table tr td:not(:nth-child(2)) {
+  text-align: center;
+}
+
+.productQna .pdQna table .pdQna_content_wrap {
+  background-color: #ccc;
+}
+
+.productQna .pdQna table .pdQna_content_wrap .pdQna_content {
+  text-align: left;
+  margin-left: 50px;
+}
+
+
+.productQna .pdQna .pdqPager {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.productQna .pdQna .pdqPager a {
+  color: #111;
+}
+
+.productQna .pdQna .pdqPager ul {
+  display: flex;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+.productQna .pdQna .pdqPager ul li {
+  margin: 0 10px;
+}
+
+.productQna .pdQna .pdqPager ul li.active a{
+  font-weight: bold;
+  color: #ccc;
+}

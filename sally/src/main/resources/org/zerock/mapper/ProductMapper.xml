@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.zerock.mapper.ProductMapper">
+	<select id="getList" resultType="org.zerock.domain.ProductVO">
+		<![CDATA[
+			select * from team_board where bno > 0
+		]]>
+	</select>
+	
+	<select id="getListWithPaging" resultType="org.zerock.domain.ProductVO">
+	
+	select rownum, bno, title, content, writer, regdate, views
+	from (
+			select @rownum:=@rownum+1 as rownum,b.*
+	        from (
+				select @rownum:=0
+			) as tmp, team_board as b
+			order by bno asc
+	) as qnalist
+	<![CDATA[
+	where rownum>(#{pageNum} - 1)*#{amount} and rownum<=#{pageNum} *#{amount}
+	]]>
+	</select>
+	<select id="getTotalCount" resultType="int">
+		select count(*) from team_board
+	</select>
+	
+	<insert id="insertSelectKey">
+		<selectKey keyProperty="bno" order="BEFORE" resultType="int">
+			select max(bno)+1 bno from team_board
+		</selectKey>
+		insert into team_board(bno,title, content, writer, regdate, views)
+		values(#{bno},#{title},#{content},#{writer},#{regdate},#{views})
+	</insert>
+	<select id="read" resultType="org.zerock.domain.ProductVO">
+		select * from team_board where bno=#{bno}
+	</select>
+</mapper>

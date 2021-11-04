@@ -1,0 +1,124 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    color: #222;
+}
+ul{
+    list-style: none;
+}
+img{
+    vertical-align: top;
+    border: 0;
+}
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.container_in{
+    margin: 0 40px;
+    margin-bottom: 150px;
+}
+
+h2{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 45px;
+    margin-bottom: 50px;
+}
+
+table{
+    width: 100%;
+    border: 0;
+    border-spacing: 0;
+    margin-bottom: 20px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.title th{
+    width: 10%;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.title td{
+    width: 90%;
+    text-align: left;
+}
+
+tr>.writer{
+    border-bottom: 1px solid #ccc;
+}
+
+.writer th{
+    width: 10%;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.writer td{
+    width: 90%;
+    text-align: left;
+    position: relative;
+}
+
+.writer .date{
+    position: absolute;
+    right: 100px;
+    top: 15px;
+}
+
+.writer .count{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+}
+
+.writer span{
+	margin-left: 3px;
+	margin-top: 2px;
+}
+
+th{
+    font-size: 13px;
+    font-weight: 400;
+    color: #555;
+    padding: 10px 0;
+}
+
+td{
+    padding: 13px 0;
+    text-align: center;
+    color: #555;
+    font-size: 12px;
+}
+
+.content{
+    padding: 30px 40px;
+    text-align: left;
+    padding-left: 10px;
+    border-top: 1px solid #ddd;
+    margin-top: -10px;
+}
+
+.list{
+    text-align: right;
+}
+
+.list a{
+    color: #555;
+    padding: 8px 30px;
+    border: 1px solid #ccc;
+}

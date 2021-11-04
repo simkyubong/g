@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <mapper namespace="org.zerock.mapper.AdminMapper">
+	<!-- 상품 등록 -->
+  	<insert id="goodsEnroll">
+  	
+  		insert into tbl_goods(gdsName, cateCode, gdsPrice, gdsStock, gdsDes)
+		values(#{gdsName}, #{cateCode}, #{gdsPrice}, #{gdsStock}, #{gdsDes})
+
+  	</insert>
+	
+	<!-- 카테고리 리스트 -->
+  	<select id="cateList" resultType="org.zerock.domain.CateVO">
+  	
+  		select cateName from tbl_cate1
+  	
+  	</select>
+  	
+  	<!-- 2차 카테고리 리스트 -->
+  	<select id="cate2List" resultType="org.zerock.domain.CateVO">
+  	
+  		select * from tbl_cate2 where cateName=#{cate1}
+  	
+  	</select>
+	
+	<!-- 상품 리스트 -->
+	<select id="goodsGetList" resultType="org.zerock.domain.GoodsVO">
+	
+		select  a.gdsNum, a.gdsName, a.gdsPrice, a.cateCode, a.gdsStock, a.gdsDate
+		from tbl_goods AS a
+		left join tbl_cate1 AS b on a.cateCode = b.cateName
+		left join tbl_cate2 AS c on b.cateName = c.cateName
+		<if test="keyword != null">
+			where (gdsName like concat ('%', #{keyword}, '%'))
+		</if>
+		order by gdsNum DESC
+		limit #{skip}, #{amount};	
+	
+	</select>
+  	
+  	<!-- 상품 총 갯수 -->
+  	<select id="goodsGetTotal" resultType="int">
+  	
+  		select count(*) from tbl_goods
+  		
+  		<if test="keyword != null">
+  		
+  			where gdsName like concat('%' , #{keyword}, '%')
+  		
+  		</if>
+  	
+  	</select>
+
+</mapper>
