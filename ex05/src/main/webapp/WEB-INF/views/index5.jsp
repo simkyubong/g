@@ -8,7 +8,7 @@
 <head>
 	<meta charset="UTF-8">
     <title>Document</title>    
-    <link href="resources/css/reset.css" rel="stylesheet">
+ 	<link rel="stylesheet" href="resources/css/main_reset.css">
 
     <script
   		src="https://code.jquery.com/jquery-3.4.1.js"

@@ -2,7 +2,8 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
-<jsp:include page="header.jsp"></jsp:include>
+
+<jsp:include page="main_header.jsp"></jsp:include>
 
 	<div id="wrap">
 	
@@ -10,7 +11,7 @@
 		
 			<div class="main_slide">
 				<div class="main_silde_in">
-					<a href=""> <img src="resources/css/img/main05.jpg" alt="">
+					<a href=""> <img src="resources/css/img/main/main05.jpg" alt="">
 						<p class="">손쉽게 찾아가는 나만의 쇼핑</p>
 					</a>
 					<!-- <a href=""><img src="./img/main01.jpg" alt=""></a> -->
@@ -24,7 +25,7 @@
 				<div class="sec1_main_notice_in">
 					<ul>
 						<li>
-							<h2></h2> <a href=""> <img src="resources/css/img/sub_01.jpg" alt="">
+							<h2></h2> <a href=""> <img src="resources/css/img/main/sub_01.jpg" alt="">
 								<h2></h2>
 								<p></p>
 						</a>
@@ -34,7 +35,7 @@
 							</div>
 						</li>
 						<li>
-							<h2></h2> <a href=""> <img src="resources/css/img/sub_02.jpg" alt="">
+							<h2></h2> <a href=""> <img src="resources/css/img/main/sub_02.jpg" alt="">
 								<h2></h2>
 								<p></p>
 						</a>
@@ -44,7 +45,7 @@
 							</div>
 						</li>
 						<li>
-							<h2></h2> <a href=""> <img src="resources/css/img/sub_03.jpg" alt="">
+							<h2></h2> <a href=""> <img src="resources/css/img/main/sub_03.jpg" alt="">
 								<p></p>
 								<p></p>
 						</a>
@@ -56,7 +57,7 @@
 						<li>
 							<h2></h2>
 							<div class="con">
-								<a href=""> <img src="resources/css/img/sub_04.jpg" alt="">
+								<a href=""> <img src="resources/css/img/main/sub_04.jpg" alt="">
 									<p></p>
 									<p></p>
 								</a>
@@ -69,7 +70,7 @@
 						<li>
 							<h2></h2>
 							<div class="con">
-								<a href=""> <img src="resources/css/img/sub_05.jpg" alt="">
+								<a href=""> <img src="resources/css/img/main/sub_05.jpg" alt="">
 									<p></p>
 									<p></p>
 								</a>
@@ -176,10 +177,10 @@
 					</ul>
 					<div class="sec2_btn">
 						<p class="sec2_btnR">
-							<img src="./img/gnb_icon/prev_left_icon.png" alt="">
+							<img src="resources/css/img/gnb_icon/prev_left_icon.png" alt="">
 						</p>
 						<p class="sec2_btnL">
-							<img src="./img/gnb_icon/next_right_icon.png" alt="">
+							<img src="resources/css/img/gnb_icon/next_right_icon.png" alt="">
 						</p>
 					</div>
 				</div>
@@ -586,7 +587,7 @@
 		</div>
 		<!-- container -->
 		
-<jsp:include page="footer.jsp"></jsp:include>
+<jsp:include page="main_footer.jsp"></jsp:include>
 		
 	</div>
 	<!-- wrap -->

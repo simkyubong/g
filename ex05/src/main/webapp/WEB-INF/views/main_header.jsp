@@ -4,23 +4,22 @@
 <head>
 	<title>Sally</title>
 	<meta charset="utf-8">
-	<link href="resources/css/reset.css" rel="stylesheet">
+	<link href="resources/css/main_reset.css" rel="stylesheet">
 	<link href="resources/css/style2.css" rel="stylesheet">
 	<link href="resources/css/style_live_best.css" rel="stylesheet">
-	<link href="resources/css/header.css" rel="stylesheet">
-	<link href="resources/css/footer.css" rel="stylesheet">
+	<link href="resources/css/main_header.css" rel="stylesheet">
+	<link href="resources/css/main_footer.css" rel="stylesheet">
 	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
 
 <body>
     <div id="header">
         <div class="header_in">
-        
             <div class="header_banner">
                 <a href="">
                     <p>
 						코로나 19 관련 고객 전달사항 알림 
-                        <img src="resources/img/gnb_icon/ic-clear.svg" alt="">
+                      	<img src="resources/img/main/gnb_icon/ic-clear.svg" alt="">
                     </p>
                 </a>
             </div>
@@ -28,7 +27,7 @@
             <div class="logo">
                 <div class="logo_in">
                     <a href="">
-                    	<img src="resources/img/man.png" alt="">
+                    	<img src="resources/img/main/mainlogo1.jpg" alt="">
                     	<p class="h_logo_name">Sally</p>
                     </a>
                 </div><!-- logo_in -->

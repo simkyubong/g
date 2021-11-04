@@ -8,7 +8,7 @@
 <head>
 	<meta charset="UTF-8">
     <title>sally</title>    
-	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/main_reset.css">
     <link rel="stylesheet" href="css/style3_setUP.css">
     <script
   		src="https://code.jquery.com/jquery-3.4.1.js"

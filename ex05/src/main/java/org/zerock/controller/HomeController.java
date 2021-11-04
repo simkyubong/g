@@ -37,14 +37,14 @@ public class HomeController {
 		return "index5";
 		}
 	
-	@RequestMapping(value = "/header", method = RequestMethod.GET)
-	public String header() {
-		return "header";
+	@RequestMapping(value = "/main_header", method = RequestMethod.GET)
+	public String main_header() {
+		return "main_header";
 		}
 	
-	@RequestMapping(value = "/footer", method = RequestMethod.GET)
-	public String footer() {
-		return "footer";
+	@RequestMapping(value = "/main_footer", method = RequestMethod.GET)
+	public String main_footer() {
+		return "main_footer";
 		}
 	
 

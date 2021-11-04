@@ -74,6 +74,9 @@
     text-align: center;
     padding-top: 30px;
 }
+.sec2_nowLive_bset h2, p{
+	back-ground: geay;
+}
 
 .sec2_nowLive_bset .tap_pager{
     /* background-color: gray; */
