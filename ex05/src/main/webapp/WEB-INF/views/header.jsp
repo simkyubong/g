@@ -28,7 +28,7 @@
             <div class="logo">
                 <div class="logo_in">
                     <a href="">
-                    	<img src="resources/img/mainLogo.png" alt="">
+                    	<img src="resources/img/man.png" alt="">
                     	<p class="h_logo_name">Sally</p>
                     </a>
                 </div><!-- logo_in -->

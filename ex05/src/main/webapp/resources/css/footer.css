@@ -23,28 +23,34 @@
 .f_in .f1 ul li{
     margin-bottom: 10px;
 }
-
+.f_menu{
+}
 .f_menu_in{
     display: flex;
     justify-content: space-between;
     background-color:gainsboro;
-    padding: 15px;
+    padding: 12px;
     font-size: 15px;
     margin-bottom: 100px;
+    line-height: 36px;
+}
+.f_menu .f_menu_in{
 }
 
-.f_menu_in ul{
-    display: flex;
+.f_menu .f_menu_in ul{
+    display: flex;   
+    justify-content: space-between;
 }
 
-.f_menu_in ul li{
+.f_menu .f_menu_in ul li{
     margin-right: 22px;
-}
-.f_menu_in ul li a{
+} 
+.f_menu .f_menu_in ul li a{
     color: black;
 }
 
 .f_menu .f_menu_in .f_sns {
+    display: flex;
 }
 
 .f_menu .f_menu_in .f_sns .f_face{
