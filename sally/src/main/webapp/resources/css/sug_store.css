@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+#wrap {
+	width: 1240px;
+	margin: 0 auto;
+}
+/*   section4    */
+.section4 {
+	position: relative;
+	width: 1200px;
+	margin: 0 auto;
+	margin-bottom: 250px;
+}
+
+/* 이전페이지 시작하기 버튼 */
+.section4 .user_top_btn {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 100px;
+	font-size: 18px;
+}
+
+.section4 .user_top_btn .prev_btn {
+	background-color: grey;
+}
+
+.section4 .user_top_btn .prev_btn a {
+	display: block;
+	color: black;
+	padding: 12px;
+}
+
+.section4 .user_top_btn .start_btn {
+	background-color: grey;
+}
+
+.section4 .user_top_btn .start_btn a {
+	display: block;
+	color: black;
+	padding: 12px;
+}
+
+/*  */
+.section4 .user_top_head {
+	margin-bottom: 10px;
+	line-height: 22px;
+}
+
+.section4 .user_top_head .emoji {
+	font-size: 140px;
+	margin-bottom: 100px;
+}
+
+.section4 .user_top_head h2 {
+	margin-bottom: 10px;
+	font-size: 22px;
+}
+
+.section4 .user_top_head {
+	background-color: gainsboro;
+	margin-bottom: 60px;
+}
+
+/* 즐겨찾기 */
+.section4 .bookmark_btn {
+	position: relative;
+	margin-bottom: 40px;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.section4 .bookmark_btn div {
+	line-height: 22px;
+	padding: 12px;
+}
+
+.section4 .bookmark_btn div p {
+	width: 150px;
+	padding: 10px;
+}
+
+.section4 .bookmark_btn img {
+	position: absolute;
+	width: 22px;
+	top: 0px;
+	left: 150px;
+	line-height: 20px;
+}
+
+/* 상품사진 */
+.section4 .user_choice {
+	
+}
+
+.section4 .user_choice .page1, .page2, .page3 {
+	background-color: gainsboro;
+	margin-bottom: 60px;
+}
+
+.section4 .user_choice .page1 ul, .page2 ul, .page3 ul {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.section4 .user_choice .page1 ul li {
+	
+}
+
+.section4 .user_choice ul li img {
+	width: 260px;
+	height: 330px;
+	margin-right: 40px;
+	margin-left: 40px;
+	margin-bottom: 50px;
+}
+
+.section4 .user_choice .seller_profile {
+	display: flex;
+}
+
+.section4 .user_choice .seller_profile .profile img {
+	width: 50px;
+}
+
+.section4 .user_choice .seller_profile .book_mark {
+	
+}
+
+.section4 .user_choice .seller_profile .book_mark img {
+	width: 30px;
+	margin-left: 1100px;
+}
+
+.section4 .user_choice .seller_profile .item_information {
+	margin-bottom: 24px;
+}

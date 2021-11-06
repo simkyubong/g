@@ -1,0 +1,287 @@
+@charset "utf-8";
+
+#wrap {
+	width: 1240px;
+	margin: 0 auto;
+	/* background-color:gainsboro; */
+}
+
+#header {
+	position: relative;
+	width: 1200px;
+	margin: 0 auto;
+	/* background-color: antiquewhite; */
+}
+
+.header_in .gnb {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
+	margin-top: 5px;
+}
+
+/* 건너뛰기, 선택완료 버튼 */
+.header_in .gnb .pass_btn {
+	background-color: gray;
+	padding: 12px;
+}
+
+.header_in .gnb .pass_btn a {
+	color: #111;
+}
+
+.header_in .gnb .selection_btn {
+	background-color: gray;
+	padding: 12px;
+}
+
+.header_in .gnb .selection_btn a {
+	color: #111;
+}
+
+/* 헤더 문장 */
+.header_in .h_text {
+	margin-bottom: 80px;
+	margin-left: 5px;
+}
+
+.header_in .h_text h1 {
+	display: block;
+	font-size: 22px;
+	background-color: rgb(199, 190, 139);
+	margin-bottom: 10px;
+	line-height: 26px;
+}
+
+.header_in .h_text .emoji {
+	font-size: 140px;
+	margin-bottom: 45px;
+}
+
+.header_in .h_text p {
+	font-size: 16px;
+}
+
+#container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+/*  */
+.section1 {
+	display: none;
+}
+/*  */
+.section2 {
+	display: none;
+}
+
+/* section3 */
+.section3 {
+	width: 1200px;
+	margin: 0 auto;
+	margin-bottom: 200px;
+}
+
+/* 상품텍스트 */
+.section3 .user_set_up {
+	margin-bottom: 30px;
+	background-color: gainsboro;
+}
+
+.section3 .user_set_up .user_text {
+	padding-top: 20px;
+	font-size: 22px;
+	font-weight: 500;
+}
+
+.section3 .user_set_up .user_text ul li:hover a {
+	text-decoration: underline;
+	color: gainsboro;
+}
+
+.section3 .user_text ul {
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 50px;
+}
+
+.section3 .user_text ul li {
+	padding: 12px;
+	background-color: rgb(172, 172, 172);
+}
+
+.section3 .user_text ul li a {
+	color: black;
+}
+
+.section3 .user_set_up_in {
+	/* background-color: green; */
+	
+}
+
+.section3 .user_set_up_in ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.section3 .user_set_up_in ul li {
+	width: 250px;
+	height: 200px;
+	background-color: gray;
+	margin-bottom: 200px;
+}
+
+.section3 .user_set_up_in ul li::before input {
+	background-color: bisque;
+}
+
+/* ------------------------------------------------ */
+/* input[type="checkbox"]+label {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url('../img/main/profile.png') no-repeat 0 0px / contain;
+}
+
+input[type='checkbox']:checked+label {
+    background: url('../img/balck/h_l-100.jpeg') no-repeat 0 0px / contain;
+}
+
+input[type="checkbox"] {
+    display: none;
+} */
+/* ---------------------------------------------- */
+
+/*   section4    */
+.section4 {
+	position: relative;
+	width: 1200px;
+	margin: 0 auto;
+	margin-bottom: 250px;
+}
+
+/* 이전페이지 시작하기 버튼 */
+.section4 .user_top_btn {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 100px;
+	font-size: 18px;
+}
+
+.section4 .user_top_btn .prev_btn {
+	background-color: grey;
+}
+
+.section4 .user_top_btn .prev_btn a {
+	display: block;
+	color: black;
+	padding: 12px;
+}
+
+.section4 .user_top_btn .start_btn {
+	background-color: grey;
+}
+
+.section4 .user_top_btn .start_btn a {
+	display: block;
+	color: black;
+	padding: 12px;
+}
+
+/*  */
+.section4 .user_top_head {
+	margin-bottom: 10px;
+	line-height: 22px;
+}
+
+.section4 .user_top_head .emoji {
+	font-size: 140px;
+	margin-bottom: 100px;
+}
+
+.section4 .user_top_head h2 {
+	margin-bottom: 10px;
+	font-size: 22px;
+}
+
+.section4 .user_top_head {
+	background-color: gainsboro;
+	margin-bottom: 60px;
+}
+
+/* 즐겨찾기 */
+.section4 .bookmark_btn {
+	position: relative;
+	margin-bottom: 40px;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.section4 .bookmark_btn div {
+	line-height: 22px;
+	padding: 12px;
+}
+
+.section4 .bookmark_btn div p {
+	width: 150px;
+	padding: 10px;
+}
+
+.section4 .bookmark_btn img {
+	position: absolute;
+	width: 22px;
+	top: 0px;
+	left: 150px;
+	line-height: 20px;
+}
+
+/* 상품사진 */
+.section4 .user_choice {
+	
+}
+
+.section4 .user_choice .page1, .page2, .page3 {
+	background-color: gainsboro;
+	margin-bottom: 60px;
+}
+
+.section4 .user_choice .page1 ul, .page2 ul, .page3 ul {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.section4 .user_choice .page1 ul li {
+	
+}
+
+.section4 .user_choice ul li img {
+	width: 250px;
+	height: 300px;
+	margin-right: 40px;
+	margin-left: 40px;
+	margin-bottom: 50px;
+}
+
+.section4 .user_choice .seller_profile {
+	display: flex;
+}
+
+.section4 .user_choice .seller_profile .profile img {
+	width: 50px;
+}
+
+.section4 .user_choice .seller_profile .book_mark {
+	
+}
+
+.section4 .user_choice .seller_profile .book_mark img {
+	width: 30px;
+	margin-left: 1100px;
+}
+
+.section4 .user_choice .seller_profile .item_information {
+	margin-bottom: 24px;
+}

@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+#wrap {
+	width: 1240px;
+	margin: 0 auto;
+	/* background-color:gainsboro; */
+}
+
+#header {
+	position: relative;
+	width: 1200px;
+	margin: 0 auto;
+	/* background-color: antiquewhite; */
+}
+
+.header_in .gnb {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
+	margin-top: 5px;
+}
+
+/* 건너뛰기, 선택완료 버튼 */
+.header_in .gnb .pass_btn {
+	background-color: gray;
+	padding: 12px;
+}
+
+.header_in .gnb .pass_btn a {
+	color: #111;
+}
+
+.header_in .gnb .selection_btn {
+	background-color: gray;
+	padding: 12px;
+}
+
+.header_in .gnb .selection_btn a {
+	color: #111;
+}
+
+/* 헤더 문장 */
+.header_in .h_text {
+	margin-bottom: 80px;
+	margin-left: 5px;
+}
+
+.header_in .h_text h1 {
+	display: block;
+	font-size: 22px;
+	background-color: rgb(199, 190, 139);
+	margin-bottom: 10px;
+	line-height: 26px;
+}
+
+.header_in .h_text .emoji {
+	font-size: 140px;
+	margin-bottom: 45px;
+}
+
+.header_in .h_text p {
+	font-size: 16px;
+}
+
+#container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+/*  */
+.section1 {
+	display: none;
+}
+/*  */
+.section2 {
+	display: none;
+}
+
+/* section3 */
+.section3 {
+	width: 1200px;
+	margin: 0 auto;
+	margin-bottom: 200px;
+}
+
+/* 상품텍스트 */
+.section3 .user_set_up {
+	margin-bottom: 30px;
+	background-color: gainsboro;
+}
+
+.section3 .user_set_up .user_text {
+	padding-top: 20px;
+	font-size: 22px;
+	font-weight: 500;
+}
+
+.section3 .user_set_up .user_text ul li:hover a {
+	text-decoration: underline;
+	color: gainsboro;
+}
+
+.section3 .user_text ul {
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 50px;
+}
+
+.section3 .user_text ul li {
+	padding: 12px;
+	background-color: rgb(172, 172, 172);
+}
+
+.section3 .user_text ul li a {
+	color: black;
+}
+
+.section3 .user_item {
+	/* background-color: green; */
+	
+}
+
+.section3 .user_item ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.section3 .user_item ul li {
+	width: 250px;
+	height: 330px;
+	background-color: gray;
+	margin-bottom: 150px;
+}
+
+.section3 .user_item ul li a img {
+	width: 250px;
+}

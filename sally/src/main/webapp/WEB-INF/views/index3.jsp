@@ -1,252 +1,315 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-    <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>   
-    
+	pageEncoding="UTF-8"%>
+<link rel="stylesheet" type="text/css"
+	href="resouces/css/layout.css?v=3">
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-    <title>sally</title>    
-	<link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style3_setUP.css">
-    <script
-  		src="https://code.jquery.com/jquery-3.4.1.js"
-	  	integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-	  	crossorigin="anonymous">
-    </script>
+<meta charset="UTF-8">
+<title>suggest</title>
+<link rel="stylesheet" href="resources/css/main_reset.css">
+<link rel="stylesheet" href="resources/css/main_style3.css">
+<link rel="stylesheet" href="resources/css/js/index.js">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+	href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap"
+	rel="stylesheet">
 </head>
 <body>
+	<div id="wrap">
 
-    <div id="wrap">
-        <div id="header">
-            <div class="header_in">
-                <div class="gnb">
-                    <p class="pass_btn">
-                        <a href="">건너뛰기</a>
-                    </p>
-                    <p class="selection_btn">
-                        <a href="">선택 완료</a>
-                    </p>
-                </div>
-                <div class="h_text">
-                    <h1>
-                        <img src="" alt=""><br>
-                        안녕하세요! 취향에 맞는 스타일을 고르면 <br>
-                        본인에게 맞는 상품을 추천해드려요
-                    </h1>
-                    <p>많이 선택해 주실수록 추천과 취향이 가까워집니다!</p>
-                </div>
-            </div><!-- header_in -->
-            <div class="header_in_sec1">
+		<div id="header">
 
-            </div><!-- header_in_sec1 -->
-            <div class="header_in_sec2">
+			<div class="header_in">
 
-            </div><!-- header_in_sec2 -->
-        </div><!-- header -->
+				<div class="gnb">
+					<p class="pass_btn">
+						<a href="">건너 뛰기</a>
+					</p>
+					<p class="selection_btn">
+						<a href="">선택 완료</a>
+					</p>
+				</div>
+				<!-- gnb -->
+				<div class="h_text">
+					<h1>
+						<p class="emoji">&#128149;</p>
+						<br> 안녕하세요! 취향에 맞는 스타일을 고르면 <br> 본인에게 맞는 상품을 추천해드려요
+					</h1>
+					<p>많이 선택해 주실수록 추천과 취향이 가까워집니다!</p>
+				</div>
+				<!-- h_text -->
+			</div>
+			<!-- header_in -->
+			<div class="header_in_sec1"></div>
+			<!-- header_in_sec1 -->
+			<div class="header_in_sec2"></div>
+			<!-- header_in_sec2 -->
+		</div>
+		<!-- header -->
 
-        <div id="container">
-            <div class="section1 hide">
-                <div class="age_selection"></div><!-- age_selection -->
-                    <p>이모티콘</p>
-                    <h2>연령대를 선택해 주십시요</h2>
-                    <p>알맞은 상품들을 추천해 드릴게요</p>
-                    <div>
-                        <ul>
-                            <li>
-                                <input type="checkbox" name="10대" id="">
-                                10대
-                            </li>
-                            <li>
-                                <input type="checkbox" name="10대" id="">
-                                10대
-                            </li>
-                            <li>
-                                <input type="checkbox" name="10대" id="">
-                                20~24세
-                            </li>
-                            <li>
-                                <input type="checkbox" name="10대" id="">
-                                25~29세
-                            </li>
-                            <li>
-                                <input type="checkbox" name="10대" id="">
-                                30~34세
-                            </li>
-                            <li>
-                                <input type="checkbox" name="10대" id="">
-                                35세 이상
-                            </li>
+		<div id="container">
+			<div class="section1 hide">
+				<div class="age_selection">
+					<p>이모티콘</p>
+					<h2>연령대를 선택해 주십시요</h2>
+					<p>알맞은 상품들을 추천해 드릴게요</p>
+					<div>
+						<ul>
+							<li><input type="checkbox" name="age" id=""
+								oneclick="checkAgeOne(this)" /> 10대</li>
+							<li><input type="checkbox" name="age" id=""
+								oneclick="checkAgeOne(this)" /> 10~19세</li>
+							<li><input type="checkbox" name="age" id=""
+								oneclick="checkAgeOne(this)" /> 20~24세</li>
+							<li><input type="checkbox" name="age" id=""
+								oneclick="checkAgeOne(this)" /> 25~29세</li>
+							<li><input type="checkbox" name="age" id=""
+								oneclick="checkAgeOne(this)" /> 30~34세</li>
+							<li><input type="checkbox" name="age" id=""
+								oneclick="checkAgeOne(this)" /> 35세 이상</li>
+						</ul>
+					</div>
+				</div>
+				<!-- age_selection -->
+			</div>
+			<!-- section1 -->
 
-                        </ul>
-                    </div>
-                </div><!-- age_selection -->
-            </div><!-- section1 -->
-            <div class="section2 hide">
-                <div class="taste_selection">
-                    <p>이모티콘</p>
-                    <h2>취향을 선택해 주세요</h2>
-                    <p>3개 이상 선택해 주시면 원하는 것과 그와 관련된 것들을 먼저 보여드릴게요</p>
-                   <div>
-                    <ul>
-                        <li>
-                            <input type="checkbox" name="10대" id="">
-                            <img src="" alt="">
-                            쇼핑몰
-                        </li>
-                        <li>
-                            <input type="checkbox" name="10대" id="">
-                            <img src="" alt="">
-                            뷰티
-                        </li>
-                        <li>
-                            <input type="checkbox" name="10대" id="">
-                            <img src="" alt="">
-                            브랜드
-                        </li>
-                        <li>
-                            <input type="checkbox" name="10대" id="">
-                            <img src="" alt="">
-                            럭셔리
-                        </li>
-                        <li>
-                            <input type="checkbox" name="10대" id="">
-                            <img src="" alt="">
-                            홈데코
-                        </li>
-                        <li>
-                            <input type="checkbox" name="10대" id="">
-                            <img src="" alt="">
-                            핸드메이드
-                        </li>
-                        <li>
-                            <input type="checkbox" name="10대" id="">
-                            <img src="" alt="">
-                            팬시
-                        </li>
-                        <li>
-                            <input type="checkbox" name="10대" id="">
-                            <img src="" alt="">
-                            스포츠
-                        </li>
-                    </ul>
-                </div>
-                </div><!-- taste_selection -->
-            </div><!-- section2 -->
-            
-            <div class="section3">
-                <div class="user_set_up">
-                    <div class="user_text">
-                        <ul>
-                            <!-- <input type="checkbox">상품선택 -->
-                            <li class=""><a href="">전체</a></li>
-                            <li class=""><a href="">상의</a></li>
-                            <li class=""><a href="">원피스</a></li>
-                            <li class=""><a href="">바지</a></li>
-                            <li class=""><a href="">스커트</a></li>
-                            <li class=""><a href="">슈즈</a></li>
-                            <li class=""><a href="">가방</a></li>
-                            <li class=""><a href="">액세서리</a></li>
-                        </ul>
-                    </div>
-                    <div class="user_set_up_in">
-                        <ul>
-                            <li><a href=""><img src="./img/brown/h_l-102.jpeg" alt=""></a></li>
-                            <li><a href=""><img src="./img/brown/h_l-103.jpeg" alt=""></a></li>
-                            <li><a href=""><img src="./img/brown/brownitem13.jpeg" alt=""></a></li>
-                            <li><a href=""><img src="./img/brown/brownitem12.jpeg" alt=""></a></li>
-                            <li><a href=""><img src="./img/blue/buleitem20.jpeg" alt=""></a></li>
-                            <li><a href=""><img src="./img/blue/blueitem21.jpeg" alt=""></a></li>
-                            <li><a href=""><img src="./img/red/h_l-115.jpeg" alt=""></a></li>
-                            <li><a href=""><img src="./img/red/reditem3.jpeg" alt=""></a></li>
-                            <li><a href=""><img src="./img/gery/grey_item9.jpeg" alt=""></a></li>
-                            <li><a href=""><img src="./img/gery/grey_item10.jpeg" alt=""></a></li>
-                            <li><a href=""><img src="./img/gery/grey_item11.jpeg" alt=""></a></li>
-                            <li><a href=""><img src="./img/gery/grey_item12.jpeg" alt=""></a></li>
-                        </ul>
-                    </div>
-                </div><!-- user_set_up -->
-            </div><!-- section3 -->
-            
-            <div class="section4">
-                <div class="user_start">
-                    <div class="user_btn">
-                        <p class="u_prev"><a href="">이전페이지</a></p>
-                        <p class="u_start"><a href="">시작하기</a></p>
-                    </div><!-- user_top_btn -->
-                    <div class="user_top">
-                        <h2>
-                            선택한 스타일의 <br>
-                            스타일을 모아왔어요.
-                        </h2>
-                        <p>
-                            즐겨찾기 하시고 매일 인기상품과
-                            신상을 모아보세요!
-                        </p>
-                    </div><!-- user_top_head -->
+			<div class="section2 hide">
+				<div class="taste_selection">
+					<p>이모티콘</p>
+					<h2>취향을 선택해 주세요</h2>
+					<p>3개 이상 선택해 주시면 원하는 것과 그와 관련된 것들을 먼저 보여드릴게요</p>
+					<div class="taste_list">
+						<ul>
+							<li><input type="checkbox" name="10대" id=""> <img
+								src="" alt=""> 쇼핑몰</li>
+							<li><input type="checkbox" name="10대" id=""> <img
+								src="" alt=""> 뷰티</li>
+							<li><input type="checkbox" name="10대" id=""> <img
+								src="" alt=""> 브랜드</li>
+							<li><input type="checkbox" name="10대" id=""> <img
+								src="" alt=""> 럭셔리</li>
+							<li><input type="checkbox" name="10대" id=""> <img
+								src="" alt=""> 홈데코</li>
+							<li><input type="checkbox" name="10대" id=""> <img
+								src="" alt=""> 핸드메이드</li>
+							<li><input type="checkbox" name="10대" id=""> <img
+								src="" alt=""> 팬시</li>
+							<li><input type="checkbox" name="10대" id=""> <img
+								src="" alt=""> 스포츠</li>
+						</ul>
+					</div>
+				</div>
+				<!-- taste_selection -->
+			</div>
+			<!-- section2 -->
 
-                    <div class="user_start_in">
-                        <div class="bookmark_btn">
-                            <p>
-                                모두 즐겨찾기
-                            </p>
-                            <img src="./img/bookmark .svg" alt="">
-                        </div><!-- bookmark_btn -->
+			<div class="section3">
+				<div class="user_set_up">
+					<div class="user_text">
+						<ul>
+							<!-- <input type="checkbox">상품선택 -->
+							<li class=""><a href="">전체</a></li>
+							<li class=""><a href="">상의</a></li>
+							<li class=""><a href="">원피스</a></li>
+							<li class=""><a href="">바지</a></li>
+							<li class=""><a href="">스커트</a></li>
+							<li class=""><a href="">슈즈</a></li>
+							<li class=""><a href="">가방</a></li>
+							<li class=""><a href="">액세서리</a></li>
+							<!-- <li class=""><a href="">비치웨어</a></li>
+                            <li class=""><a href="">란제리/속옷</a></li>
+                            <li class=""><a href="">트레이닝/피트니스</a></li> -->
+						</ul>
+					</div>
+					<div class="user_set_up_in">
+						<ul>
+							<!-- <input type="checkbox" id="myCheck">
+                            <label for="myCheck">
+                                <img src="" alt="">체크
+                            </label>    -->
 
-                        <div class="user_img">
-                            <ul class="page1">
-                                <li><a href=""><img src="./img/khaki/khakiitem16.jpeg" alt=""></a></li>
-                                <li><a href=""><img src="./img/khaki/khakiitem15.jpeg" alt=""></a></li>
-                                <li><a href=""><img src="./img/blue/blueitem21.jpeg" alt=""></a></li>
-                                <div class="profile">
-                                    <img src="./img/profile.png" alt="">
-                                    <p>쇼핑몰 1</p>
-                                    <p>구독자수:8만</p>
-                                </div>
-                                <div>
-                                    <img src="./img/bookmark .svg" alt="">
-                                </div>
-                            </ul><!-- page1 -->
+							<!-- <fieldset>
+                                <input type="checkbox" class="img_btn">
+                                <label for="img_btn">
+                                    <img src="resources/css/img/red/h_l-115.jpeg" alt="" style="width: 200px;">
+                                </label>
+                            </fieldset> -->
+							<li><a href=""> <img
+									src="resources/css/img/red/reditem3.jpeg" alt="">
+							</a></li>
+							<li><a href=""><img
+									src="resources/css/img/red/reditem19.jpeg" alt=""></a></li>
+							<li><a href=""><img
+									src="resources/css/img/gery/greyitem12.jpeg" alt=""></a></li>
+							<li><a href=""><img
+									src="resources/css/img/gery/greyitem13.jpeg" alt=""></a></li>
+							<li><a href=""><img
+									src="resources/css/img/green/greenitem12.jpeg" alt=""></a></li>
 
-                            <ul class="page2">
-                                <li><a href=""><img src="./img/pink/pinkitem11.jpeg" alt=""></a></li>
-                                <li><a href=""><img src="./img/red/reditem2.jpeg" alt=""></a></li>
-                                <li><a href=""><img src="./img/white/whiteitem5.jpeg" alt=""></a></li>
-                                <div class="profile">
-                                    <img src="./img/profile.png" alt="">
-                                    <p>쇼핑몰 2</p>
-                                    <p>구독자수:25.3만</p>
-                                </div>
-                                <div>
-                                    <img src="./img/bookmark .svg" alt="">
-                                </div>
-                            </ul>
-                            <ul class="page3">
-                                <li><a href=""><img src="img/navi/naviitem111.jpeg" alt=""></a></li>
-                                <li><a href=""><img src="img/blue/blueitem19.jpeg" alt=""></a></li>
-                                <li><a href=""><img src="img/blue/buleitem20.jpeg" alt=""></a></li>
-                                <div class="profile">
-                                    <img src="./img/profile.png" alt="">
-                                    <p>쇼핑몰 3</p>
-                                    <p>구독자수:15.9만</p>
-                                </div>
-                                <div>
-                                    <img src="./img/bookmark .svg" alt="">
-                                </div>
-                            </ul>
-                        </div><!-- user_start_img -->
-                    </div><!-- user_start_in -->
-                </div><!-- user_start -->
-            </div><!-- section4 -->
+							<li><a href=""><img
+									src="resources/css/img/navi/naviitem23.jpeg" alt=""></a></li>
+							<li><a href=""><img
+									src="resources/css/img/khaki/kaakiitem7.jpeg" alt=""></a></li>
+							<li><a href=""><img
+									src="resources/css/img/khaki/khakiitem16.jpeg" alt=""></a></li>
+							<li><a href=""><img
+									src="resources/css/img/brown/brownitem12.jpg" alt=""></a></li>
+							<li><a href=""><img
+									src="resources/css/img/brown/brownitem16.jpeg" alt=""></a></li>
+							<li><a href=""><img
+									src="resources/css/img/yellow/yellowitem12.jpeg" alt=""></a></li>
+							<li><a href=""><img
+									src="resources/css/img/yellow/yellowitem13.jpeg" alt=""></a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- user_set_up -->
+			</div>
+			<!-- section3 -->
 
-        </div><!-- container -->
+			<div class="section4">
+				<div class="user_top_btn">
+					<p class="prev_btn">
+						<a href="">이전페이지</a>
+					</p>
+					<p class="start_btn">
+						<a href="">시작하기</a>
+					</p>
+				</div>
+				<!-- user_top_btn -->
 
-        <div id="footer">
+				<div class="user_top_head">
+					<h2>
+						<p class="emoji">&#128161;</p>
+						선택한 스타일의 <br> 스타일을 모아왔어요.
+					</h2>
+					<p>즐겨찾기 하시고 매일 인기상품과 신상을 모아보세요!</p>
+				</div>
+				<!-- user_top_head -->
 
-        </div><!-- footer -->
-    </div><!-- wrap -->
-</body>
-</html>
+				<div class="bookmark_btn">
+					<p>모두 즐겨찾기</p>
+					<img src="resources/css/img/main/book_mark.png" alt="">
+				</div>
+				<!-- bookmark_btn -->
+
+				<div class="user_choice">
+					<div class="page1">
+						<ul>
+							<li><a href=""><img
+									src="resources/css/img/green/greenitem03.jpeg" alt=""></a></li>
+							<li><a href=""><img
+									src="resources/css/img/green/greenitem7.jpeg" alt=""></a></li>
+							<li><a href=""><img
+									src="resources/css/img/green/greenitem11.jpeg" alt=""></a></li>
+						</ul>
+						<!-- page1 -->
+						<div class="seller_profile">
+							<p class="profile">
+								<img src="resources/css/img/main/profile.png" alt="">
+							</p>
+							<p class="book_mark">
+								<img src="resources/css/img/main/book_mark.png" alt="">
+							</p>
+						</div>
+						<div class="item_information">
+							<p class="p1_brand_name">
+								<b>판매자명</b> : Sally
+							</p>
+							<p class="p1_subscriber">
+								<b>구독자수</b> : 35.3만
+							</p>
+							<p class="p1_infor">
+								<b>브랜드 정보</b> : 여성스러운 스타일로 꾸며진 판매샵
+							</p>
+						</div>
+					</div>
+					<!-- page1 -->
+
+
+					<div class="page2">
+						<ul>
+							<li><a href=""><img
+									src="resources/css/img/khaki/khakiitem5.jpeg" alt=""></a></li>
+							<li><a href=""><img
+									src="resources/css/img/khaki/khakiitem4.jpeg" alt=""></a></li>
+							<li><a href=""><img
+									src="resources/css/img/khaki/khakiitem6.jpeg" alt=""></a></li>
+						</ul>
+						<!-- page2 -->
+						<div class="seller_profile">
+							<p class="profile">
+								<img src="resources/css/img/main/profile.png" alt="">
+							</p>
+							<p class="book_mark">
+								<img src="resources/css/img/main/book_mark.png" alt="">
+							</p>
+						</div>
+						<div class="item_information">
+							<p class="p1_brand_name">
+								<b>판매자명</b> : Sally
+							</p>
+							<p class="p1_subscriber">
+								<b>구독자수</b> : 35.3만
+							</p>
+							<p class="p1_infor">
+								<b>브랜드 정보</b> : 여성스러운 스타일로 꾸며진 판매샵
+							</p>
+						</div>
+					</div>
+					<!-- page2 -->
+					<div class="page3">
+						<ul>
+							<li><a href=""><img
+									src="resources/css/img/yellow/yellowitem10.jpg" alt=""></a></li>
+							<li><a href=""><img
+									src="resources/css/img/yellow/yellowitem20.jpg" alt=""></a></li>
+							<li><a href=""><img
+									src="resources/css/img/yellow/yellowitem3.jpg" alt=""></a></li>
+						</ul>
+						<!-- page3 -->
+						<div class="seller_profile">
+							<p class="profile">
+								<img src="resources/css/img/main/profile.png" alt="">
+							</p>
+							<p class="book_mark">
+								<img src="resources/css/img/main/book_mark.png" alt="">
+							</p>
+						</div>
+						<div class="item_information">
+							<p class="p1_brand_name">
+								<b>판매자명</b> : Sally
+							</p>
+							<p class="p1_subscriber">
+								<b>구독자수</b> : 35.3만
+							</p>
+							<p class="p1_infor">
+								<b>브랜드 정보</b> : 여성스러운 스타일로 꾸며진 판매샵
+							</p>
+						</div>
+					</div>
+					<!-- page3 -->
+
+				</div>
+				<!-- user_choice -->
+			</div>
+			<!-- user_start_in -->
+		</div>
+		<!-- section4 -->
+
+	</div>
+	<!-- container -->
+
+	<div id="footer"></div>
+	<!-- footer -->
+	</div>
+	<!-- wrap -->
 </body>
 </html>

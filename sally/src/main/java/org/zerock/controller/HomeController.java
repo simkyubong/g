@@ -19,9 +19,9 @@ import lombok.extern.log4j.Log4j;
 @Log4j
 public class HomeController {
 	// 메인페이지 	
-	@RequestMapping(value = "/", method = RequestMethod.GET)
+	@RequestMapping(value = "/sally", method = RequestMethod.GET)
 	public String home() {
-		return "index2";
+		return "sally";
 	}
 	
 	@RequestMapping(value = "/index3", method = RequestMethod.GET)
@@ -39,14 +39,23 @@ public class HomeController {
 		return "index5";
 		}
 	
-	@RequestMapping(value = "/header", method = RequestMethod.GET)
+	@RequestMapping(value = "/main_header", method = RequestMethod.GET)
 	public String header() {
-		return "header";
+		return "main_header";
 		}
 	
-	@RequestMapping(value = "/footer", method = RequestMethod.GET)
+	@RequestMapping(value = "/main_footer", method = RequestMethod.GET)
 	public String footer() {
-		return "footer";
+		return "main_footer";
+		}
+	@RequestMapping(value = "/sug_store", method = RequestMethod.GET)
+	public String sug_store() {
+		return "sug_store";
+		}
+	
+	@RequestMapping(value = "/sug_item", method = RequestMethod.GET)
+	public String sug_item() {
+		return "sug_item";
 		}
 	
 
