@@ -9,10 +9,8 @@
 <title>Insert title here</title>
 <link rel="stylesheet" href="../resources/css/admin/goodsEnroll.css">
  
-<script
-  src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   <script src="https://cdn.ckeditor.com/ckeditor5/31.0.0/classic/ckeditor.js"></script>
-</head>
 </head>
 <body>
  
@@ -36,13 +34,11 @@
                     			<div class="form_section_content">
 	                    			<div class="cate_wrap">
 										<span>1차 분류</span>
-										<select class="cate1">
-										
+										<select class="cate1" name="cateName">
 											<option value="none">선택</option>
-											
-											      <c:forEach var="cateList" items="${cateList}" varStatus="i">
+												<c:forEach var="cateList" items="${cateList}" varStatus="i">
 											         <option value="${cateList.cateName}">${cateList.cateName}</option>
-											      </c:forEach>
+										    	</c:forEach>
 										</select>
 									</div>
 									<div class="cate_wrap">
@@ -51,7 +47,7 @@
 											<option value="">선택</option>
 										</select>
 									</div>
-								</div>							
+								 </div>							
                     		</div>          
                     		<div class="form_section">
                     			<div class="form_section_title">
@@ -85,6 +81,14 @@
                     				<textarea name="gdsDes" id="goodsContents_textarea"></textarea>
                     			</div>
                     		</div>
+                    		<div class="form_section">
+                    			<div class="form_section_title">
+                    				<label>상품 이미지</label>
+                    			</div>
+                    			<div class="form_section_content">
+									<input type="file" multiple id ="fileItem" name='uploadFile' style="height: 30px;">
+                    			</div>
+                    		</div>  
                    		</form>
                    			<div class="btn_section">
 	                    		<button id="enrollBtn" type="submit" class="btn enroll_btn">등 록</button>
@@ -118,13 +122,6 @@
 	
 	/* 위지윅 적용 */
 	 
-	/* 상품 소개 */
-	/* ClassicEditor
-		.create(document.querySelector('#goodsIntro_textarea'))
-		.catch(error=>{
-			console.error(error);
-		});
-		 */
 	/* 상품 내용 */	
 	ClassicEditor
 		.create(document.querySelector('#goodsContents_textarea'))
@@ -154,7 +151,53 @@
 	})
 
 	
+	/* 이미지 업로드 */
+	$("input[type='file']").on("change", function(e){
+		
+		let formData = new FormData();
+		let fileInput = $('input[name="uploadFile"]');
+		let fileList = fileInput[0].files;
+		let fileObj = fileList[0];
+		
+		if(!fileCheck(fileObj.name, fileObj.size)){
+			return false;
+		}
+		
+		formData.append("uploadFile", fileObj);
+		
+		/* for(let i = 0; i < fileList.length; i++){
+			formData.append("uploadFile", fileList[i]);
+		} */
+		
+		$.ajax({
+			url: '/admin/uploadAjaxAction',
+	    	processData : false,
+	    	contentType : false,
+	    	data : formData,
+	    	type : 'POST',
+	    	dataType : 'json'
+		});
+	});
 	
+	/* var, method related with attachFile */
+	let regex = new RegExp("(.*?)\.(jpg|png)$");
+	let maxSize = 1048576; //1MB	
+	
+	function fileCheck(fileName, fileSize){
+
+		if(fileSize >= maxSize){
+			alert("파일 사이즈 초과");
+			return false;
+		}
+			  
+		if(!regex.test(fileName)){
+			alert("해당 종류의 파일은 업로드할 수 없습니다.");
+			return false;
+		}
+		
+		return true;		
+		
+	}
 	
 </script> 	
  

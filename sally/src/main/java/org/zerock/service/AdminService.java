@@ -10,10 +10,10 @@ public interface AdminService {
 	/* 상품 등록 */
 	public void goodsEnroll(GoodsVO goods);
 	
-	/* 카테고리 리스트 */
+	/* 1차 카테고리 리스트 */
 	public List<CateVO> cateList();
 	
-	/* 2치 카테고리 리스트 */
+	/* 2차 카테고리 리스트 */
 	public List<CateVO> cate2List(String cate1);
 	
 	/* 상품 리스트 */
@@ -21,5 +21,14 @@ public interface AdminService {
 	
 	/* 상품 총 개수 */
 	public int goodsGetTotal(Criteria cri);	
+	
+	/* 상품 조회 페이지 */
+	public GoodsVO goodsGetDetail(int gdsNum);
+	
+	/* 상품 수정 */
+	public int goodsModify(GoodsVO vo);
+	
+	/* 상품 정보 삭제 */
+	public int goodsDelete(int gdsNum);
 
 }

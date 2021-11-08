@@ -6,8 +6,8 @@
 	<!-- 상품 등록 -->
   	<insert id="goodsEnroll">
   	
-  		insert into tbl_goods(gdsName, cateCode, gdsPrice, gdsStock, gdsDes)
-		values(#{gdsName}, #{cateCode}, #{gdsPrice}, #{gdsStock}, #{gdsDes})
+  		insert into tbl_goods(gdsName, cateCode, cateName, gdsPrice, gdsStock, gdsDes)
+		values(#{gdsName}, #{cateCode}, #{cateName}, #{gdsPrice}, #{gdsStock}, #{gdsDes})
 
   	</insert>
 	
@@ -52,5 +52,31 @@
   		</if>
   	
   	</select>
+  	
+  	<!-- 상품 조회 페이지 -->
+	<select id="goodsGetDetail" resultType="org.zerock.domain.GoodsVO">
+	
+		select gdsNum, gdsName,
+			cateCode, gdsPrice, gdsStock, gdsDes, gdsDate 
+		from tbl_goods where gdsNum = #{gdsNum}
+	
+	</select>
+	
+	
+	<!-- 상품 정보 수정 -->
+	<update id="goodsModify">
+		
+		update tbl_goods set gdsName = #{gdsName}, cateName = ${cateName}, cateCode = ${cateCode}, gdsPrice = #{gdsPrice}, 
+			gdsStock = #{gdsStock}, gdsDes = #{gdsDes}
+		where gdsNum = ${gdsNum}
+		
+	</update>
+	
+	<!-- 상품 정보 삭제 -->
+	<delete id="goodsDelete">
+	
+		delete from tbl_goods where gdsNum = #{gdsNum}
+	
+	</delete>
 
 </mapper>

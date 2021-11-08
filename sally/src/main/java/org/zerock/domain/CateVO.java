@@ -9,4 +9,6 @@ public class CateVO {
 	private String cateNo;
 	private String cateParent;
 	private String cateName;
+	private String cateCode;
+	
 }

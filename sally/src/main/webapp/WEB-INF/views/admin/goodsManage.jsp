@@ -9,9 +9,7 @@
 <title>Insert title here</title>
 <link rel="stylesheet" href="../resources/css/admin/goodsManage.css">
  
-<script
-  src="https://code.jquery.com/jquery-3.4.1.js"></script>
-</head>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
 <body>
  
@@ -36,7 +34,11 @@
 	                    		<c:forEach items="${list}" var="list">
 	                    		<tr>
 	                    			<td><c:out value="${list.gdsNum}"></c:out></td>
-	                    			<td><c:out value="${list.gdsName}"></c:out></td>
+	                    			<td>
+	                    				<a class="move" href='<c:out value="${list.gdsNum}"/>'>
+											<c:out value="${list.gdsName}"></c:out>
+										</a>
+	                    			</td>
 	                    			<td><c:out value="${list.gdsPrice}"></c:out></td>
 	                    			<td><c:out value="${list.cateCode}"></c:out></td>
 	                    			<td><c:out value="${list.gdsStock}"></c:out></td>
@@ -102,55 +104,83 @@
     <%@include file="../includes/admin/footer.jsp" %>
 
  <script>
-$(document).ready(function(){
-	
-	let eResult = '<c:out value="${enroll_result}"/>';
-	
-	checkResult(eResult);
-	
-	function checkResult(result){
+	$(document).ready(function(){
 		
-		if(result === ''){
-			return;
+		let eResult = '<c:out value="${enroll_result}"/>';
+		
+		checkResult(eResult);
+		
+		function checkResult(result){
+			
+			if(result === ''){
+				return;
+			}
+			
+			alert("상품'"+ eResult +"'을 등록하였습니다.");
+			
+		}
+	
+	});
+
+	let searchForm = $('#searchForm');
+	let moveForm = $('#moveForm');
+
+	/* 검색 버튼 동작 */
+	$("#searchForm button").on("click", function(e){
+		
+		e.preventDefault();
+		
+		/* 검색 키워드 유효성 검사 */
+		if(!searchForm.find("input[name='keyword']").val()){
+			alert("키워드를 입력하십시오");
+			return false;
 		}
 		
-		alert("상품'"+ eResult +"'을 등록하였습니다.");
+		searchForm.find("input[name='pageNum']").val("1");
 		
+		searchForm.submit();
+		
+	});
+
+
+	/* 페이지 이동 버튼 */
+	$(".pageMaker_btn a").on("click", function(e){
+		
+		e.preventDefault();
+		
+		moveForm.find("input[name='pageNum']").val($(this).attr("href"));
+		
+		moveForm.submit();
+		
+	});
+
+	/* 상품 조회 페이지 */
+	$(".move").on("click", function(e){
+		
+		e.preventDefault();
+		
+		moveForm.append("<input type='hidden' name='gdsNum' value='"+$(this).attr("href") + "'>");
+		moveForm.attr("action", "/admin/goodsDetail");
+		moveForm.submit();
+		
+		
+	});
+
+
+	/* 수정 성공 이벤트 */
+		let modify_result = '${modify_result}';
+		
+		if(modify_result == 1){
+			alert("수정 완료");
+	}
+		
+	/* 삭제 결과 경고창 */
+	let delete_result = '${delete_result}';
+	
+	if(delete_result == 1){
+		alert("삭제 완료");
 	}
 
-});
-
-let searchForm = $('#searchForm');
-let moveForm = $('#moveForm');
-
-/* 검색 버튼 동작 */
-$("#searchForm button").on("click", function(e){
-	
-	e.preventDefault();
-	
-	/* 검색 키워드 유효성 검사 */
-	if(!searchForm.find("input[name='keyword']").val()){
-		alert("키워드를 입력하십시오");
-		return false;
-	}
-	
-	searchForm.find("input[name='pageNum']").val("1");
-	
-	searchForm.submit();
-	
-});
-
-
-/* 페이지 이동 버튼 */
-$(".pageMaker_btn a").on("click", function(e){
-	
-	e.preventDefault();
-	
-	moveForm.find("input[name='pageNum']").val($(this).attr("href"));
-	
-	moveForm.submit();
-	
-});
 </script>
 </body>
 </html>

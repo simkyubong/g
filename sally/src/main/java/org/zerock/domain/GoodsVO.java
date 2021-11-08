@@ -12,11 +12,12 @@ public class GoodsVO {
 	/* 상품 이름 */
 	private String gdsName;
 	
-	/* 카테고리 코드 */
-	private String cateCode;
+	/* 카테고리 1차 */
+	private String cateName;	
 	
-	/* 카테고리 이름 */
-	private String cateName;
+	/* 카테고리 2차 */
+	private String cateCode;	
+	
 	
 	/* 상품 가격 */
 	private int gdsPrice;
