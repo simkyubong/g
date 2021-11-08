@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <link rel="stylesheet" type="text/css"
-	href="resources/css/layout.css?v=3">
+	href="resources/css/main/layout.css?v=3">
 
 <jsp:include page="main_header.jsp"></jsp:include>
 
@@ -21,37 +21,31 @@
 		<p></p>
 		<div class="sec1_main_notice_in">
 			<ul>
-				<li>
-					<a href="">
-						<img src="resources/css/img/main/sub_01.jpg" alt="">
-					</a>
+				<li><a href=""> <img
+						src="resources/css/img/main/sub_01.jpg" alt="">
+				</a>
 					<div>
 						<h2>Best</h2>
 						<p>가을베스트 10</p>
-					</div>
-				</li>
-				<li>
-				<a href=""> <img src="resources/css/img/main/sub_02.jpg" alt="">
+					</div></li>
+				<li><a href=""> <img
+						src="resources/css/img/main/sub_02.jpg" alt="">
 				</a>
 					<div>
 						<h2>신상품</h2>
 						<p>샐리 메이드</p>
-					</div>
-				</li>
-				<li>
-					<a href="">
-						<img src="resources/css/img/main/sub_03.jpg" alt="">
+					</div></li>
+				<li><a href=""> <img
+						src="resources/css/img/main/sub_03.jpg" alt="">
 
 				</a>
 					<div>
 						<h2>Sally MADE</h2>
 						<p>155cm 160cm 160cm Line</p>
-					</div>
-				</li>
+					</div></li>
 				<li>
 					<div class="con">
-						<a href="">
-							<img src="resources/css/img/main/sub_04.jpg">
+						<a href=""> <img src="resources/css/img/main/sub_04.jpg">
 						</a>
 						<div>
 							<h2>Today List</h2>
@@ -61,7 +55,8 @@
 				</li>
 				<li>
 					<div class="con">
-						<a href=""> <img src="resources/css/img/main/sub_05.jpg" alt="">
+						<a href=""> <img src="resources/css/img/main/sub_05.jpg"
+							alt="">
 						</a>
 						<div>
 							<h2>Notice</h2>
@@ -79,10 +74,9 @@
 		<p>지금 사랑받는 실시간 베스트 아이템</p>
 		<div class="tap_pager">
 			<ul>
-				<li class="live_today_hot">
-					<a href="">
+				<li class="live_today_hot"><a href="">
 						<p class="live_today_hot_h">오늘의 실시간 HOT</p>
-					</a>
+				</a>
 					<div class="tap_pager_in">
 						<ul class="">
 							<li><a href=""><img
@@ -104,10 +98,9 @@
 
 						</ul>
 					</div></li>
-				<li class="live_today_outer">
-					<a href="">
-							<p class="live_today_outer_in">OUTER</p>
-					</a>
+				<li class="live_today_outer"><a href="">
+						<p class="live_today_outer_in">OUTER</p>
+				</a>
 					<div class="tap_pager_in_outer">
 						<ul class="">
 							<li><a href=""><img src="" alt=""></a></li>
@@ -470,7 +463,7 @@
 		<div class="best_in">
 			<ul>
 				<li><a href=""> <img
-						src="resources/css/img/yellow/yellowitem23.jpeg" alt="">
+						src="resources/css/img/yellow/yellowitem24.jpeg" alt="">
 						<div class="pic_text">
 							<p class="productBarnd">
 								<b>MARNI</b>
