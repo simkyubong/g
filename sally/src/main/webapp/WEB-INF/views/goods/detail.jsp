@@ -442,15 +442,15 @@
             <div class="pdrPager">
             	<ul class="pagination">
 					<c:if test="${rvpageMaker.prev}">
-   						<li class="paginate_button prev"><a href="/product/detail?rvpageNum=${rvpageMaker.startPage-1}&rvamount=${rvpageMaker.rvcri.rvamount}#productReview">이전</a></li>
+   						<li class="paginate_button prev"><a href="/goods/detail?rvpageNum=${rvpageMaker.startPage-1}&rvamount=${rvpageMaker.rvcri.rvamount}#productReview">이전</a></li>
 					</c:if>
 					<c:forEach var="num" begin="${rvpageMaker.startPage}" end="${rvpageMaker.endPage}">
     					<li class="paginate_button page-item ${rvpageMaker.rvcri.rvpageNum==num?'active':''}">
-		    				<a href="/product/detail?rvpageNum=${num}&rvamount=${rvpageMaker.rvcri.rvamount}#productReview" class="page-link">${num}</a>
+		    				<a href="/goods/detail?rvpageNum=${num}&rvamount=${rvpageMaker.rvcri.rvamount}#productReview" class="page-link">${num}</a>
 			    		</li>
 					</c:forEach>
    					<c:if test="${rvpageMaker.next}">
-	  					<li class="paginate_button next"><a href="/product/detail?rvpageNum=${rvpageMaker.endPage+1}&rvamount=${rvpageMaker.rvcri.rvamount}#productReview">다음</a></li>
+	  					<li class="paginate_button next"><a href="/goods/detail?rvpageNum=${rvpageMaker.endPage+1}&rvamount=${rvpageMaker.rvcri.rvamount}#productReview">다음</a></li>
    					</c:if>
    				</ul>
             </div>
@@ -497,15 +497,15 @@
               <div class="pdqPager">
                 <ul class="pagination">
 					<c:if test="${pageMaker.prev}">
-    					<li class="paginate_button prev"><a href="/product/detail?pageNum=${pageMaker.startPage-1}&amount=${pageMaker.qcri.amount}#productQna">이전</a></li>
+    					<li class="paginate_button prev"><a href="/goods/detail?pageNum=${pageMaker.startPage-1}&amount=${pageMaker.qcri.amount}#productQna">이전</a></li>
    					</c:if>
 					<c:forEach var="num" begin="${pageMaker.startPage}" end="${pageMaker.endPage}">
 	    				<li class="paginate_button page-item ${pageMaker.qcri.pageNum==num?'active':''}">
-		    				<a href="/product/detail?pageNum=${num}&amount=${pageMaker.qcri.amount}#productQna" class="page-link">${num}</a>
+		    				<a href="/goods/detail?pageNum=${num}&amount=${pageMaker.qcri.amount}#productQna" class="page-link">${num}</a>
 				    	</li>
    					</c:forEach>
      				<c:if test="${pageMaker.next}">
-    					<li class="paginate_button next"><a href="/product/detail?pageNum=${pageMaker.endPage+1}&amount=${pageMaker.qcri.amount}#productQna">다음</a></li>
+    					<li class="paginate_button next"><a href="/goods/detail?pageNum=${pageMaker.endPage+1}&amount=${pageMaker.qcri.amount}#productQna">다음</a></li>
     				</c:if>
     			</ul>
               </div>
