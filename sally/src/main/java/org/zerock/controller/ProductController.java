@@ -7,9 +7,12 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
-import org.zerock.domain.Criteria;
-import org.zerock.domain.PageDTO;
+import org.zerock.domain.QnaCriteria;
+import org.zerock.domain.QnaPageDTO;
+import org.zerock.domain.ReviewCriteria;
+import org.zerock.domain.ReviewPageDTO;
 import org.zerock.service.ProductService;
+import org.zerock.service.ReviewService;
 
 import lombok.AllArgsConstructor;
 import lombok.extern.log4j.Log4j;
@@ -21,18 +24,26 @@ import lombok.extern.log4j.Log4j;
 public class ProductController {
 	
 	private ProductService service;
+	private ReviewService rvservice;
 	
 	// 제품 상세페이지
 	//@RequestMapping(value = "/product/detail", method = RequestMethod.GET)
 	@GetMapping("detail")
-	public void list(Model model,Criteria cri) {
+	public void list(Model model, Model rvmodel, QnaCriteria cri, ReviewCriteria rvcri) {
 		log.info("detail");
 		//                배열이름,  select된 결과물
 		model.addAttribute("list", service.getList(cri));
 		
 		int total=service.getTotalCount(cri);
 		
-		model.addAttribute("pageMaker", new PageDTO(cri,total));
+		model.addAttribute("pageMaker", new QnaPageDTO(cri,total));
+		
+		//      			배열이름,  select된 결과물
+		rvmodel.addAttribute("reviewlist", rvservice.getReviewList(rvcri));
+
+		int rvtotal=rvservice.getReviewTotalCount(rvcri);
+		
+		rvmodel.addAttribute("rvpageMaker", new ReviewPageDTO(rvcri,rvtotal));
 	}
 	
 	@GetMapping("read")

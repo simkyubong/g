@@ -86,9 +86,21 @@
   text-align: center;
 }
 
+.detailHead .productInfo table td ul .selected a {
+  background-color: #222;
+  color: #fff;
+}
+
 .detailHead .productInfo table td p {
   font-size: 11px;
   color: #555;
+}
+
+.detailHead .productInfo table .mainAmount input {
+  width: 180px;
+  height: 23px;
+  border: 1px solid #ddd;
+  padding: 0 2px 0 3px;
 }
 
 .totalPrice {
@@ -269,7 +281,7 @@
 
 .productRelated .prev {
   left: -30px;
-  background: url(https://flymodel.co.kr/plain/img/prev.png);
+  background: url(/resources/img/source/prev.png);
   background-repeat: no-repeat;
   background-position: center;
   text-indent: -999999px;
@@ -277,7 +289,7 @@
 
 .productRelated .next {
   right: -30px;
-  background: url(https://flymodel.co.kr/plain/img/next.png);
+  background: url(/resources/img/source/next.png);
   background-repeat: no-repeat;
   background-position: center;
   text-indent: -999999px;
@@ -302,8 +314,12 @@
 .productReview {
   position: relative;
   margin: 0 auto;
-  padding: 27px 0 40px;
+  padding: 0 0 40px;
   max-width: 1200px;
+}
+
+.productReview .pdReview {
+  margin-top: 50px;
 }
 
 .productReview h3 {
@@ -383,7 +399,8 @@
   color: #111;
 }
 
-.productReview .pdrPager .active {
+.productReview .pdrPager .active a{
+  font-weight: bold;
   color: #ccc;
 }
 
@@ -434,7 +451,7 @@
 
 .productQna .pdQna table td {
   border-top: 1px solid #eee;
-  margin: 14px 10px;
+  padding: 14px 10px;
 }
 
 .productQna .pdQna table td a {
@@ -465,15 +482,18 @@
   text-align: center;
 }
 
+.productQna .pdQna table .pdQna_contentShow {
+  cursor: pointer;
+}
+
 .productQna .pdQna table .pdQna_content_wrap {
   background-color: #ccc;
 }
 
 .productQna .pdQna table .pdQna_content_wrap .pdQna_content {
   text-align: left;
-  margin-left: 50px;
+  margin: 0 50px;
 }
-
 
 .productQna .pdQna .pdqPager {
   display: flex;

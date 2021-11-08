@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.zerock.domain.Criteria;
+import org.zerock.domain.QnaCriteria;
 import org.zerock.domain.ProductVO;
 import org.zerock.mapper.ProductMapper;
 
@@ -24,12 +24,12 @@ public class ProductServiceImpl implements ProductService {
 		return mapper.read(bno);
 	}
 	@Override
-	public List<ProductVO> getList(Criteria cri) {
+	public List<ProductVO> getList(QnaCriteria cri) {
 		log.info("getList........");
 		return mapper.getListWithPaging(cri);
 	}
 	@Override
-	public int getTotalCount(Criteria cri) {
+	public int getTotalCount(QnaCriteria cri) {
 		return mapper.getTotalCount(cri);
 	}
 	@Override

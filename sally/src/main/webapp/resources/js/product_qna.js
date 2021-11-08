@@ -34,14 +34,14 @@ $(document).ready(function() {
 
 $(function() {
 	$('.productQna .pdQna table .pdQna_contentShow').click(function(e) {
-		let d = $(this).siblings('pdQna_content_wrap td').css('display');
-		if (d == 'block') {
+		let d = $(this).hasClass("active");
+		if (d) {
 			$('.productQna .pdQna table .pdQna_contentShow').removeClass('active');
 			$('.productQna .pdQna table .pdQna_content_wrap td').slideUp();
 		} else {
 			$('.productQna .pdQna table .pdQna_contentShow').removeClass('active');
 			$('.productQna .pdQna table .pdQna_content_wrap td').slideUp();
-			$(this).addClass('active').siblings('.pdQna_content_wrap td').slideDown();
+			$(this).addClass('active').next().find('td').slideDown();
 	    }
 
 	    e.preventDefault();

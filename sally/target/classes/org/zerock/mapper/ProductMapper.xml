@@ -5,7 +5,7 @@
 <mapper namespace="org.zerock.mapper.ProductMapper">
 	<select id="getList" resultType="org.zerock.domain.ProductVO">
 		<![CDATA[
-			select * from team_board where bno > 0
+			select * from tbl_qna where bno > 0
 		]]>
 	</select>
 	
@@ -16,7 +16,7 @@
 			select @rownum:=@rownum+1 as rownum,b.*
 	        from (
 				select @rownum:=0
-			) as tmp, team_board as b
+			) as tmp, tbl_qna as b
 			order by bno asc
 	) as qnalist
 	<![CDATA[
@@ -24,17 +24,56 @@
 	]]>
 	</select>
 	<select id="getTotalCount" resultType="int">
-		select count(*) from team_board
+		select count(*) from tbl_qna
 	</select>
 	
 	<insert id="insertSelectKey">
 		<selectKey keyProperty="bno" order="BEFORE" resultType="int">
-			select max(bno)+1 bno from team_board
+			select max(bno)+1 bno from tbl_qna
 		</selectKey>
-		insert into team_board(bno,title, content, writer, regdate, views)
+		insert into tbl_qna(bno,title, content, writer, regdate, views)
 		values(#{bno},#{title},#{content},#{writer},#{regdate},#{views})
 	</insert>
 	<select id="read" resultType="org.zerock.domain.ProductVO">
-		select * from team_board where bno=#{bno}
+		select * from tbl_qna where bno=#{bno}
+	</select>
+	
+	
+	
+	
+	
+	<select id="getReviewList" resultType="org.zerock.domain.ReviewVO">
+		<![CDATA[
+			select * from tbl_review where rno > 0
+		]]>
+	</select>
+	
+	<select id="getReviewListWithPaging" resultType="org.zerock.domain.ReviewVO">
+	
+	select rownum, rno, rating, content, reviewimg, writer
+	from (
+			select @rownum:=@rownum+1 as rownum,b.*
+	        from (
+				select @rownum:=0
+			) as tmp, tbl_review as b
+			order by rno asc
+	) as reviewlist
+	<![CDATA[
+	where rownum>(#{rvpageNum} - 1)*#{rvamount} and rownum<=#{rvpageNum} *#{rvamount}
+	]]>
+	</select>
+	<select id="getReviewTotalCount" resultType="int">
+		select count(*) from tbl_review
+	</select>
+	
+	<insert id="insertReviewSelectKey">
+		<selectKey keyProperty="rno" order="BEFORE" resultType="int">
+			select max(rno)+1 rno from tbl_review
+		</selectKey>
+		insert into tbl_review(rno, rating, content, reviewimg, writer)
+		values(#{rno}, #{rating}, #{content}, #{reviewimg}, #{writer})
+	</insert>
+	<select id="readReview" resultType="org.zerock.domain.ReviewVO">
+		select * from tbl_review where rno=#{rno}
 	</select>
 </mapper>

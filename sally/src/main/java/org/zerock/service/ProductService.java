@@ -1,7 +1,7 @@
 package org.zerock.service;
 
 import java.util.List;
-import org.zerock.domain.Criteria;
+import org.zerock.domain.QnaCriteria;
 import org.zerock.domain.ProductVO;
 
 public interface ProductService {
@@ -10,8 +10,8 @@ public interface ProductService {
 
 
 	// 목록리스트(페이징 처리 된거)
-	public List<ProductVO> getList(Criteria cri);
+	public List<ProductVO> getList(QnaCriteria cri);
 	// tbl_board테이블의 전체 갯수
-	public int getTotalCount(Criteria cri);
+	public int getTotalCount(QnaCriteria cri);
 	public Iterable<ProductVO> getList();
 }

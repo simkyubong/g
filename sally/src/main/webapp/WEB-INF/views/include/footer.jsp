@@ -1,14 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<link href="${path}/resources/css/header.css" rel="stylesheet"/>
-<link href="${path}/resources/css/style.css" rel="stylesheet"/>  
-<title>Insert title here</title>
-</head>
-<body>
+
 <footer id="footer">
             <div class="f_in">
                 <div class="f1">

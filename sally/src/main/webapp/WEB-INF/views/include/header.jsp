@@ -7,6 +7,23 @@
 <link href="${path}/resources/css/header.css" rel="stylesheet"/>
 <link href="${path}/resources/css/style.css" rel="stylesheet"/>  
 <title>Insert title here</title>
+
+
+<link rel="stylesheet" href="/resources/css/css/reset.css">
+<link rel="stylesheet" href="/resources/css/css/style.css">
+
+
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	
+	<!-- jQuery 연결 -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- jQuery UI 연결 -->
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	
+	<!-- slick -->
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	
 </head>
 <body>
         <div id="header">
@@ -198,5 +215,3 @@
                 </div><!-- gnb -->
             </div><!-- header_int -->
         </div><!-- header -->
-</body>
-</html>
