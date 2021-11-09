@@ -69,10 +69,14 @@
 								<li><a href="">당일발송</a></li>
 							</ul>
 							<ul class="h_category">
-								<li><a href="">TOP</a>
+								<li>
+									<a href="http://localhost:8080/goods/category?name=top">TOP
+								</a>
 									<div class="TOP_in">
 										<ul>
-											<li><a href="">Tee</a></li>
+											<li>
+												<a href="http://localhost:8080/goods/list?name=tee">Tee</a>
+											</li>
 											<li><a href="">BLOUSE</a></li>
 											<li><a href="">SHIRT</a></li>
 											<li><a href="">KNIT</a></li>
@@ -162,7 +166,9 @@
 									<p>BOARD</p>
 									<div class="board_in">
 										<ul>
-											<li><a href="">NOTICE</a></li>
+											<li>
+											<a href="http://localhost:8080/notice/list">NOTICE</a>
+											</li>
 											<li><a href="">Q & A</a></li>
 											<li><a href="">REVIEW</a></li>
 											<li><a href="">MODEL</a></li>

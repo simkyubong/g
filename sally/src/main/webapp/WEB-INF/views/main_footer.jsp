@@ -1,5 +1,6 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" %>
-<link rel="stylesheet" type="text/css" href="resources/css/layout.css?v=3">
+<%@ page language="java" contentType="text/html; charset=UTF-8"%>
+<link rel="stylesheet" type="text/css"
+	href="resources/css/layout.css?v=3">
 
 <link rel="stylesheet" href="resources/css/main_footer.css">
 <link rel="stylesheet" href="resources/css/main_reset.css">
@@ -12,11 +13,12 @@
 				<li>
 					<h3>[ COMPANY (주)Sally ]</h3>
 					<p>
-						<b>owner</b> 김샐리 <b>tel</b> 1655-5555 <br> <b>business no</b> 201-82-55555 <br>
-						<b>mail order license</b> 제2016-울산삼산-00555호 [사업자정보확인] <br> <b>personal
-						info manager</b> 김 (master@sally.com) <br> <b>address</b> [133110]
-						울산광역시 남구 삼산동 101-55 Sally <br> copyright © (주)Sally all
-						rights reserved / published by plain design <br>
+						<b>owner</b> 김샐리 <b>tel</b> 1655-5555 <br> <b>business no</b>
+						201-82-55555 <br> <b>mail order license</b> 제2016-울산삼산-00555호
+						[사업자정보확인] <br> <b>personal info manager</b> 김
+						(master@sally.com) <br> <b>address</b> [133110] 울산광역시 남구 삼산동
+						101-55 Sally <br> copyright © (주)Sally all rights reserved /
+						published by plain design <br>
 					</p>
 				</li>
 				<li>
@@ -35,7 +37,7 @@
 					</p>
 				</li>
 				<li>
-					<h3>교환/반품주소 </h3>
+					<h3>교환/반품주소</h3>
 					<p>
 						울산광역시 북구 삼산<br> 울산 물류센터 2층 소포실<br> * 공지사항 및 이용안내를 참고하여 <br>
 						지정택배사로 반품요청해주세요.
@@ -66,14 +68,18 @@
 			</ul>
 			<!-- f_menu2 -->
 			<ul class="f_sns">
-				<li class="f_face"><a href=""><img
-						src="resources/css/img/sns_icon/sns_facebook.png" alt=""></a></li>
-				<li class="f_yout"><a href=""><img
-						src="resources/css/img/sns_icon/sns_insta_icon.png" alt=""></a></li>
-				<li class="insta"><a href=""><img
-						src="resources/css/img/sns_icon/sns_twitter.png" alt=""></a></li>
-				<li class="insta"><a href=""><img
-						src="resources/css/img/sns_icon/sns_yout_icon.png" alt=""></a></li>
+				<li class="f_face"><a href="https://www.facebook.com/"> <img
+						src="resources/css/img/sns_icon/sns_facebook.png" alt="">
+				</a></li>
+				<li class="f_yout"><a href="https://www.instagram.com/"> <img
+						src="resources/css/img/sns_icon/sns_insta_icon.png" alt="">
+				</a></li>
+				<li class="insta"><a href="https://twitter.com/"> <img
+						src="resources/css/img/sns_icon/sns_twitter.png" alt="">
+				</a></li>
+				<li class="insta"><a href="https://www.youtube.com/"> <img
+						src="resources/css/img/sns_icon/sns_yout_icon.png" alt="">
+				</a></li>
 			</ul>
 			<!-- f_sns -->
 		</div>
