@@ -458,7 +458,6 @@
 
 
 	<script src="/resources/js/product_detail.js"></script>
-	<script src="/resources/js/product_qna.js"></script>
     <script src="/resources/js/product_slide_slick.js"></script>
   
   <%@include file="../include/include_footer.jsp" %>
