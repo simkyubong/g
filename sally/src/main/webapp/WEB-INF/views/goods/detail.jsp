@@ -3,7 +3,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@taglib prefix = "fmt" uri = "http://java.sun.com/jsp/jstl/fmt" %>    
 
-<%@include file="../include/header.jsp" %>
+<%@include file="../include/include_header.jsp" %>
 
       <div id="contents">
         <!-- 상품 정보 -->
@@ -521,4 +521,4 @@
 	<script src="/resources/js/product_qna.js"></script>
     <script src="/resources/js/product_slide_slick.js"></script>
   
-  <%@include file="../include/footer.jsp" %>
+  <%@include file="../include/include_footer.jsp" %>

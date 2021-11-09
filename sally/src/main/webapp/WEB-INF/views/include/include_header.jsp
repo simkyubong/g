@@ -8,13 +8,29 @@
 <head>
 <title>Sally</title>
 <meta charset="utf-8">
-<link rel="stylesheet" href="resources/css/main_reset.css">
-<link rel="stylesheet" href="resources/css/main_header.css">
-<link rel="stylesheet" href="resources/css/main_footer.css">
-<link rel="stylesheet" href="resources/css/main_style2.css">
-<link rel="stylesheet" href="resources/css/main_style_live_best.css">
+<link rel="stylesheet" href="/resources/css/main_reset.css">
+<link rel="stylesheet" href="/resources/css/main_header.css">
+<link rel="stylesheet" href="/resources/css/main_footer.css">
+<link rel="stylesheet" href="/resources/css/main_style2.css">
+<link rel="stylesheet" href="/resources/css/main_style_live_best.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+<link rel="stylesheet" href="/resources/css/css/reset.css">
+<link rel="stylesheet" href="/resources/css/css/style.css">
+
+
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	
+	<!-- jQuery 연결 -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- jQuery UI 연결 -->
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	
+	<!-- slick -->
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	
 
 </head>
 <body>
@@ -25,14 +41,14 @@
 					<a href="">
 						<p>
 							코로나 19 관련 고객 전달사항 알림 <img
-								src="resources/css/img/gnb_icon/ic-clear.svg" alt="">
+								src="/resources/css/img/gnb_icon/ic-clear.svg" alt="">
 						</p>
 					</a>
 				</div>
 
 				<div class="logo">
 					<div class="logo_in">
-						<a href=""> <img src="resources/css/img/main/mainlogo1.jpg"
+						<a href=""> <img src="/resources/css/img/main/mainlogo1.jpg"
 							alt="">
 							<p class="h_logo_name">Sally</p>
 						</a>
@@ -41,7 +57,7 @@
 					<div class="serach_box">
 						<input type="text" placeholder="" class="ser_box_text">
 						<Button class="serach_box_btn">
-							<img src="resources/css/img/gnb_icon/ic_search.svg" alt="">
+							<img src="/resources/css/img/gnb_icon/ic_search.svg" alt="">
 						</Button>
 					</div>
 				</div>
@@ -175,13 +191,13 @@
 							<ul class="h_join_menu">
 								<li class="cart_in"><a href="">
 										<p class="hide">찜목록</p> <img
-										src="resources/css/img/gnb_icon/ic_wishlist.svg" alt="">
+										src="/resources/css/img/gnb_icon/ic_wishlist.svg" alt="">
 								</a>
 									<div></div></li>
 								<!-- cart_in -->
 								<li class="cart_in"><a href="">
 										<p class="hide">장바구니</p> <img
-										src="resources/css/img/gnb_icon/ic_cart.svg" alt="">
+										src="/resources/css/img/gnb_icon/ic_cart.svg" alt="">
 								</a>
 									<div></div></li>
 								<!-- cart_in -->
@@ -195,7 +211,7 @@
 								<!-- search_in -->
 								<li class="category_in"><a href="">
 										<p class="hide">햄버거</p> <img
-										src="resources/css/img/gnb_icon/ic_hamburger.svg" alt="">
+										src="/resources/css/img/gnb_icon/ic_hamburger.svg" alt="">
 								</a>
 									<div></div></li>
 								<!-- category_in -->

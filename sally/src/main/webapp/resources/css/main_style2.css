@@ -89,16 +89,16 @@
 	background-color: rgb(249, 249, 249);
 	text-align: center;
 	padding-top: 30px;
+	margin-bottom: 100px;
 }
 
-.sec2_nowLive_bset h2 {
-	/* margin-bottom: 10px; */
-	
+.sec2_nowLive_bset>h2 {
+	font-size: 22px;
+	margin-bottom: 10px;
 }
 
-.sec2_nowLive_bset p {
-	/* margin-bottom: 30px; */
-	
+.sec2_nowLive_bset>p {
+	margin-bottom: 10px;
 }
 
 .sec2_nowLive_bset .tap_pager {
@@ -107,9 +107,9 @@
 	margin-bottom: 100px;
 }
 
-.sec2_nowLive_bset .sec2_head {
-	/* background-color: beige ; */
-	
+.sec2_nowLive_bset .tap_pager ul li .sec2_head {
+	font-size: 16px;
+	font-weight: 400;
 }
 
 .sec2_nowLive_bset .tap_pager ul {
@@ -170,6 +170,7 @@
 	font-size: 14px;
 }
 
+/* 베스트 상품 더보기 */
 .sec2_nowLive_bset .sec2_best_more {
 	display: inline-block;
 	width: 200px;
@@ -182,6 +183,7 @@
 	text-align: center;
 	font-size: 18px;
 }
+
 /* 섹션2 서브메뉴 5개 */ /* 섹션2 서브메뉴 5개 */ /* 섹션2 서브메뉴 5개 */
 .sec2_nowLive_bset .live_today_hot .tap_pager_in {
 	display: none;
@@ -240,6 +242,7 @@
 	text-align: center;
 	margin-top: 50px;
 	background-color: rgb(249, 249, 249);
+	margin-bottom: 100px;
 }
 
 .sec3_newArrival .newArrIn {
@@ -302,7 +305,7 @@
 	margin: 0 auto;
 	text-align: center;
 	background-color: rgb(249, 249, 249);
-	margin-bottom: 50px;
+	margin-bottom: 100px;
 }
 
 .sec4_signature_item .sec4_head {
@@ -375,7 +378,7 @@
 	margin: 0 auto;
 	text-align: center;
 	background-color: rgb(249, 249, 249);
-	margin-bottom: 80px;
+	margin-bottom: 100px;
 }
 
 .sec5_best .sec5_head {
@@ -436,6 +439,7 @@
 
 .sec6_event_in {
 	width: 1220px;
+	margin: 0 auto;
 }
 
 .sec6_event .sec6_event_in {
@@ -444,13 +448,14 @@
 }
 
 .sec6_event .sec6_event_in h2 {
-	font-size: 32px;
+	font-size: 36px;
+	margin-bottom: 10px;
 	padding-top: 50px;
-	margin-bottom: 5px;
 	padding-left: 15px;
 }
 
 .sec6_event .sec6_event_in p {
+	font-size: 18px;
 	margin-bottom: 30px;
 	padding-left: 15px;
 }

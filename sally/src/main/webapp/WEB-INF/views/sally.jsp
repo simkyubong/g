@@ -75,87 +75,87 @@
 		<div class="tap_pager">
 			<ul>
 				<li class="live_today_hot"><a href="">
-						<p class="live_today_hot_h">오늘의 실시간 HOT</p>
+						<p class="live_today_hot_h sec2_head">오늘의 실시간 HOT</p>
 				</a>
-					<div class="tap_pager_in">
+					<div class="tap_pager_in sec2_head">
 						<ul class="">
 							<li><a href=""><img
-									src="resources/css/img/blue/blueitem1.jpg" alt=""></a></li>
+									src="resources/css/img/blue/blueitem1.jpeg" alt=""></a></li>
 							<li><a href=""><img
-									src="resources/css/img/blue/blueitem2.jpg" alt=""></a></li>
+									src="resources/css/img/blue/blueitem10.jpg" alt=""></a></li>
 							<li><a href=""><img
-									src="resources/css/img/blue/buleitem3.jpg" alt=""></a></li>
+									src="resources/css/img/blue/buleitem11.jpg" alt=""></a></li>
 							<li><a href=""><img
-									src="resources/css/img/blue/buleitem4.jpg" alt=""></a></li>
+									src="resources/css/img/blue/buleitem12.jpg" alt=""></a></li>
 							<li><a href=""><img
-									src="resources/css/img/blue/buleitem5.jpg" alt=""></a></li>
+									src="resources/css/img/blue/buleitem13.jpg" alt=""></a></li>
 							<li><a href=""><img
-									src="resources/css/img/blue/buleitem7.jpg" alt=""></a></li>
+									src="resources/css/img/blue/buleitem14.jpg" alt=""></a></li>
 							<li><a href=""><img
-									src="resources/css/img/blue/buleitem8.jpg" alt=""></a></li>
+									src="resources/css/img/blue/buleitem15.jpg" alt=""></a></li>
 							<li><a href=""><img
-									src="resources/css/img/blue/buleitem9.jpg" alt=""></a></li>
+									src="resources/css/img/blue/buleitem16.jpg" alt=""></a></li>
 
 						</ul>
 					</div></li>
 				<li class="live_today_outer"><a href="">
-						<p class="live_today_outer_in">OUTER</p>
+						<p class="live_today_outer_in sec2_head">OUTER</p>
 				</a>
 					<div class="tap_pager_in_outer">
 						<ul class="">
-							<li><a href=""><img src="" alt=""></a></li>
-							<li><a href=""><img src="" alt=""></a></li>
-							<li><a href=""><img src="" alt=""></a></li>
-							<li><a href=""><img src="" alt=""></a></li>
-							<li><a href=""><img src="" alt=""></a></li>
-							<li><a href=""><img src="" alt=""></a></li>
-							<li><a href=""><img src="" alt=""></a></li>
-							<li><a href=""><img src="" alt=""></a></li>
+							<li><a href=""><img src="resources/css/img/red/reditem11.jpeg" alt=""></a></li>
+							<li><a href=""><img src="resources/css/img/red/reditem12.jpeg" alt=""></a></li>
+							<li><a href=""><img src="resources/css/img/red/reditem13.jpeg" alt=""></a></li>
+							<li><a href=""><img src="resources/css/img/red/reditem14.jpeg" alt=""></a></li>
+							<li><a href=""><img src="resources/css/img/red/reditem15.jpeg" alt=""></a></li>
+							<li><a href=""><img src="resources/css/img/red/reditem16.jpeg" alt=""></a></li>
+							<li><a href=""><img src="resources/css/img/red/reditem17.jpeg" alt=""></a></li>
+							<li><a href=""><img src="resources/css/img/red/reditem18.jpeg" alt=""></a></li>
 						</ul>
 					</div></li>
 				<li class="live_today_top"><a href="">
-						<p class="live_today_top_in">TOP</p>
+						<p class="live_today_top_in sec2_head">TOP</p>
 				</a>
 					<div class="tap_pager_in_top">
 						<ul class="">
-							<li><a href=""><img src="" alt=""></a></li>
-							<li><a href=""><img src="" alt=""></a></li>
-							<li><a href=""><img src="" alt=""></a></li>
-							<li><a href=""><img src="" alt=""></a></li>
-							<li><a href=""><img src="" alt=""></a></li>
-							<li><a href=""><img src="" alt=""></a></li>
-							<li><a href=""><img src="" alt=""></a></li>
-							<li><a href=""><img src="" alt=""></a></li>
+							<li><a href=""><img src="resources/css/img/khaki/khakiitem20.jpeg" alt=""></a></li>
+							<li><a href=""><img src="resources/css/img/khaki/khakiitem21.jpeg" alt=""></a></li>
+							<li><a href=""><img src="resources/css/img/khaki/khakiitem22.jpeg" alt=""></a></li>
+							<li><a href=""><img src="resources/css/img/khaki/khakiitem23.jpeg" alt=""></a></li>
+							<li><a href=""><img src="resources/css/img/khaki/khakiitem24.jpeg" alt=""></a></li>
+							<li><a href=""><img src="resources/css/img/khaki/khakiitem25.jpeg" alt=""></a></li>
+							<li><a href=""><img src="resources/css/img/khaki/khakiitem26.jpeg" alt=""></a></li>
+							<li><a href=""><img src="resources/css/img/khaki/khakiitem27.jpg" alt=""></a></li>
 						</ul>
 					</div></li>
 				<li class="live_today_bottom"><a href="">
-						<p class="live_today_bottom_in">BOTTOM</p>
+						<p class="live_today_bottom_in sec2_head">BOTTOM</p>
 				</a>
 					<div class="tap_pager_in_bottom">
 						<ul class="">
-							<li><a href=""><img src="" alt=""></a></li>
-							<li><a href=""><img src="" alt=""></a></li>
-							<li><a href=""><img src="" alt=""></a></li>
-							<li><a href=""><img src="" alt=""></a></li>
-							<li><a href=""><img src="" alt=""></a></li>
-							<li><a href=""><img src="" alt=""></a></li>
-							<li><a href=""><img src="" alt=""></a></li>
-							<li><a href=""><img src="" alt=""></a></li>
+							<li><a href=""><img src="resources/css/img/pink/pinkitem20.jpeg" alt=""></a></li>
+							<li><a href=""><img src="resources/css/img/pink/pinkitem21.jpeg" alt=""></a></li>
+							<li><a href=""><img src="resources/css/img/pink/pinkitem22.jpeg" alt=""></a></li>
+							<li><a href=""><img src="resources/css/img/pink/pinkitem23.jpg" alt=""></a></li>
+							<li><a href=""><img src="resources/css/img/pink/pinkitem24.jpg" alt=""></a></li>
+							<li><a href=""><img src="resources/css/img/pink/pinkitem25.jpg" alt=""></a></li>
+							<li><a href=""><img src="resources/css/img/pink/pinkitem26.jpg" alt=""></a></li>
+							<li><a href=""><img src="resources/css/img/pink/pinkitem27.jpg" alt=""></a></li>
 						</ul>
 					</div></li>
 				<li class="live_today_ops"><a href="">
-						<p class="live_today_in">OPS</p>
+						<p class="live_today_in sec2_head">OPS</p>
 				</a>
 					<div class="tap_pager_in_ops">
 						<ul class="">
-							<li><a href=""><img src="" alt=""></a></li>
-							<li><a href=""><img src="" alt=""></a></li>
-							<li><a href=""><img src="" alt=""></a></li>
-							<li><a href=""><img src="" alt=""></a></li>
-							<li><a href=""><img src="" alt=""></a></li>
-							<li><a href=""><img src="" alt=""></a></li>
-							<li><a href=""><img src="" alt=""></a></li>
-							<li><a href=""><img src="" alt=""></a></li>
+							<li><a href=""><img src="resources/css/img/blue/blueitem21.jpeg" alt=""></a></li>
+							<li><a href=""><img src="resources/css/img/blue/blueitem21.jpeg" alt=""></a></li>
+							<li><a href=""><img src="resources/css/img/blue/blueitem22.jpeg" alt=""></a></li>
+							<li><a href=""><img src="resources/css/img/blue/blueitem23.jpeg" alt=""></a></li>
+							<li><a href=""><img src="resources/css/img/blue/blueitem24.jpeg" alt=""></a></li>
+							<li><a href=""><img src="resources/css/img/blue/blueitem25.jpeg" alt=""></a></li>
+							<li><a href=""><img src="resources/css/img/blue/blueitem26.jpeg" alt=""></a></li>
+							<li><a href=""><img src="resources/css/img/blue/blueitem27.jpeg" alt=""></a></li>
 						</ul>
 					</div></li>
 			</ul>
@@ -178,7 +178,7 @@
 								<b>MAX MARA</b>
 							</p>
 							<p class="productName">가디건</p>
-							<p class="productPirce">￦ 300,000</p>
+							<p class="productPirce">￦ 346,000</p>
 						</div>
 				</a></li>
 				<li><a href=""> <img
@@ -188,7 +188,7 @@
 								<b>ACNE STUDIOS</b>
 							</p>
 							<p class="productName">상의</p>
-							<p class="productPirce">￦ 300,000</p>
+							<p class="productPirce">￦ 462,000</p>
 						</div>
 				</a></li>
 				<li><a href=""> <img
@@ -198,7 +198,7 @@
 								<b>A.P.C</b>
 							</p>
 							<p class="productName">원피스</p>
-							<p class="productPirce">￦ 300,000</p>
+							<p class="productPirce">￦ 1,114,000</p>
 						</div>
 				</a></li>
 				<li><a href=""> <img
@@ -208,7 +208,7 @@
 								<b>JACQUEMUS</b>
 							</p>
 							<p class="productName">자켓</p>
-							<p class="productPirce">￦ 300,000</p>
+							<p class="productPirce">￦ 638,000</p>
 						</div>
 				</a></li>
 				<li><a href=""> <img
@@ -218,7 +218,7 @@
 								<b>LEMAIRE</b>
 							</p>
 							<p class="productName">가디건</p>
-							<p class="productPirce">￦ 300,000</p>
+							<p class="productPirce">￦ 289,000</p>
 						</div>
 				</a></li>
 				<li><a href=""> <img
@@ -228,7 +228,7 @@
 								<b>FENDI</b>
 							</p>
 							<p class="productName">울 블렌드 가디건</p>
-							<p class="productPirce">￦ 300,000</p>
+							<p class="productPirce">￦ 588,000</p>
 						</div>
 				</a></li>
 				<li><a href=""> <img
@@ -238,7 +238,7 @@
 								<b>LOEWE</b>
 							</p>
 							<p class="productName">투톤 가디건</p>
-							<p class="productPirce">￦ 300,000</p>
+							<p class="productPirce">￦ 1,201,000</p>
 						</div>
 				</a></li>
 				<li><a href=""> <img
@@ -248,12 +248,14 @@
 								<b>ISABEL</b>
 							</p>
 							<p class="productName">자켓</p>
-							<p class="productPirce">￦ 300,000</p>
+							<p class="productPirce">￦ 234,000</p>
 						</div>
 				</a></li>
 			</ul>
 			<div class="sec2_best_more">
-				<p>베스트 상품 더보기 ></p>
+				<a href="">
+					<p>베스트 상품 더보기 ></p>
+				</a>
 			</div>
 		</div>
 		<!-- live_best_list -->
@@ -274,7 +276,7 @@
 								<b>JACQUEMUS</b>
 							</p>
 							<p class="productName">케이블 니트 집업</p>
-							<p class="productPirce">￦ 300,000</p>
+							<p class="productPirce">￦ 451,000</p>
 						</div>
 				</a></li>
 				<li><a href=""> <img
@@ -284,7 +286,7 @@
 								<b>GUCCI</b>
 							</p>
 							<p class="productName">면 자켓</p>
-							<p class="productPirce">￦ 300,000</p>
+							<p class="productPirce">￦ 396,000</p>
 						</div>
 				</a></li>
 				<li><a href=""> <img
@@ -294,7 +296,7 @@
 								<b>BURBERRY</b>
 							</p>
 							<p class="productName">리본 레이스 트리밍 골지</p>
-							<p class="productPirce">￦ 300,000</p>
+							<p class="productPirce">￦ 989,000</p>
 						</div>
 				</a></li>
 				<li><a href=""> <img
@@ -304,7 +306,7 @@
 								<b>LORO PIANA</b>
 							</p>
 							<p class="productName">줄무늬 가디건</p>
-							<p class="productPirce">￦ 300,000</p>
+							<p class="productPirce">￦ 162,000</p>
 						</div>
 				</a></li>
 				<li><a href=""> <img
@@ -314,7 +316,7 @@
 								<b>RAEY</b>
 							</p>
 							<p class="productName">브이넥 골지 가디건</p>
-							<p class="productPirce">￦ 300,000</p>
+							<p class="productPirce">￦ 734,000</p>
 						</div>
 				</a></li>
 				<li><a href=""> <img
@@ -324,7 +326,7 @@
 								<b>CHLOE</b>
 							</p>
 							<p class="productName">케바 페이스 니트 울 가디건</p>
-							<p class="productPirce">￦ 300,000</p>
+							<p class="productPirce">￦ 472,000</p>
 						</div>
 				</a></li>
 				<li><a href=""> <img
@@ -334,7 +336,7 @@
 								<b>MARANT</b>
 							</p>
 							<p class="productName">줄무늬 셔링 상의</p>
-							<p class="productPirce">￦ 300,000</p>
+							<p class="productPirce">￦ 348,000</p>
 						</div>
 				</a></li>
 				<li><a href=""> <img
@@ -344,7 +346,7 @@
 								<b>MARINE</b>
 							</p>
 							<p class="productName">케이블 니트 울 블렌드 스웨터</p>
-							<p class="productPirce">￦ 300,000</p>
+							<p class="productPirce">￦ 578,000</p>
 						</div>
 				</a></li>
 			</ul>
@@ -373,7 +375,7 @@
 								<b>THE ROW</b>
 							</p>
 							<p class="productName">로고 자수 스웨터</p>
-							<p class="productPirce">￦ 300,000</p>
+							<p class="productPirce">￦ 958,000</p>
 						</div>
 				</a></li>
 				<li><a href=""> <img
@@ -383,7 +385,7 @@
 								<b>GANNI</b>
 							</p>
 							<p class="productName">빅 로고 스웨터 탑</p>
-							<p class="productPirce">￦ 300,000</p>
+							<p class="productPirce">￦ 1,779,000</p>
 						</div>
 				</a></li>
 				<li><a href=""> <img
@@ -393,7 +395,7 @@
 								<b>CHROE</b>
 							</p>
 							<p class="productName">캐시미어 스웨터</p>
-							<p class="productPirce">￦ 300,000</p>
+							<p class="productPirce">￦ 483,000</p>
 						</div>
 				</a></li>
 				<li><a href=""> <img
@@ -403,7 +405,7 @@
 								<b>KIJUN</b>
 							</p>
 							<p class="productName">벨티드 코튼 블렌드 원피스</p>
-							<p class="productPirce">￦ 300,000</p>
+							<p class="productPirce">￦ 885,000</p>
 						</div>
 				</a></li>
 				<li><a href=""> <img
@@ -413,7 +415,7 @@
 								<b>BSB</b>
 							</p>
 							<p class="productName">니티드 벨트 캐시미어 가디건</p>
-							<p class="productPirce">￦ 300,000</p>
+							<p class="productPirce">￦ 1,185,000</p>
 						</div>
 				</a></li>
 				<li><a href=""> <img
@@ -423,7 +425,7 @@
 								<b>CALE</b>
 							</p>
 							<p class="productName">브이넥 골지 탑 상의</p>
-							<p class="productPirce">￦ 300,000</p>
+							<p class="productPirce">￦ 778,000</p>
 						</div>
 				</a></li>
 				<li><a href=""> <img
@@ -433,7 +435,7 @@
 								<b>CAPRI</b>
 							</p>
 							<p class="productName">로고 컷 상의 코트</p>
-							<p class="productPirce">￦ 300,000</p>
+							<p class="productPirce">￦ 247,000</p>
 						</div>
 				</a></li>
 				<li><a href=""> <img
@@ -443,7 +445,7 @@
 								<b>D'ELLE</b>
 							</p>
 							<p class="productName">패널 모헤어 상의</p>
-							<p class="productPirce">￦ 300,000</p>
+							<p class="productPirce">￦ 351,000</p>
 						</div>
 				</a></li>
 			</ul>
