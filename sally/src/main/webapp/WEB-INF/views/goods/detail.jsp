@@ -119,6 +119,215 @@
 							</select>
 						</p>
 						<div class="pdrAmount">
+<<<<<<< HEAD
+							<input type="number" value="1" min='0' max='50'
+								oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+						</div>
+					</div>
+
+
+
+
+
+
+
+					<div class="box">
+						<p class="pdrImg">
+							<a href="#"><img
+								src="https://flymodel.co.kr/web/product/medium/202108/2df7099ad3285dfde38a7844100b3586.webp"></a>
+						</p>
+						<p class="pdrName">
+							<input type="checkbox"> <a href="#">B</a>
+						</p>
+						<p class="pdrPrice">00,000원</p>
+						<p class="pdrOption">
+							<select>
+								<option value="*">옵션선택</option>
+								<option value="**">-------------------</option>
+								<option value="AA">AA</option>
+								<option value="BB">BB</option>
+							</select>
+						</p>
+						<div class="pdrAmount">
+							<input type="number" value="1" min='0' max='50'
+								oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+						</div>
+					</div>
+					<div class="box">
+						<p class="pdrImg">
+							<a href="#"><img
+								src="https://flymodel.co.kr/web/product/medium/202109/621b143ec8ee24b81d20de01103c4d9e.webp"></a>
+						</p>
+						<p class="pdrName">
+							<input type="checkbox"> <a href="#">C</a>
+						</p>
+						<p class="pdrPrice">00,000원</p>
+						<p class="pdrOption">
+							<select>
+								<option value="*">옵션선택</option>
+								<option value="**">-------------------</option>
+								<option value="AA">AA</option>
+								<option value="BB">BB</option>
+							</select>
+						</p>
+						<div class="pdrAmount">
+							<input type="number" value="1" min='0' max='50'
+								oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+						</div>
+					</div>
+					<div class="box">
+						<p class="pdrImg">
+							<a href="#"><img
+								src="https://flymodel.co.kr/web/product/medium/202109/64f5a596d576d0306f9dc38b953854c1.webp"></a>
+						</p>
+						<p class="pdrName">
+							<input type="checkbox"> <a href="#">D</a>
+						</p>
+						<p class="pdrPrice">00,000원</p>
+						<p class="pdrOption">
+							<select>
+								<option value="*">옵션선택</option>
+								<option value="**">-------------------</option>
+								<option value="AA">AA</option>
+								<option value="BB">BB</option>
+							</select>
+						</p>
+						<div class="pdrAmount">
+							<input type="number" value="1" min='0' max='50'
+								oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+						</div>
+					</div>
+					<div class="box">
+						<p class="pdrImg">
+							<a href="#"><img
+								src="https://flymodel.co.kr/web/product/big/202108/ead2f6e9e8e099fb51737c5d7e56d6f5.webp"></a>
+						</p>
+						<p class="pdrName">
+							<input type="checkbox"> <a href="#">E</a>
+						</p>
+						<p class="pdrPrice">00,000원</p>
+						<p class="pdrOption">
+							<select>
+								<option value="*">옵션선택</option>
+								<option value="**">-------------------</option>
+								<option value="AA">AA</option>
+								<option value="BB">BB</option>
+							</select>
+						</p>
+						<div class="pdrAmount">
+							<input type="number" value="1" min='0' max='50'
+								oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+						</div>
+					</div>
+					<div class="box">
+						<p class="pdrImg">
+							<a href="#"><img
+								src="https://flymodel.co.kr/web/product/medium/202109/6575e238444fd0a0bc399eb0e1aea836.gif"></a>
+						</p>
+						<p class="pdrName">
+							<input type="checkbox"> <a href="#">F</a>
+						</p>
+						<p class="pdrPrice">00,000원</p>
+						<p class="pdrOption">
+							<select>
+								<option value="*">옵션선택</option>
+								<option value="**">-------------------</option>
+								<option value="AA">AA</option>
+								<option value="BB">BB</option>
+							</select>
+						</p>
+						<div class="pdrAmount">
+							<input type="number" value="1" min='0' max='50'
+								oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+						</div>
+					</div>
+					<div class="box">
+						<p class="pdrImg">
+							<a href="#"><img
+								src="https://flymodel.co.kr/web/product/medium/202109/6575e238444fd0a0bc399eb0e1aea836.gif"></a>
+						</p>
+						<p class="pdrName">
+							<input type="checkbox"> <a href="#">G</a>
+						</p>
+						<p class="pdrPrice">00,000원</p>
+						<p class="pdrOption">
+							<select>
+								<option value="*">옵션선택</option>
+								<option value="**">-------------------</option>
+								<option value="AA">AA</option>
+								<option value="BB">BB</option>
+							</select>
+						</p>
+						<div class="pdrAmount">
+							<input type="number" value="1" min='0' max='50'
+								oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+						</div>
+					</div>
+					<div class="box">
+						<p class="pdrImg">
+							<a href="#"><img
+								src="https://flymodel.co.kr/web/product/medium/202109/6575e238444fd0a0bc399eb0e1aea836.gif"></a>
+						</p>
+						<p class="pdrName">
+							<input type="checkbox"> <a href="#">H</a>
+						</p>
+						<p class="pdrPrice">00,000원</p>
+						<p class="pdrOption">
+							<select>
+								<option value="*">옵션선택</option>
+								<option value="**">-------------------</option>
+								<option value="AA">AA</option>
+								<option value="BB">BB</option>
+							</select>
+						</p>
+						<div class="pdrAmount">
+							<input type="number" value="1" min='0' max='50'
+								oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+						</div>
+					</div>
+					<div class="box">
+						<p class="pdrImg">
+							<a href="#"><img
+								src="https://flymodel.co.kr/web/product/medium/202109/6575e238444fd0a0bc399eb0e1aea836.gif"></a>
+						</p>
+						<p class="pdrName">
+							<input type="checkbox"> <a href="#">I</a>
+						</p>
+						<p class="pdrPrice">00,000원</p>
+						<p class="pdrOption">
+							<select>
+								<option value="*">옵션선택</option>
+								<option value="**">-------------------</option>
+								<option value="AA">AA</option>
+								<option value="BB">BB</option>
+							</select>
+						</p>
+						<div class="pdrAmount">
+							<input type="number" value="1" min='0' max='50'
+								oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+						</div>
+					</div>
+					<div class="box">
+						<p class="pdrImg">
+							<a href="#"><img
+								src="https://flymodel.co.kr/web/product/medium/202109/6575e238444fd0a0bc399eb0e1aea836.gif"></a>
+						</p>
+						<p class="pdrName">
+							<input type="checkbox"> <a href="#">J</a>
+						</p>
+						<p class="pdrPrice">00,000원</p>
+						<p class="pdrOption">
+							<select>
+								<option value="*">옵션선택</option>
+								<option value="**">-------------------</option>
+								<option value="AA">AA</option>
+								<option value="BB">BB</option>
+							</select>
+						</p>
+						<div class="pdrAmount">
+							<input type="number" value="1" min='0' max='50'
+								oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+=======
 							<input type="text" value="1">
 							<div class="updown">
 								<a href="#"><img
@@ -386,6 +595,7 @@
 									src="http://img.echosting.cafe24.com/skin/base_ko_KR/product/btn_count_down.gif"
 									alt="수량감소" class="down"></a>
 							</div>
+>>>>>>> branch 'master' of https://github.com/bangbangk/sally3.git
 						</div>
 					</div>
 
@@ -531,7 +741,10 @@
 
 
 <script src="/resources/js/product_detail.js"></script>
+<<<<<<< HEAD
+=======
 <script src="/resources/js/product_qna.js"></script>
+>>>>>>> branch 'master' of https://github.com/bangbangk/sally3.git
 <script src="/resources/js/product_slide_slick.js"></script>
 
 <%@include file="../include/include_footer.jsp"%>
