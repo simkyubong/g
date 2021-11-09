@@ -1,6 +1,7 @@
 package org.zerock.domain;
 
 import java.util.Date;
+import java.util.List;
 
 import lombok.Data;
 
@@ -30,11 +31,17 @@ public class GoodsVO {
 	
 	/* 등록 날짜 */
 	private Date gdsDate;
+	
+	/* 경로 */
+	private String uploadPath;
+	
+	/* uuid */
+	private String uuid;
+	
+	/* 파일 이름 */
+	private String fileName;
 
-	
-	
-	
-
-	
+	/* 이미지 정보 */
+	private List<AttachImageVO> imageList;
 	
 }

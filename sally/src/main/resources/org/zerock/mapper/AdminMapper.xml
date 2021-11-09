@@ -6,6 +6,12 @@
 	<!-- 상품 등록 -->
   	<insert id="goodsEnroll">
   	
+  		<selectKey resultType="int" keyProperty="gdsNum" order="AFTER">
+  		
+  			SELECT LAST_INSERT_ID()
+  		
+  		</selectKey>
+  	
   		insert into tbl_goods(gdsName, cateCode, cateName, gdsPrice, gdsStock, gdsDes)
 		values(#{gdsName}, #{cateCode}, #{cateName}, #{gdsPrice}, #{gdsStock}, #{gdsDes})
 
@@ -78,5 +84,12 @@
 		delete from tbl_goods where gdsNum = #{gdsNum}
 	
 	</delete>
+	
+	<!-- 이미지 등록 -->
+	<insert id="imageEnroll">
+	
+		insert into tbl_image(gdsNum, fileName, uploadPath, uuid) values (#{gdsNum}, #{fileName}, #{uploadPath}, #{uuid})
+	
+	</insert>
 
 </mapper>

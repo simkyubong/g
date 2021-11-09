@@ -2,6 +2,7 @@ package org.zerock.mapper;
 
 import java.util.List;
 
+import org.zerock.domain.AttachImageVO;
 import org.zerock.domain.CateVO;
 import org.zerock.domain.Criteria;
 import org.zerock.domain.GoodsVO;
@@ -31,4 +32,8 @@ public interface AdminMapper {
 	
 	/* 상품 정보 삭제 */
 	public int goodsDelete(int gdsNum);
+	
+	/* 이미지 등록 */
+	public void imageEnroll(AttachImageVO vo);
+	
 }

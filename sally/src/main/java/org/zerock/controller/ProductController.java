@@ -47,7 +47,7 @@ public class ProductController {
 	}
 	
 	@GetMapping("read")
-	public void read(long bno,Model model) {
+	public void read(long bno, Model model) {
 		log.info("read="+bno);
 		model.addAttribute("read", service.get(bno));
 	}

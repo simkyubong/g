@@ -2,6 +2,10 @@ package org.zerock.domain;
 
 import java.util.Date;
 
+import lombok.Data;
+
+@Data
+
 public class OrderListVO {
 /*	create table tbl_orderlist(
 			orderNumber int primary key not null,
@@ -14,60 +18,29 @@ public class OrderListVO {
 			orderState varchar(20) not null
 		);	*/
 	
+	/* 주문 번호 */ 
 	private int orderNumber;
+	
+	/* 주문 일자 */
 	private Date orderDate;
-	public int getOrderNumber() {
-		return orderNumber;
-	}
-	public void setOrderNumber(int orderNumber) {
-		this.orderNumber = orderNumber;
-	}
-	public Date getOrderDate() {
-		return orderDate;
-	}
-	public void setOrderDate(Date orderDate) {
-		this.orderDate = orderDate;
-	}
-	public String getGdsImg() {
-		return gdsImg;
-	}
-	public void setGdsImg(String gdsImg) {
-		this.gdsImg = gdsImg;
-	}
-	public String getGdsName() {
-		return gdsName;
-	}
-	public void setGdsName(String gdsName) {
-		this.gdsName = gdsName;
-	}
-	public String getOrderOption() {
-		return orderOption;
-	}
-	public void setOrderOption(String orderOption) {
-		this.orderOption = orderOption;
-	}
-	public int getOrderQuantity() {
-		return orderQuantity;
-	}
-	public void setOrderQuantity(int orderQuantity) {
-		this.orderQuantity = orderQuantity;
-	}
-	public int getOrderPrice() {
-		return orderPrice;
-	}
-	public void setOrderPrice(int orderPrice) {
-		this.orderPrice = orderPrice;
-	}
-	public String getOrderState() {
-		return orderState;
-	}
-	public void setOrderState(String orderState) {
-		this.orderState = orderState;
-	}
+	
+	/* 상품이미지 */
 	private String gdsImg;
+	
+	/* 상품 이름 */
 	private String gdsName;
+	
+	/* 주문 옵션*/
 	private String orderOption;
+	
+	/* 주문 수량*/
 	private int orderQuantity;
+	
+	/* 주문 가격 */
 	private int orderPrice;
+	
+	/* 주문 상태 */
 	private String orderState;
+	
+	
 }

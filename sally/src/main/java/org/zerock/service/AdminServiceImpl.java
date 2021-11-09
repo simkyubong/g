@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.zerock.domain.CateVO;
 import org.zerock.domain.Criteria;
 import org.zerock.domain.GoodsVO;
@@ -19,12 +20,24 @@ public class AdminServiceImpl implements AdminService {
 	private AdminMapper adminMapper;
 	
 	/* 상품 등록 */
+	@Transactional
 	@Override
 	public void goodsEnroll(GoodsVO goods) {
 		
 		log.info("(srevice)goodsEnroll........");
 		
 		adminMapper.goodsEnroll(goods);
+		
+		if(goods.getImageList() == null || goods.getImageList().size() <= 0) {
+			return;
+		}
+		
+		goods.getImageList().forEach(attach ->{
+			
+			attach.setGdsNum(goods.getGdsNum());
+			adminMapper.imageEnroll(attach);
+			
+		});
 	}
 	
 	/* 카테고리 리스트 */

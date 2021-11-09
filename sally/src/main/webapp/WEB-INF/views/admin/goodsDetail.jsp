@@ -17,13 +17,13 @@
                     <div class="admin_content_subject"><span>상품 상세정보</span></div>
 
                     <div class="admin_content_main">
-                            <div class="form_section">
-                                <div class="form_section_title">
-                                    <label>상품 이름</label>
-                                </div>
+                           <div class="form_section">
+                               <div class="form_section_title">
+                                   <label>상품 이름</label>
+                               </div>
                                 <div class="form_section_content">
-                                    <input name="gdsName" value="<c:out value="${goodsInfo.gdsName}"/>" disabled>
-                                </div>
+                                   <input name="gdsName" value="<c:out value="${goodsInfo.gdsName}"/>" disabled>
+                            	</div>
                             </div>
                             <div class="form_section">
                                 <div class="form_section_title">
