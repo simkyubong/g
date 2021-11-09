@@ -17,4 +17,3 @@ public class AttachImageVO {
 	/* 상품 id */
 	private int gdsNum;
 }
-

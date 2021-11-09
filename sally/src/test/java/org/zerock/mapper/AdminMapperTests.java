@@ -7,6 +7,7 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.zerock.domain.AttachImageVO;
 import org.zerock.domain.Criteria;
 import org.zerock.domain.GoodsVO;
 
@@ -18,21 +19,23 @@ public class AdminMapperTests {
 	private AdminMapper mapper;
 	
 	/* 상품 등록 */
-	/*
+	
 	@Test
 	public void goodsEnrollTest() throws Exception{
 		GoodsVO goods = new GoodsVO();
 		
-		goods.setGoodsName("mapper 테스트");
+		goods.setGdsName("mapper 테스트");
+		goods.setCateName("222");
 		goods.setCateCode("0231");
-		goods.setGoodsPrice(20000);
-		goods.setGoodsStock(300);
-		goods.setGoodsIntro("제품 소개 ");
-		goods.setGoodsContents("제품 설명 ");
+		goods.setGdsPrice(20000);
+		goods.setGdsStock(300);
+		goods.setGdsDes("제품 소개 ");
 		
+		System.out.println("Before GoodsVO :" + goods);
 		mapper.goodsEnroll(goods);
+		System.out.println("After GoodsVO :" + goods);
 	}
-	*/
+	
 	
 	/* 카테고리 리스트 */
 	/*
@@ -79,7 +82,7 @@ public class AdminMapperTests {
 	}*/
 	
 	/* 상품 정보 수정 */
-	@Test
+	/*@Test
 	public void goodsModifyTest() {
 		
 		GoodsVO goods = new GoodsVO();
@@ -94,7 +97,7 @@ public class AdminMapperTests {
 		
 		mapper.goodsModify(goods);
 		
-	}
+	}*/
 	
 	/* 상품 정보 삭제 
 	@Test
@@ -107,6 +110,21 @@ public class AdminMapperTests {
 		if(result == 1) {
 			System.out.println("삭제 성공");
 		}
+		
+	}*/
+	
+	/* 이미지 등록 */
+	/*@Test
+	public void imageEnrollTest() {
+		
+		AttachImageVO vo = new AttachImageVO();
+		
+		vo.setGdsNum(1);
+		vo.setFileName("test");
+		vo.setUploadPath("test");
+		vo.setUuid("test2");
+		
+		mapper.imageEnroll(vo);
 		
 	}*/
 }

@@ -4,7 +4,7 @@
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
   <mapper namespace="org.zerock.mapper.AttachMapper">
 	
-	<select id="getAttachList" resultType="org.zerock.domainl.AttachImageVO">
+	<select id="getAttachList" resultType="org.zerock.domain.AttachImageVO">
 	
 		select * from tbl_image where gdsNum = #{gdsNum}
 	
