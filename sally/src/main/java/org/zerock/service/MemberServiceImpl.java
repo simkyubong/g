@@ -1,7 +1,5 @@
 package org.zerock.service;
 
-/*import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;*/
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.zerock.domain.MemberVO;
@@ -36,4 +34,8 @@ public class MemberServiceImpl implements MemberService {
         
         return membermapper.memberLogin(member);
     }
+    
+    /* 회원정보 수정 */
+    @Override
+    
 }

@@ -97,15 +97,7 @@
                     			<div class="form_section_content">
                     				<input name="gdsStock" value="0">
                     			</div>
-                    		</div>    		
-                    		<!-- <div class="form_section">
-                    			<div class="form_section_title">
-                    				<label>상품 요약</label>
-                    			</div>
-                    			<div class="form_section_content">
-                    				<textarea name="goodsIntro" id="goodsIntro_textarea"></textarea>
-                    			</div>
-                    		</div>       -->  		
+                    		</div> 		
                     		<div class="form_section">
                     			<div class="form_section_title">
                     				<label>상품 내용</label>
@@ -114,6 +106,8 @@
                     				<textarea name="gdsDes" id="goodsContents_textarea"></textarea>
                     			</div>
                     		</div>
+                    		
+                    		
                     		<div class="form_section">
                     			<div class="form_section_title">
                     				<label>상품 이미지</label>
