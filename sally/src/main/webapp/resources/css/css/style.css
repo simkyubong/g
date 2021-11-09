@@ -250,7 +250,7 @@
 }
 
 .productRelated .pdrList .pdrListIn .box .pdrAmount input {
-  width: 22px;
+  width: 40px;
   height: 23px;
   font-size: 12px;
   line-height: 23px;
@@ -416,7 +416,7 @@
 
 .productQna .pdQna {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 50px auto 200px auto;
   padding: 27px 0 40px;
 }
 

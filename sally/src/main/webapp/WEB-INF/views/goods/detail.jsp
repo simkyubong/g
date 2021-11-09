@@ -121,13 +121,7 @@
                     </select>
                   </p>
                   <div class="pdrAmount">
-                    <input type="text" value="1">
-                    <div class="updown">
-                      <a href="#"><img src="/resources/img/source/btn_count_up.gif"
-                          alt="수량증가" class="up"></a>
-                      <a href="#"><img src="/resources/img/source/btn_count_down.gif"
-                          alt="수량감소" class="down"></a>
-                    </div>
+                    <input type="number" value="1"  min='0' max='50'  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
                   </div>
                 </div>
                 
@@ -156,13 +150,7 @@
                     </select>
                   </p>
                   <div class="pdrAmount">
-                    <input type="text" value="1">
-                    <div class="updown">
-                      <a href="#"><img src="http://img.echosting.cafe24.com/skin/base_ko_KR/product/btn_count_up.gif"
-                          alt="수량증가" class="up"></a>
-                      <a href="#"><img src="http://img.echosting.cafe24.com/skin/base_ko_KR/product/btn_count_down.gif"
-                          alt="수량감소" class="down"></a>
-                    </div>
+                    <input type="number" value="1"  min='0' max='50'  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
                   </div>
                 </div>
                 <div class="box">
@@ -184,13 +172,7 @@
                     </select>
                   </p>
                   <div class="pdrAmount">
-                    <input type="text" value="1">
-                    <div class="updown">
-                      <a href="#"><img src="http://img.echosting.cafe24.com/skin/base_ko_KR/product/btn_count_up.gif"
-                          alt="수량증가" class="up"></a>
-                      <a href="#"><img src="http://img.echosting.cafe24.com/skin/base_ko_KR/product/btn_count_down.gif"
-                          alt="수량감소" class="down"></a>
-                    </div>
+                    <input type="number" value="1"  min='0' max='50'  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
                   </div>
                 </div>
                 <div class="box">
@@ -212,13 +194,7 @@
                     </select>
                   </p>
                   <div class="pdrAmount">
-                    <input type="text" value="1">
-                    <div class="updown">
-                      <a href="#"><img src="http://img.echosting.cafe24.com/skin/base_ko_KR/product/btn_count_up.gif"
-                          alt="수량증가" class="up"></a>
-                      <a href="#"><img src="http://img.echosting.cafe24.com/skin/base_ko_KR/product/btn_count_down.gif"
-                          alt="수량감소" class="down"></a>
-                    </div>
+                    <input type="number" value="1"  min='0' max='50'  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
                   </div>
                 </div>
                 <div class="box">
@@ -240,13 +216,7 @@
                     </select>
                   </p>
                   <div class="pdrAmount">
-                    <input type="text" value="1">
-                    <div class="updown">
-                      <a href="#"><img src="http://img.echosting.cafe24.com/skin/base_ko_KR/product/btn_count_up.gif"
-                          alt="수량증가" class="up"></a>
-                      <a href="#"><img src="http://img.echosting.cafe24.com/skin/base_ko_KR/product/btn_count_down.gif"
-                          alt="수량감소" class="down"></a>
-                    </div>
+                    <input type="number" value="1"  min='0' max='50'  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
                   </div>
                 </div>
                 <div class="box">
@@ -268,13 +238,7 @@
                     </select>
                   </p>
                   <div class="pdrAmount">
-                    <input type="text" value="1">
-                    <div class="updown">
-                      <a href="#"><img src="http://img.echosting.cafe24.com/skin/base_ko_KR/product/btn_count_up.gif"
-                          alt="수량증가" class="up"></a>
-                      <a href="#"><img src="http://img.echosting.cafe24.com/skin/base_ko_KR/product/btn_count_down.gif"
-                          alt="수량감소" class="down"></a>
-                    </div>
+                    <input type="number" value="1"  min='0' max='50'  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
                   </div>
                 </div>
                 <div class="box">
@@ -296,13 +260,7 @@
                     </select>
                   </p>
                   <div class="pdrAmount">
-                    <input type="text" value="1">
-                    <div class="updown">
-                      <a href="#"><img src="http://img.echosting.cafe24.com/skin/base_ko_KR/product/btn_count_up.gif"
-                          alt="수량증가" class="up"></a>
-                      <a href="#"><img src="http://img.echosting.cafe24.com/skin/base_ko_KR/product/btn_count_down.gif"
-                          alt="수량감소" class="down"></a>
-                    </div>
+                    <input type="number" value="1"  min='0' max='50'  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
                   </div>
                 </div>
                 <div class="box">
@@ -324,13 +282,7 @@
                     </select>
                   </p>
                   <div class="pdrAmount">
-                    <input type="text" value="1">
-                    <div class="updown">
-                      <a href="#"><img src="http://img.echosting.cafe24.com/skin/base_ko_KR/product/btn_count_up.gif"
-                          alt="수량증가" class="up"></a>
-                      <a href="#"><img src="http://img.echosting.cafe24.com/skin/base_ko_KR/product/btn_count_down.gif"
-                          alt="수량감소" class="down"></a>
-                    </div>
+                    <input type="number" value="1"  min='0' max='50'  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
                   </div>
                 </div>
                 <div class="box">
@@ -352,13 +304,7 @@
                     </select>
                   </p>
                   <div class="pdrAmount">
-                    <input type="text" value="1">
-                    <div class="updown">
-                      <a href="#"><img src="http://img.echosting.cafe24.com/skin/base_ko_KR/product/btn_count_up.gif"
-                          alt="수량증가" class="up"></a>
-                      <a href="#"><img src="http://img.echosting.cafe24.com/skin/base_ko_KR/product/btn_count_down.gif"
-                          alt="수량감소" class="down"></a>
-                    </div>
+                    <input type="number" value="1"  min='0' max='50'  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
                   </div>
                 </div>
                 <div class="box">
@@ -380,13 +326,7 @@
                     </select>
                   </p>
                   <div class="pdrAmount">
-                    <input type="text" value="1">
-                    <div class="updown">
-                      <a href="#"><img src="http://img.echosting.cafe24.com/skin/base_ko_KR/product/btn_count_up.gif"
-                          alt="수량증가" class="up"></a>
-                      <a href="#"><img src="http://img.echosting.cafe24.com/skin/base_ko_KR/product/btn_count_down.gif"
-                          alt="수량감소" class="down"></a>
-                    </div>
+                    <input type="number" value="1"  min='0' max='50'  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
                   </div>
                 </div>
 
