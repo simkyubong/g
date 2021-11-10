@@ -1,5 +1,7 @@
 package org.zerock.mapper;
 
+import java.util.List;
+
 import org.zerock.domain.MemberVO;
 
 public interface MemberMapper {
@@ -12,10 +14,12 @@ public interface MemberMapper {
 	// 로그인
     public MemberVO memberLogin(MemberVO member);
     
-    // 회원정보 수정 
+	// 회원정보 수정 
     public void updateMember(MemberVO member);
     
     // 회원비밀번호 수정처리
     public void updatePw(MemberVO memeber);
+    
+    public List<MemberVO> list();
  
 }

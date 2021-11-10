@@ -19,6 +19,11 @@ public class GoodsVO {
 	/* 카테고리 2차 */
 	private String cateCode;	
 	
+	/* 상품 사이즈 */
+	private String gdsSize;
+	
+	/* 상품 색상 */
+	private String gdsColor;
 	
 	/* 상품 가격 */
 	private int gdsPrice;

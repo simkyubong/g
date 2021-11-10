@@ -1,5 +1,7 @@
 package org.zerock.service;
 
+import java.util.List;
+
 import org.zerock.domain.MemberVO;
 
 public interface MemberService {
@@ -12,4 +14,6 @@ public interface MemberService {
 	
 	// 로그인
     public MemberVO memberLogin(MemberVO member) throws Exception;
+    
+    
 }

@@ -8,6 +8,7 @@ import org.springframework.transaction.annotation.Transactional;
 import org.zerock.domain.CateVO;
 import org.zerock.domain.Criteria;
 import org.zerock.domain.GoodsVO;
+import org.zerock.domain.MemberVO;
 import org.zerock.mapper.AdminMapper;
 
 import lombok.extern.log4j.Log4j;
@@ -96,6 +97,11 @@ public class AdminServiceImpl implements AdminService {
 		
 		return adminMapper.goodsDelete(gdsNum);
 	}
-
+	
+	
+	public List<MemberVO> list() throws Exception{
+		
+    	return adminMapper.list();
+    }
 	
 }
