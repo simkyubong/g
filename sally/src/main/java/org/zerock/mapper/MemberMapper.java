@@ -20,6 +20,6 @@ public interface MemberMapper {
     // 회원비밀번호 수정처리
     public void updatePw(MemberVO memeber);
     
-    public List<MemberVO> list();
+    public List<MemberVO> memberList();
  
 }

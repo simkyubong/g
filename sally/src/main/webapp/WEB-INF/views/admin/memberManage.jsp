@@ -29,7 +29,7 @@
 	                    				<td class="th_column_5">비고</td>
 	                    			</tr>
 	                    		</thead>	
-	                    		<c:forEach items="${list}" var="list">
+	                    		<c:forEach items="${memberList}" var="list">
 	                    		<tr>
 	                    			<td><c:out value="${list.memberId}"></c:out></td>
 	                    			<td><c:out value="${list.memberName}"></c:out></td>

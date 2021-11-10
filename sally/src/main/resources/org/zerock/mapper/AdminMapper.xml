@@ -96,7 +96,8 @@
 	<!-- 회원 목록 -->
     <select id="getList" resultType="org.zerock.domain.MemberVO">
     
-        select * from member
+        select memberId, memberName, memberEmail, regDate
+        	from member
     
     </select>
 

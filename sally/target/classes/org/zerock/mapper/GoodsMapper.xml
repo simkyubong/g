@@ -21,7 +21,7 @@
 	<!-- 상품 목록 --> 
 	<select id="list" resultType="org.zerock.domain.GoodsVO">
 	 select
-	  gdsNum, gdsName, cateCode, gdsPrice, gdsStock, gdsDes, gdsDate
+	  gdsNum, gdsName, cateCode, gdsSize, gdsColor, gdsPrice, gdsStock, gdsDes, gdsDate
 	    from tbl_goods
 	        order by gdsNum desc
 	</select>
