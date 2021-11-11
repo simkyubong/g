@@ -79,10 +79,11 @@
 	font-size: 16px;
 }
 
-.header_in .header_banner img {
-	/* top: 13px; */
-	width: 14px;
-	/* line-height: 300px; */
+.header_in .header_banner a p img {
+	position: absolute;
+	top: 13px;
+	width: 15px;
+	line-height: 10px;
 	margin-left: 10px;
 }
 

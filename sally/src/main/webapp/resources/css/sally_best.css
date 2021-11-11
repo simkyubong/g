@@ -1,0 +1,227 @@
+@charset "UTF-8";
+
+ul.tabs {
+	width: 1220px;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.tabs h2 {
+	margin-bottom: 20px;
+}
+
+ul.tabs li {
+	background: none;
+	color: #222;
+	display: inline-block;
+	padding: 10px 15px;
+	cursor: pointer;
+}
+
+ul.tabs li.current {
+	/* background: #b1b1b1; */
+	color: #222;
+}
+
+.tab-content {
+	display: none;
+	background: #f3f3f3;
+	padding: 15px;
+}
+
+.tab-content.current {
+	display: inherit;
+}
+
+/* #tab-1 */
+#tab-1 ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin-bottom: 100px;
+}
+
+#tab-1 ul li {
+	margin-top: 50px;
+	text-align: center;
+}
+
+#tab-1 ul li a {
+	display: block;
+	color: #222;
+	font-size: 16px;
+}
+
+#tab-1 ul li a img {
+	width: 250px;
+	height: 330px;
+	margin-bottom: 20px;
+}
+
+#tab-1 ul li a .pic_text {
+	line-height: 20px;
+	margin-bottom: 20px;
+}
+
+/* #tab-2 */
+#tab-2 ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin-bottom: 100px;
+}
+
+#tab-2 ul li {
+	margin-top: 50px;
+	text-align: center;
+}
+
+#tab-2 ul li a {
+	display: block;
+	color: #222;
+	font-size: 16px;
+}
+
+#tab-2 ul li a img {
+	width: 250px;
+	height: 330px;
+	margin-bottom: 20px;
+}
+
+#tab-2 ul li a .pic_text {
+	line-height: 20px;
+	margin-bottom: 20px;
+}
+
+/* #tab-3 */
+#tab-3 ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin-bottom: 100px;
+}
+
+#tab-3 ul li {
+	margin-top: 50px;
+	text-align: center;
+}
+
+#tab-3 ul li a {
+	display: block;
+	color: #222;
+	font-size: 16px;
+}
+
+#tab-3 ul li a img {
+	width: 250px;
+	height: 330px;
+	margin-bottom: 20px;
+}
+
+#tab-3 ul li a .pic_text {
+	line-height: 20px;
+	margin-bottom: 20px;
+}
+
+/* #tab-4 */
+#tab-4 ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin-bottom: 100px;
+}
+
+#tab-4 ul li {
+	margin-top: 50px;
+	text-align: center;
+}
+
+#tab-4 ul li a {
+	display: block;
+	color: #222;
+	font-size: 16px;
+}
+
+#tab-4 ul li a img {
+	width: 250px;
+	height: 330px;
+	margin-bottom: 20px;
+}
+
+#tab-4 ul li a .pic_text {
+	line-height: 20px;
+	margin-bottom: 20px;
+}
+/*  */
+#tab-5 ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin-bottom: 100px;
+}
+
+#tab-5 ul li {
+	margin-top: 50px;
+	text-align: center;
+}
+
+#tab-5 ul li a {
+	display: block;
+	color: #222;
+	font-size: 16px;
+}
+
+#tab-5 ul li a img {
+	width: 250px;
+	height: 330px;
+	margin-bottom: 20px;
+}
+
+#tab-5 ul li a .pic_text {
+	line-height: 20px;
+	margin-bottom: 20px;
+}
+/*  */
+#tab-6 ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin-bottom: 100px;
+}
+
+#tab-6 ul li {
+	margin-top: 50px;
+	text-align: center;
+}
+
+#tab-6 ul li a {
+	display: block;
+	color: #222;
+	font-size: 16px;
+}
+
+#tab-6 ul li a img {
+	width: 250px;
+	height: 330px;
+	margin-bottom: 20px;
+}
+
+#tab-6 ul li a .pic_text {
+	line-height: 20px;
+	margin-bottom: 20px;
+}
+
+/* 버튼 */
+.button {
+	margin-bottom: 200px;
+	text-align: center;
+	margin-top: 130px;
+}
+
+.button a {
+	color: rgb(39, 39, 39);
+	font-size: 30px;
+}

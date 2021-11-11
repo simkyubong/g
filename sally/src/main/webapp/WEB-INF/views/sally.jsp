@@ -4,6 +4,8 @@
 	href="resources/css/main/layout.css?v=3">
 
 <jsp:include page="main_header.jsp"></jsp:include>
+<script src="resources/js/sally_best.js"></script>
+<script src="sally_best.js"></script>
 
 <div id="container">
 	<div class="main_slide">
@@ -68,108 +70,18 @@
 		</div>
 	</div>
 	<!-- section_main_notice -->
-
 	<div class="sec2_nowLive_bset">
 		<h2>실시간베스트</h2>
 		<p>지금 사랑받는 실시간 베스트 아이템</p>
-		<div class="tap_pager">
-			<ul>
-				<li class="live_today_hot"><a href="">
-						<p class="live_today_hot_h sec2_head">오늘의 실시간 HOT</p>
-				</a>
-					<div class="tap_pager_in sec2_head">
-						<ul class="">
-							<li><a href=""><img
-									src="resources/css/img/blue/blueitem1.jpeg" alt=""></a></li>
-							<li><a href=""><img
-									src="resources/css/img/blue/blueitem10.jpg" alt=""></a></li>
-							<li><a href=""><img
-									src="resources/css/img/blue/buleitem11.jpg" alt=""></a></li>
-							<li><a href=""><img
-									src="resources/css/img/blue/buleitem12.jpg" alt=""></a></li>
-							<li><a href=""><img
-									src="resources/css/img/blue/buleitem13.jpg" alt=""></a></li>
-							<li><a href=""><img
-									src="resources/css/img/blue/buleitem14.jpg" alt=""></a></li>
-							<li><a href=""><img
-									src="resources/css/img/blue/buleitem15.jpg" alt=""></a></li>
-							<li><a href=""><img
-									src="resources/css/img/blue/buleitem16.jpg" alt=""></a></li>
-
-						</ul>
-					</div></li>
-				<li class="live_today_outer"><a href="">
-						<p class="live_today_outer_in sec2_head">OUTER</p>
-				</a>
-					<div class="tap_pager_in_outer">
-						<ul class="">
-							<li><a href=""><img src="resources/css/img/red/reditem11.jpeg" alt=""></a></li>
-							<li><a href=""><img src="resources/css/img/red/reditem12.jpeg" alt=""></a></li>
-							<li><a href=""><img src="resources/css/img/red/reditem13.jpeg" alt=""></a></li>
-							<li><a href=""><img src="resources/css/img/red/reditem14.jpeg" alt=""></a></li>
-							<li><a href=""><img src="resources/css/img/red/reditem15.jpeg" alt=""></a></li>
-							<li><a href=""><img src="resources/css/img/red/reditem16.jpeg" alt=""></a></li>
-							<li><a href=""><img src="resources/css/img/red/reditem17.jpeg" alt=""></a></li>
-							<li><a href=""><img src="resources/css/img/red/reditem18.jpeg" alt=""></a></li>
-						</ul>
-					</div></li>
-				<li class="live_today_top"><a href="">
-						<p class="live_today_top_in sec2_head">TOP</p>
-				</a>
-					<div class="tap_pager_in_top">
-						<ul class="">
-							<li><a href=""><img src="resources/css/img/khaki/khakiitem20.jpeg" alt=""></a></li>
-							<li><a href=""><img src="resources/css/img/khaki/khakiitem21.jpeg" alt=""></a></li>
-							<li><a href=""><img src="resources/css/img/khaki/khakiitem22.jpeg" alt=""></a></li>
-							<li><a href=""><img src="resources/css/img/khaki/khakiitem23.jpeg" alt=""></a></li>
-							<li><a href=""><img src="resources/css/img/khaki/khakiitem24.jpeg" alt=""></a></li>
-							<li><a href=""><img src="resources/css/img/khaki/khakiitem25.jpeg" alt=""></a></li>
-							<li><a href=""><img src="resources/css/img/khaki/khakiitem26.jpeg" alt=""></a></li>
-							<li><a href=""><img src="resources/css/img/khaki/khakiitem27.jpg" alt=""></a></li>
-						</ul>
-					</div></li>
-				<li class="live_today_bottom"><a href="">
-						<p class="live_today_bottom_in sec2_head">BOTTOM</p>
-				</a>
-					<div class="tap_pager_in_bottom">
-						<ul class="">
-							<li><a href=""><img src="resources/css/img/pink/pinkitem20.jpeg" alt=""></a></li>
-							<li><a href=""><img src="resources/css/img/pink/pinkitem21.jpeg" alt=""></a></li>
-							<li><a href=""><img src="resources/css/img/pink/pinkitem22.jpeg" alt=""></a></li>
-							<li><a href=""><img src="resources/css/img/pink/pinkitem23.jpg" alt=""></a></li>
-							<li><a href=""><img src="resources/css/img/pink/pinkitem24.jpg" alt=""></a></li>
-							<li><a href=""><img src="resources/css/img/pink/pinkitem25.jpg" alt=""></a></li>
-							<li><a href=""><img src="resources/css/img/pink/pinkitem26.jpg" alt=""></a></li>
-							<li><a href=""><img src="resources/css/img/pink/pinkitem27.jpg" alt=""></a></li>
-						</ul>
-					</div></li>
-				<li class="live_today_ops"><a href="">
-						<p class="live_today_in sec2_head">OPS</p>
-				</a>
-					<div class="tap_pager_in_ops">
-						<ul class="">
-							<li><a href=""><img src="resources/css/img/blue/blueitem21.jpeg" alt=""></a></li>
-							<li><a href=""><img src="resources/css/img/blue/blueitem21.jpeg" alt=""></a></li>
-							<li><a href=""><img src="resources/css/img/blue/blueitem22.jpeg" alt=""></a></li>
-							<li><a href=""><img src="resources/css/img/blue/blueitem23.jpeg" alt=""></a></li>
-							<li><a href=""><img src="resources/css/img/blue/blueitem24.jpeg" alt=""></a></li>
-							<li><a href=""><img src="resources/css/img/blue/blueitem25.jpeg" alt=""></a></li>
-							<li><a href=""><img src="resources/css/img/blue/blueitem26.jpeg" alt=""></a></li>
-							<li><a href=""><img src="resources/css/img/blue/blueitem27.jpeg" alt=""></a></li>
-						</ul>
-					</div></li>
-			</ul>
-			<div class="sec2_btn">
-				<p class="sec2_btnR">
-					<img src="resources/css/img/gnb_icon/prev_left1.png" alt="">
-				</p>
-				<p class="sec2_btnL">
-					<img src="resources/css/img/gnb_icon/next_right1.png" alt="">
-				</p>
-			</div>
-		</div>
-		<!-- tap_pager -->
-		<div class="live_best_list">
+		<ul class="tabs">
+			<li class="tab-link current" data-tab="tab-1">오늘의 실시간 HOT !!</li>
+			<li class="tab-link" data-tab="tab-2">OUTER</li>
+			<li class="tab-link" data-tab="tab-3">PANTS</li>
+			<li class="tab-link" data-tab="tab-4">OPS/SKIRT</li>
+			<li class="tab-link" data-tab="tab-5">ACC</li>
+			<li class="tab-link" data-tab="tab-6">SHOSE</li>
+		</ul>
+		<div id="tab-1" class="tab-content current">
 			<ul class="">
 				<li><a href=""> <img
 						src="resources/css/img/navi/naviitem2.jpeg" alt="">
@@ -258,11 +170,478 @@
 				</a>
 			</div>
 		</div>
-		<!-- live_best_list -->
-		<!-- <div class="live_btn_Left">L_btn</div>
-		                <div class="live_btn_Right">R_btn</div> -->
+		<!-- tab-1 -->
+
+		<div id="tab-2" class="tab-content">
+			<ul>
+				<li><a href=""> <img
+						src="resources/css/img/green/greenitem01.jpeg" alt="">
+						<div class="pic_text">
+							<p class="productBarnd">
+								<b>MAX MARA</b>
+							</p>
+							<p class="productName">가디건</p>
+							<p class="productPirce">￦ 346,000</p>
+						</div>
+				</a></li>
+				<li><a href=""> <img
+						src="resources/css/img/green/greenitem02.jpeg" alt="">
+						<div class="pic_text">
+							<p class="productBarnd">
+								<b>ACNE STUDIOS</b>
+							</p>
+							<p class="productName">상의</p>
+							<p class="productPirce">￦ 462,000</p>
+						</div>
+				</a></li>
+				<li><a href=""> <img
+						src="resources/css/img/green/greenitem03.jpeg" alt="">
+						<div class="pic_text">
+							<p class="productBarnd">
+								<b>A.P.C</b>
+							</p>
+							<p class="productName">원피스</p>
+							<p class="productPirce">￦ 1,114,000</p>
+						</div>
+				</a></li>
+				<li><a href=""> <img
+						src="resources/css/img/green/greenitem11.jpeg" alt="">
+						<div class="pic_text">
+							<p class="productBarnd">
+								<b>JACQUEMUS</b>
+							</p>
+							<p class="productName">자켓</p>
+							<p class="productPirce">￦ 638,000</p>
+						</div>
+				</a></li>
+				<li><a href=""> <img
+						src="resources/css/img/green/greenitem5.jpeg" alt="">
+						<div class="pic_text">
+							<p class="productBarnd">
+								<b>LEMAIRE</b>
+							</p>
+							<p class="productName">가디건</p>
+							<p class="productPirce">￦ 289,000</p>
+						</div>
+				</a></li>
+				<li><a href=""> <img
+						src="resources/css/img/green/greenitem6.jpeg" alt="">
+						<div class="pic_text">
+							<p class="productBarnd">
+								<b>FENDI</b>
+							</p>
+							<p class="productName">울 블렌드 가디건</p>
+							<p class="productPirce">￦ 588,000</p>
+						</div>
+				</a></li>
+				<li><a href=""> <img
+						src="resources/css/img/green/greenitem7.jpeg" alt="">
+						<div class="pic_text">
+							<p class="productBarnd">
+								<b>LOEWE</b>
+							</p>
+							<p class="productName">투톤 가디건</p>
+							<p class="productPirce">￦ 1,201,000</p>
+						</div>
+				</a></li>
+				<li><a href=""> <img
+						src="resources/css/img/green/greenitem9.jpeg" alt="">
+						<div class="pic_text">
+							<p class="productBarnd">
+								<b>ISABEL</b>
+							</p>
+							<p class="productName">자켓</p>
+							<p class="productPirce">￦ 234,000</p>
+						</div>
+				</a></li>
+			</ul>
+			<div class="sec2_best_more">
+				<a href="">
+					<p>베스트 상품 더보기 ></p>
+				</a>
+			</div>
+		</div>
+		<!-- tab-2 -->
+
+		<div id="tab-3" class="tab-content">
+			<ul>
+				<li><a href=""> <img
+						src="resources/css/img/red/reditem1.jpg" alt="">
+						<div class="pic_text">
+							<p class="productBarnd">
+								<b>MAX MARA</b>
+							</p>
+							<p class="productName">가디건</p>
+							<p class="productPirce">￦ 346,000</p>
+						</div>
+				</a></li>
+				<li><a href=""> <img
+						src="resources/css/img/red/reditem2.jpg" alt="">
+						<div class="pic_text">
+							<p class="productBarnd">
+								<b>ACNE STUDIOS</b>
+							</p>
+							<p class="productName">상의</p>
+							<p class="productPirce">￦ 462,000</p>
+						</div>
+				</a></li>
+				<li><a href=""> <img
+						src="resources/css/img/red/reditem3.jpeg" alt="">
+						<div class="pic_text">
+							<p class="productBarnd">
+								<b>A.P.C</b>
+							</p>
+							<p class="productName">원피스</p>
+							<p class="productPirce">￦ 1,114,000</p>
+						</div>
+				</a></li>
+				<li><a href=""> <img
+						src="resources/css/img/red/reditem4.jpeg" alt="">
+						<div class="pic_text">
+							<p class="productBarnd">
+								<b>JACQUEMUS</b>
+							</p>
+							<p class="productName">자켓</p>
+							<p class="productPirce">￦ 638,000</p>
+						</div>
+				</a></li>
+				<li><a href=""> <img
+						src="resources/css/img/red/reditem5.jpeg" alt="">
+						<div class="pic_text">
+							<p class="productBarnd">
+								<b>LEMAIRE</b>
+							</p>
+							<p class="productName">가디건</p>
+							<p class="productPirce">￦ 289,000</p>
+						</div>
+				</a></li>
+				<li><a href=""> <img
+						src="resources/css/img/red/reditem7.jpeg" alt="">
+						<div class="pic_text">
+							<p class="productBarnd">
+								<b>FENDI</b>
+							</p>
+							<p class="productName">울 블렌드 가디건</p>
+							<p class="productPirce">￦ 588,000</p>
+						</div>
+				</a></li>
+				<li><a href=""> <img
+						src="resources/css/img/red/reditem8.jpeg" alt="">
+						<div class="pic_text">
+							<p class="productBarnd">
+								<b>LOEWE</b>
+							</p>
+							<p class="productName">투톤 가디건</p>
+							<p class="productPirce">￦ 1,201,000</p>
+						</div>
+				</a></li>
+				<li><a href=""> <img
+						src="resources/css/img/red/reditem20.jpeg" alt="">
+						<div class="pic_text">
+							<p class="productBarnd">
+								<b>ISABEL</b>
+							</p>
+							<p class="productName">자켓</p>
+							<p class="productPirce">￦ 234,000</p>
+						</div>
+				</a></li>
+			</ul>
+			<div class="sec2_best_more">
+				<a href="">
+					<p>베스트 상품 더보기 ></p>
+				</a>
+			</div>
+		</div>
+		<!-- tab-3 -->
+
+		<div id="tab-4" class="tab-content">
+			<ul>
+				<li><a href=""> <img
+						src="resources/css/img/khaki/khakiitem1.jpeg" alt="">
+						<div class="pic_text">
+							<p class="productBarnd">
+								<b>MAX MARA</b>
+							</p>
+							<p class="productName">가디건</p>
+							<p class="productPirce">￦ 346,000</p>
+						</div>
+				</a></li>
+				<li><a href=""> <img
+						src="resources/css/img/khaki/khakiitem2.jpeg" alt="">
+						<div class="pic_text">
+							<p class="productBarnd">
+								<b>ACNE STUDIOS</b>
+							</p>
+							<p class="productName">상의</p>
+							<p class="productPirce">￦ 462,000</p>
+						</div>
+				</a></li>
+				<li><a href=""> <img
+						src="resources/css/img/khaki/khakiitem03.jpeg" alt="">
+						<div class="pic_text">
+							<p class="productBarnd">
+								<b>A.P.C</b>
+							</p>
+							<p class="productName">원피스</p>
+							<p class="productPirce">￦ 1,114,000</p>
+						</div>
+				</a></li>
+				<li><a href=""> <img
+						src="resources/css/img/khaki/khakiitem4.jpeg" alt="">
+						<div class="pic_text">
+							<p class="productBarnd">
+								<b>JACQUEMUS</b>
+							</p>
+							<p class="productName">자켓</p>
+							<p class="productPirce">￦ 638,000</p>
+						</div>
+				</a></li>
+				<li><a href=""> <img
+						src="resources/css/img/khaki/khakiitem6.jpeg" alt="">
+						<div class="pic_text">
+							<p class="productBarnd">
+								<b>LEMAIRE</b>
+							</p>
+							<p class="productName">가디건</p>
+							<p class="productPirce">￦ 289,000</p>
+						</div>
+				</a></li>
+				<li><a href=""> <img
+						src="resources/css/img/khaki/khakiitem7.jpeg" alt="">
+						<div class="pic_text">
+							<p class="productBarnd">
+								<b>FENDI</b>
+							</p>
+							<p class="productName">울 블렌드 가디건</p>
+							<p class="productPirce">￦ 588,000</p>
+						</div>
+				</a></li>
+				<li><a href=""> <img
+						src="resources/css/img/khaki/khakiitem18.jpeg" alt="">
+						<div class="pic_text">
+							<p class="productBarnd">
+								<b>LOEWE</b>
+							</p>
+							<p class="productName">투톤 가디건</p>
+							<p class="productPirce">￦ 1,201,000</p>
+						</div>
+				</a></li>
+				<li><a href=""> <img
+						src="resources/css/img/khaki/khakiitem27.jpg" alt="">
+						<div class="pic_text">
+							<p class="productBarnd">
+								<b>ISABEL</b>
+							</p>
+							<p class="productName">자켓</p>
+							<p class="productPirce">￦ 234,000</p>
+						</div>
+				</a></li>
+			</ul>
+			<div class="sec2_best_more">
+				<a href="">
+					<p>베스트 상품 더보기 ></p>
+				</a>
+			</div>
+		</div>
+		<!-- tab-4 -->
+
+		<div id="tab-5" class="tab-content">
+			<ul>
+				<li><a href=""> <img
+						src="resources/css/img/pink/pinkitem3.jpeg" alt="">
+						<div class="pic_text">
+							<p class="productBarnd">
+								<b>MAX MARA</b>
+							</p>
+							<p class="productName">가디건</p>
+							<p class="productPirce">￦ 346,000</p>
+						</div>
+				</a></li>
+				<li><a href=""> <img
+						src="resources/css/img/pink/pinkitem14.jpeg" alt="">
+						<div class="pic_text">
+							<p class="productBarnd">
+								<b>ACNE STUDIOS</b>
+							</p>
+							<p class="productName">상의</p>
+							<p class="productPirce">￦ 462,000</p>
+						</div>
+				</a></li>
+				<li><a href=""> <img
+						src="resources/css/img/pink/pinkitem15.jpeg" alt="">
+						<div class="pic_text">
+							<p class="productBarnd">
+								<b>A.P.C</b>
+							</p>
+							<p class="productName">원피스</p>
+							<p class="productPirce">￦ 1,114,000</p>
+						</div>
+				</a></li>
+				<li><a href=""> <img
+						src="resources/css/img/pink/pinkitem16.jpeg" alt="">
+						<div class="pic_text">
+							<p class="productBarnd">
+								<b>JACQUEMUS</b>
+							</p>
+							<p class="productName">자켓</p>
+							<p class="productPirce">￦ 638,000</p>
+						</div>
+				</a></li>
+				<li><a href=""> <img
+						src="resources/css/img/pink/pinkitem17.jpeg" alt="">
+						<div class="pic_text">
+							<p class="productBarnd">
+								<b>LEMAIRE</b>
+							</p>
+							<p class="productName">가디건</p>
+							<p class="productPirce">￦ 289,000</p>
+						</div>
+				</a></li>
+				<li><a href=""> <img
+						src="resources/css/img/pink/pinkitem20.jpeg" alt="">
+						<div class="pic_text">
+							<p class="productBarnd">
+								<b>FENDI</b>
+							</p>
+							<p class="productName">울 블렌드 가디건</p>
+							<p class="productPirce">￦ 588,000</p>
+						</div>
+				</a></li>
+				<li><a href=""> <img
+						src="resources/css/img/pink/pinkitem32.jpeg" alt="">
+						<div class="pic_text">
+							<p class="productBarnd">
+								<b>LOEWE</b>
+							</p>
+							<p class="productName">투톤 가디건</p>
+							<p class="productPirce">￦ 1,201,000</p>
+						</div>
+				</a></li>
+				<li><a href=""> <img
+						src="resources/css/img/pink/pinkitem33.jpeg" alt="">
+						<div class="pic_text">
+							<p class="productBarnd">
+								<b>ISABEL</b>
+							</p>
+							<p class="productName">자켓</p>
+							<p class="productPirce">￦ 234,000</p>
+						</div>
+				</a></li>
+			</ul>
+			<div class="sec2_best_more">
+				<a href="">
+					<p>베스트 상품 더보기 ></p>
+				</a>
+			</div>
+		</div>
+		<!-- tab-5 -->
+
+		<div id="tab-6" class="tab-content">
+			<ul>
+				<li><a href=""> <img
+						src="resources/css/img/blue/blueitem13.jpg" alt="">
+						<div class="pic_text">
+							<p class="productBarnd">
+								<b>MAX MARA</b>
+							</p>
+							<p class="productName">가디건</p>
+							<p class="productPirce">￦ 346,000</p>
+						</div>
+				</a></li>
+				<li><a href=""> <img
+						src="resources/css/img/blue/blueitem22.jpeg" alt="">
+						<div class="pic_text">
+							<p class="productBarnd">
+								<b>ACNE STUDIOS</b>
+							</p>
+							<p class="productName">상의</p>
+							<p class="productPirce">￦ 462,000</p>
+						</div>
+				</a></li>
+				<li><a href=""> <img
+						src="resources/css/img/blue/blueitem23.jpeg" alt="">
+						<div class="pic_text">
+							<p class="productBarnd">
+								<b>A.P.C</b>
+							</p>
+							<p class="productName">원피스</p>
+							<p class="productPirce">￦ 1,114,000</p>
+						</div>
+				</a></li>
+				<li><a href=""> <img
+						src="resources/css/img/blue/blueitem11.jpg" alt="">
+						<div class="pic_text">
+							<p class="productBarnd">
+								<b>JACQUEMUS</b>
+							</p>
+							<p class="productName">자켓</p>
+							<p class="productPirce">￦ 638,000</p>
+						</div>
+				</a></li>
+				<li><a href=""> <img
+						src="resources/css/img/blue/blueitem24.jpeg" alt="">
+						<div class="pic_text">
+							<p class="productBarnd">
+								<b>LEMAIRE</b>
+							</p>
+							<p class="productName">가디건</p>
+							<p class="productPirce">￦ 289,000</p>
+						</div>
+				</a></li>
+				<li><a href=""> <img
+						src="resources/css/img/blue/blueitem33.jpeg" alt="">
+						<div class="pic_text">
+							<p class="productBarnd">
+								<b>FENDI</b>
+							</p>
+							<p class="productName">울 블렌드 가디건</p>
+							<p class="productPirce">￦ 588,000</p>
+						</div>
+				</a></li>
+				<li><a href=""> <img
+						src="resources/css/img/blue/blueitem35.jpeg" alt="">
+						<div class="pic_text">
+							<p class="productBarnd">
+								<b>LOEWE</b>
+							</p>
+							<p class="productName">투톤 가디건</p>
+							<p class="productPirce">￦ 1,201,000</p>
+						</div>
+				</a></li>
+				<li><a href=""> <img
+						src="resources/css/img/blue/blueitem41.jpeg" alt="">
+						<div class="pic_text">
+							<p class="productBarnd">
+								<b>ISABEL</b>
+							</p>
+							<p class="productName">자켓</p>
+							<p class="productPirce">￦ 234,000</p>
+						</div>
+				</a></li>
+			</ul>
+			<div class="sec2_best_more">
+				<a href="">
+					<p>베스트 상품 더보기 ></p>
+				</a>
+			</div>
+			<!-- sec2_best_more -->
+		</div>
+		<!-- tab-6 -->
+		<div class="sec2_btn">
+			<p class="sec2_btnR">
+				<a href=""> <img src="resources/cssimg/gnb_icon/prev_left1.png"
+					alt="">
+				</a>
+			</p>
+			<p class="sec2_btnL">
+				<a href=""> <img src="resources/cssimg/gnb_icon/next_right1.png"
+					alt="">
+				</a>
+			</p>
+		</div>
+		<!-- sec2_btn -->
 	</div>
-	<!-- sec2_nowLive_best -->
+	<!-- sec2_nowLive_bset -->
 
 	<div class="sec3_newArrival">
 		<h2>NEW ARRIVAL</h2>
