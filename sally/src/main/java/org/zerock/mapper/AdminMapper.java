@@ -38,6 +38,9 @@ public interface AdminMapper {
 	public void imageEnroll(AttachImageVO vo);
 	
 	/* 회원 리스트 */
-	public List<MemberVO> list(Criteria cri);
+	public List<MemberVO> memberList(Criteria cri);
+
+	/* 회원 전체 인원 */
+	public int memberGetTotal(Criteria cri);
 	
 }

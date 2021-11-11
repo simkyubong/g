@@ -99,9 +99,19 @@ public class AdminServiceImpl implements AdminService {
 	}
 	
 	
-	public List<MemberVO> list() throws Exception{
+	/* 회원 관리*/
+	@Override
+	public List<MemberVO> memberList(Criteria cri) {
 		
-    	return adminMapper.list();
-    }
+		log.info("(service)memberList......");
+		
+		return adminMapper.memberList(cri);
+	}
+	
+	/* 회원 전체 인원 */
+	public int memberGetTotal(Criteria cri) {
+		log.info("memberGetTotal().........");
+		return adminMapper.memberGetTotal(cri);
+	}
 	
 }

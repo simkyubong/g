@@ -67,6 +67,24 @@
                             </div>
                             <div class="form_section">
                                 <div class="form_section_title">
+                                    <label>상품 사이즈</label>
+                                </div>
+                                <div class="form_section_content">
+                                    <input name="gdsSize" value="<c:out value="${goodsInfo.gdsSize}"/>" disabled>
+                                </div>
+                            </div>
+                            
+                            <div class="form_section">
+                                <div class="form_section_title">
+                                    <label>상품 색상</label>
+                                </div>
+                                <div class="form_section_content">
+                                    <input name="gdsColor" value="<c:out value="${goodsInfo.gdsColor}"/>" disabled>
+                                </div>
+                            </div>
+                            
+                            <div class="form_section">
+                                <div class="form_section_title">
                                     <label>상품 가격</label>
                                 </div>
                                 <div class="form_section_content">

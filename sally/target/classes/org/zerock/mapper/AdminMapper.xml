@@ -12,8 +12,8 @@
   		
   		</selectKey>
   	
-  		insert into tbl_goods(gdsName, cateCode, cateName, gdsPrice, gdsStock, gdsDes)
-		values(#{gdsName}, #{cateCode}, #{cateName}, #{gdsPrice}, #{gdsStock}, #{gdsDes})
+  		insert into tbl_goods(gdsName, cateName, cateCode, gdsSize, gdsColor, gdsPrice, gdsStock, gdsDes)
+		values(#{gdsName}, #{cateName}, #{cateCode}, #{gdsSize}, #{gdsColor}, #{gdsPrice}, #{gdsStock}, #{gdsDes})
 
   	</insert>
 	
@@ -63,7 +63,7 @@
 	<select id="goodsGetDetail" resultType="org.zerock.domain.GoodsVO">
 	
 		select gdsNum, gdsName,
-			cateCode, gdsPrice, gdsStock, gdsDes, gdsDate 
+			cateName, cateCode, gdsSize, gdsColor, gdsPrice, gdsStock, gdsDes, gdsDate 
 		from tbl_goods where gdsNum = #{gdsNum}
 	
 	</select>
@@ -72,8 +72,8 @@
 	<!-- 상품 정보 수정 -->
 	<update id="goodsModify">
 		
-		update tbl_goods set gdsName = #{gdsName}, cateName = ${cateName}, cateCode = ${cateCode}, gdsPrice = #{gdsPrice}, 
-			gdsStock = #{gdsStock}, gdsDes = #{gdsDes}
+		update tbl_goods set gdsName = #{gdsName}, cateName = ${cateName}, cateCode = ${cateCode}, gdsSize = ${gdsSize}, gdsColor = ${gdsColor},
+			gdsPrice = #{gdsPrice}, gdsStock = #{gdsStock}, gdsDes = #{gdsDes}
 		where gdsNum = ${gdsNum}
 		
 	</update>
@@ -94,11 +94,24 @@
 	
 	
 	<!-- 회원 목록 -->
-    <select id="getList" resultType="org.zerock.domain.MemberVO">
+    <select id="memberList" resultType="org.zerock.domain.MemberVO">
     
         select memberId, memberName, memberEmail, regDate
         	from member
     
     </select>
+    
+    <!-- 전체 회원 -->
+  	<select id="memberGetTotal" resultType="int">
+  	
+  		select count(*) from member
+  		
+  		<if test="keyword != null">
+  		
+  			where memberName like concat('%' , #{keyword}, '%')
+  		
+  		</if>
+  	
+  	</select>
 
 </mapper>

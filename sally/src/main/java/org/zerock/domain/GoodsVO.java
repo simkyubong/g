@@ -50,3 +50,4 @@ public class GoodsVO {
 	private List<AttachImageVO> imageList;
 	
 }
+

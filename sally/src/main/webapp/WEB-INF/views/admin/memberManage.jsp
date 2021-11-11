@@ -28,13 +28,17 @@
 	                    				<td class="th_column_4">가입일</td>
 	                    				<td class="th_column_5">비고</td>
 	                    			</tr>
-	                    		</thead>	
-	                    		<c:forEach items="${memberList}" var="list">
+	                    		</thead>
+	                    		<c:forEach items="${list}" var="memberList">
 	                    		<tr>
-	                    			<td><c:out value="${list.memberId}"></c:out></td>
-	                    			<td><c:out value="${list.memberName}"></c:out></td>
-	                    			<td><c:out value="${list.memberEmaile}"></c:out></td>
-	                    			<td><fmt:formatDate value="${list.regDate}" pattern="yyyy-MM-dd"/></td>
+	                    			<td>
+										<a class="move" href='<c:out value="${memberList.memberId}"/>'>
+											<c:out value="${memberList.memberId}"></c:out>
+										</a>
+									</td>
+	                    			<td><c:out value="${memberList.memberName}"></c:out></td>
+	                    			<td><c:out value="${memberList.memberEmail}"></c:out></td>
+	                    			<td><fmt:formatDate value="${memberList.regDate}" pattern="yyyy-MM-dd"/></td>
 	                    			<td>기타버튼</td>
 	                    		</tr>
 	                    		</c:forEach>
@@ -50,7 +54,7 @@
                 	
                 	<!-- 검색 영역 -->
                 	<div class="search_wrap">
-                		<form id="searchForm" action="/admin/goodsManage" method="get">
+                		<form id="searchForm" action="/admin/memberManage" method="get">
                 			<div class="search_input">
                     			<input type="text" name="keyword" value='<c:out value="${pageMaker.cri.keyword}"></c:out>'>
                     			<input type="hidden" name="pageNum" value='<c:out value="${pageMaker.cri.pageNum }"></c:out>'>

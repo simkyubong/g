@@ -2,7 +2,7 @@ package org.zerock.domain;
 
 import lombok.Data;
 
-/*import java.util.Date;*/
+import java.util.Date;
 
 
 @Data
@@ -21,7 +21,7 @@ public class MemberVO {
 		private String memberEmail;
 		
 		//등록일자
-		private int regDate;
+		private Date regDate;
 		
 		// 관리자 구분(0:일반사용자, 1:관리자)
 		private int adminCk;

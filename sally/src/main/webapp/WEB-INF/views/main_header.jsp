@@ -1,9 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<link rel="stylesheet" type="text/css"
-	href="resources/css/layout.css?v=3">
+	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+    <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+    
+<link rel="stylesheet" type="text/css" href="resources/css/layout.css?v=3">
 
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
 <head>
 <title>Sally</title>
@@ -146,10 +148,27 @@
 							</ul>
 							<!-- h_category -->
 							<ul class="h_joinBar">
-								<li class=""><a href="">LOGIN</a></li>
-								<li class=""><a href="">JOIN</a></li>
+									<c:if test = "${member == null}">
+ 		    							<li>
+	                    					<a href="/member/login">LOGIN</a>
+	                					</li>
+	                					<li>
+	                    					<a href="/member/join">JOIN</a>
+	                					</li>
+                					</c:if>
 								<li class="my_page">
-									<p>MYPAGE</p>
+									<!-- 로그인 하지 않은 상태 -->
+					                <c:if test = "${member == null }">
+					                    <div class="login_button"><a href="/member/login">로그인</a></div>
+					                    <span><a href="/member/join">회원가입</a></span>                
+					                </c:if>    
+					                
+					                <!-- 로그인한 상태 -->
+					                <c:if test="${ member != null }">
+					                    <div class="login_success_area">
+					                        <a href="/member/logout.do">Logout</a>
+					                    </div>
+				                    <p>MYPAGE</p>
 									<div class="my_page_in">
 										<ul>
 											<li><a href="">주문내역조회</a></li>
@@ -161,6 +180,8 @@
 											<li><a href="">최근본상품</a></li>
 										</ul>
 									</div> <!-- h_myPage -->
+					                </c:if>
+									
 								</li>
 								<li class="board">
 									<p>BOARD</p>
