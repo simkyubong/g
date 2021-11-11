@@ -26,7 +26,7 @@ public class AdminMapperTests {
 		
 		goods.setGdsName("mapper 테스트");
 		goods.setCateName("222");
-		goods.setCateCode("0231");
+		goods.setCateParent("0231");
 		goods.setGdsPrice(20000);
 		goods.setGdsStock(300);
 		goods.setGdsDes("제품 소개 ");
@@ -90,7 +90,7 @@ public class AdminMapperTests {
 		goods.setGdsNum(2);
 		goods.setGdsName("mapper 테스트1");
 		goods.setCateName("TOP");
-		goods.setCateCode("TEE");
+		goods.setCateParent("TEE");
 		goods.setGdsPrice(60000);
 		goods.setGdsStock(300);
 		goods.setGdsDes("상품 설명");

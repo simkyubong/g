@@ -10,6 +10,6 @@ public interface GoodsMapper {
 	public List<GoodsVO> category(String cateName) throws Exception;
 	
 	//상품 목록 소분류
-	public List<GoodsVO> list(String cateCode) throws Exception;
+	public List<GoodsVO> list(String cateParent) throws Exception;
 
 }

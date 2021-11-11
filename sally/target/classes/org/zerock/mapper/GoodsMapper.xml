@@ -8,10 +8,9 @@
 	<!-- 상품 목록 대분류 -->
   	<select id="category" resultType="org.zerock.domain.GoodsVO">
 	select distinct
-		g.gdsNum, g.gdsName, g.cateCode, c.cateName, c.cateParent, gdsPrice, gdsStock, gdsDes, gdsDate         
+		g.gdsNum, g.gdsName, c.cateName, c.cateParent, gdsPrice, gdsStock, gdsDes, gdsDate         
 	from tbl_goods g             
-	inner join tbl_cate2 c                 
-	on g.cateCode = c.cateParent                        
+	inner join tbl_cate2 c                      
 	where c.cateName = #{cateName}
   	</select>
 
@@ -19,11 +18,11 @@
 	<!-- 상품 목록 소분류 --> 
 	<select id="list" resultType="org.zerock.domain.GoodsVO">
 	select distinct
-	a.gdsNum, a.gdsName, a.gdsPrice, a.cateCode, a.gdsStock, a.gdsDate
+	a.gdsNum, a.gdsName, a.gdsPrice, a.cateParent, a.gdsStock, a.gdsDate
       from tbl_goods AS a
-      left join tbl_cate1 AS b on a.cateCode = b.cateName
+      left join tbl_cate1 AS b on a.cateParent = b.cateName
       left join tbl_cate2 AS c on b.cateName = c.cateName
-      where cateCode = #{cateCode}
+      where cateParent = #{cateParent}
 	</select>
 	 
 	 

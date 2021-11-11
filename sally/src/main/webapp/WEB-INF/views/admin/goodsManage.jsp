@@ -40,7 +40,7 @@
 										</a>
 	                    			</td>
 	                    			<td><c:out value="${list.gdsPrice}"></c:out></td>
-	                    			<td><c:out value="${list.cateCode}"></c:out></td>
+	                    			<td><c:out value="${list.cateParent}"></c:out></td>
 	                    			<td><c:out value="${list.gdsStock}"></c:out></td>
 	                    			<td><fmt:formatDate value="${list.gdsDate}" pattern="yyyy-MM-dd"/></td>
 	                    		</tr>

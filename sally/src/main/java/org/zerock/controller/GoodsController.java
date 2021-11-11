@@ -33,10 +33,10 @@ public class GoodsController {
 	 
 	 //상품 목록 소분류
 	 @RequestMapping(value = "/list", method = RequestMethod.GET)
-	 public void getGoodsList(@RequestParam("name") String cateCode, Model model) throws Exception {
+	 public void getGoodsList(@RequestParam("name") String cateParent, Model model) throws Exception {
 	  
 	  List<GoodsVO> list = null;
-	  list = service.list(cateCode);
+	  list = service.list(cateParent);
 	  model.addAttribute("list", list);
 	 }
 	 

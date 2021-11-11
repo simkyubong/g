@@ -17,7 +17,7 @@ public class GoodsVO {
 	private String cateName;	
 	
 	/* 카테고리 2차 */
-	private String cateCode;	
+	private String cateParent;
 	
 	/* 상품 사이즈 */
 	private String gdsSize;
@@ -48,6 +48,13 @@ public class GoodsVO {
 
 	/* 이미지 정보 */
 	private List<AttachImageVO> imageList;
+
+	public void setCateParent(String cateParent2) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
 	
 }
 

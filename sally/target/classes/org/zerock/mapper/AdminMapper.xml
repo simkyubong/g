@@ -12,8 +12,8 @@
   		
   		</selectKey>
   	
-  		insert into tbl_goods(gdsName, cateName, cateCode, gdsSize, gdsColor, gdsPrice, gdsStock, gdsDes)
-		values(#{gdsName}, #{cateName}, #{cateCode}, #{gdsSize}, #{gdsColor}, #{gdsPrice}, #{gdsStock}, #{gdsDes})
+  		insert into tbl_goods(gdsName, cateName, cateParent, gdsSize, gdsColor, gdsPrice, gdsStock, gdsDes)
+		values(#{gdsName}, #{cateName}, #{cateParent}, #{gdsSize}, #{gdsColor}, #{gdsPrice}, #{gdsStock}, #{gdsDes})
 
   	</insert>
 	
@@ -34,10 +34,14 @@
 	<!-- 상품 리스트 -->
 	<select id="goodsGetList" resultType="org.zerock.domain.GoodsVO">
 	
-		select  a.gdsNum, a.gdsName, a.gdsPrice, a.cateCode, a.gdsStock, a.gdsDate
+		select  a.gdsNum, a.gdsName, a.gdsPrice, a.cateParent, a.gdsStock, a.gdsDate
 		from tbl_goods AS a
-		left join tbl_cate1 AS b on a.cateCode = b.cateName
-		left join tbl_cate2 AS c on b.cateName = c.cateName
+		left join tbl_cate2 AS e on a.cateParent = e.cateName;
+		
+		<!-- select  a.gdsNum, a.gdsName, a.gdsPrice, a.cateParent, a.gdsStock, a.gdsDate
+		from tbl_goods AS a
+		left join tbl_cate1 AS d on a.cateParent = d.cateName
+		left join tbl_cate2 AS e on d.cateName = e.cateName -->
 		<if test="keyword != null">
 			where (gdsName like concat ('%', #{keyword}, '%'))
 		</if>
@@ -62,9 +66,7 @@
   	<!-- 상품 조회 페이지 -->
 	<select id="goodsGetDetail" resultType="org.zerock.domain.GoodsVO">
 	
-		select gdsNum, gdsName,
-			cateName, cateCode, gdsSize, gdsColor, gdsPrice, gdsStock, gdsDes, gdsDate 
-		from tbl_goods where gdsNum = #{gdsNum}
+		select * from tbl_goods where gdsNum = #{gdsNum}
 	
 	</select>
 	
@@ -72,7 +74,7 @@
 	<!-- 상품 정보 수정 -->
 	<update id="goodsModify">
 		
-		update tbl_goods set gdsName = #{gdsName}, cateName = ${cateName}, cateCode = ${cateCode}, gdsSize = ${gdsSize}, gdsColor = ${gdsColor},
+		update tbl_goods set gdsName = #{gdsName}, cateName = ${cateName}, cateParent = ${cateParent}, gdsSize = ${gdsSize}, gdsColor = ${gdsColor},
 			gdsPrice = #{gdsPrice}, gdsStock = #{gdsStock}, gdsDes = #{gdsDes}
 		where gdsNum = ${gdsNum}
 		

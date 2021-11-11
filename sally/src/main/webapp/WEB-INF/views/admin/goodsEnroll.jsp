@@ -76,7 +76,7 @@
 									</div>
 									<div class="cate_wrap">
 										<span>2차 분류</span>
-										<select class="cate2"  name="cateCode">
+										<select class="cate2"  name="cateParent">
 											<option value="">선택</option>
 										</select>
 									</div>

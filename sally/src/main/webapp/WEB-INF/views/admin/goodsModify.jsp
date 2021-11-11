@@ -37,22 +37,19 @@
                     				<label>상품 카테고리</label>
                     			</div>
                     			<div class="form_section_content">
-	                    			<div class="cate_wrap">
-										<span>1차 분류</span>
-										<select class="cate1" name="cateName">
-											<option value="none">선택</option>
-												<c:forEach var="cateList" items="${List}" varStatus="i">
-											         <option value="${cateList.cateName}">${cateList.cateName}</option>
-										    	</c:forEach>
-										</select>
-									</div>
-									<div class="cate_wrap">
-										<span>2차 분류</span>
-										<select class="cate2"  name="cateCode">
-											<option value="">선택</option>
-										</select>
-									</div>
-								 </div>
+                                    <div class="cate_wrap">
+                                        <span>1차분류</span>
+                                        <select class="cate1" value="<c:out value="${goodsInfo.cateName}"/>" >
+                                            <option value="none">${goodsInfo.cateName}</option>
+                                        </select>
+                                    </div>
+                                    <div class="cate_wrap">
+                                        <span>2차분류</span>
+                                        <select class="cate2" value="<c:out value="${goodsInfo.cateParent}"/>" >
+                                            <option value="">선택</option>
+                                        </select>
+                                    </div>
+                                </div>
                     		</div>
                     		
                     		<div class="form_section">

@@ -59,8 +59,8 @@
                                     </div>
                                     <div class="cate_wrap">
                                         <span>2차분류</span>
-                                        <select class="cate2" value="<c:out value="${goodsInfo.cateCode}"/>" disabled>
-                                            <option value="none">${goodsInfo.cateCode}</option>
+                                        <select class="cate2" value="<c:out value="${goodsInfo.cateParent}"/>" disabled>
+                                            <option value="none">${goodsInfo.cateParent}</option>
                                         </select>
                                     </div>
                                 </div>

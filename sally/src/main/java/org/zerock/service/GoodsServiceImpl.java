@@ -27,8 +27,8 @@ public class GoodsServiceImpl implements GoodsService {
 	
 	// 상품 목록 소분류
 	@Override
-	public List<GoodsVO> list(String cateCode) throws Exception{
-		return mapper.list(cateCode);
+	public List<GoodsVO> list(String cateParent) throws Exception{
+		return mapper.list(cateParent);
 	}
 	
 
