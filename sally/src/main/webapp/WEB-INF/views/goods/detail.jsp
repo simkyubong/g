@@ -741,10 +741,7 @@
 
 
 <script src="/resources/js/product_detail.js"></script>
-<<<<<<< HEAD
-=======
 <script src="/resources/js/product_qna.js"></script>
->>>>>>> branch 'master' of https://github.com/bangbangk/sally3.git
 <script src="/resources/js/product_slide_slick.js"></script>
 
 <%@include file="../include/include_footer.jsp"%>
