@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>     
+	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+	<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>     
 <!DOCTYPE html>
 <html>
 <head>
@@ -59,7 +59,7 @@
                     			<div class="form_section_content">
                     				<input name="gdsName">
                     			</div>
-                    		</div>           
+                    		</div><!-- 제품이름 끝 -->
                     		<div class="form_section">
                     			<div class="form_section_title">
                     				<label>상품 카테고리</label>
@@ -80,8 +80,26 @@
 											<option value="">선택</option>
 										</select>
 									</div>
-								 </div>							
-                    		</div>          
+								 </div>
+                    		</div><!-- 카테고리 끝-->
+                    		<div class="form_section">
+                    			<div class="form_section_title">
+                    				<label>상품 사이즈</label>
+                    			</div>
+                    			<div class="form_section_content">
+                    				<input name="gdsSize" value="0">
+                    			</div>
+                    		</div><!-- 상품사이즈 끝 -->
+                    		
+                    		<div class="form_section">
+                    			<div class="form_section_title">
+                    				<label>상품 색상</label>
+                    			</div>
+                    			<div class="form_section_content">
+                    				<input name="gdsColor" value="0">
+                    			</div>
+                    		</div><!-- 상품색상 끝 -->
+                    		
                     		<div class="form_section">
                     			<div class="form_section_title">
                     				<label>상품 가격</label>
@@ -89,7 +107,7 @@
                     			<div class="form_section_content">
                     				<input name="gdsPrice" value="0">
                     			</div>
-                    		</div>               
+                    		</div><!-- 상품가격 끝 -->
                     		<div class="form_section">
                     			<div class="form_section_title">
                     				<label>상품 재고</label>
@@ -97,7 +115,7 @@
                     			<div class="form_section_content">
                     				<input name="gdsStock" value="0">
                     			</div>
-                    		</div> 		
+                    		</div><!-- 상품 재고 끝 -->
                     		<div class="form_section">
                     			<div class="form_section_title">
                     				<label>상품 내용</label>
@@ -105,7 +123,7 @@
                     			<div class="form_section_content">
                     				<textarea name="gdsDes" id="goodsContents_textarea"></textarea>
                     			</div>
-                    		</div>
+                    		</div><!-- 상품 내용 끝 -->
                     		
                     		
                     		<div class="form_section">
@@ -308,3 +326,5 @@
  
 </body>
 </html>
+
+

@@ -7,6 +7,7 @@
 <head>
 <meta charset="UTF-8">
 <link href="${path}/resources/css/top.css" rel="stylesheet"/>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 <title>Insert title here</title>
 </head>
 <body>
@@ -28,16 +29,34 @@
                     <li><a href=""><img src="../top/tb8.webp" alt=""></a></li>
                 </ul>
             </div>
-            <div class="menu_top">
-                <h2>TOP</h2>
+            
+            
+            <!-- 카테고리 이름 출력-->
+			<div class="menu_top">
+				<c:forEach items="${category}" var="category" begin="1" end="1"> 
+                <h2>${category.cateName}</h2>
+                </c:forEach>
                 <ul>
-                    <li><a href="">ALL</a></li>
-                    <li><a href="">TEE</a></li>
-                    <li><a href="">BLOUSE</a></li>
-                    <li><a href="">SHIRT</a></li>
-                    <li><a href="">KNIT</a></li>
+					<c:forEach items="${category}" var="category" begin="1" end="1"> 
+                	<c:if test="${category.cateName eq 'TOP'}">
+                   		<%@include file="../include/cateList/top.jsp" %>
+                   	</c:if>
+                   	<c:if test="${category.cateName eq 'OUTER'}">
+                   		<%@include file="../include/cateList/outer.jsp" %>
+                   	</c:if>
+                   	<c:if test="${category.cateName eq 'PANTS'}">
+                   		<%@include file="../include/cateList/pants.jsp" %>
+                   	</c:if>
+                   	<c:if test="${category.cateName eq 'OPS/SKIRT'}">
+                   		<%@include file="../include/cateList/ops&skirt.jsp" %>
+                   	</c:if>
+                   	<c:if test="${category.cateName eq 'ACC'}">
+                   		<%@include file="../include/cateList/acc.jsp" %>
+                   	</c:if>
+                	</c:forEach>
                 </ul>
             </div>
+    
             <div class="item_list">
                 <div class="item_list_menu">
                     <div class="item_count">
@@ -56,24 +75,24 @@
                     </div>    
                 </div>
                 <div class="item">
-                    <ul>
-                    	<c:forEach items="${list}" var="list">
+					<ul>
+                    	<c:forEach items="${category}" var="category">
                         <li>
                             <div class="item_photo">
                                 <a href=""><img src="../top/t1.gif" alt=""></a>
                             </div>
                             <div class="item_text">
                                 <p class="item_name">
-                                    <a href="">${list.gdsName}</a>
+                                    <a href="">${category.gdsName}</a>
                                 </p>
                                 <p class="item_price">
-                                    <span>${list.gdsPrice}</span>원
+                                    <span>${category.gdsPrice}</span>원
                                 </p>
                             </div>
                         </li>
                         </c:forEach>
                     </ul>
-<!--  
+<!--  				
                     <div class="item_pager">
                         <div class="item_pager_in">
                             <a href="" class="first"><img src="../top/btn_page_first.gif" alt=""></a>
@@ -95,5 +114,14 @@
         </div>
     </div>
     <%@include file="../include/footer.jsp" %>
+    
+    
+    <script>
+	    $('.menu_top li a').on('click', function(){
+	        $('.menu_top li a').removeClass("on");
+	        $(this).addClass("on");
+	    })   
+
+    </script>
 </body>
 </html>

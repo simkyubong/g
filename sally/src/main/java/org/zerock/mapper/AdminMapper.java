@@ -6,6 +6,7 @@ import org.zerock.domain.AttachImageVO;
 import org.zerock.domain.CateVO;
 import org.zerock.domain.Criteria;
 import org.zerock.domain.GoodsVO;
+import org.zerock.domain.MemberVO;
 
 public interface AdminMapper {
 	
@@ -35,5 +36,11 @@ public interface AdminMapper {
 	
 	/* 이미지 등록 */
 	public void imageEnroll(AttachImageVO vo);
+	
+	/* 회원 리스트 */
+	public List<MemberVO> memberList(Criteria cri);
+
+	/* 회원 전체 인원 */
+	public int memberGetTotal(Criteria cri);
 	
 }

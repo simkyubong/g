@@ -8,8 +8,20 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <link rel="stylesheet" href="../resources/css/admin/goodsDetail.css">
-<script src="https://code.jquery.com/jquery-3.4.1.js"></script>;
-<script src="https://cdn.ckeditor.com/ckeditor5/26.0.0/classic/ckeditor.js"></script>;
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="https://cdn.ckeditor.com/ckeditor5/26.0.0/classic/ckeditor.js"></script>
+
+<style type="text/css">
+	#result_card img{
+		max-width: 100%;
+	    height: auto;
+	    display: block;
+	    padding: 5px;
+	    margin-top: 10px;
+	    margin: auto;	
+	}
+</style>
+
 </head>
 <body>
         <%@include file="../includes/admin/header.jsp" %>
@@ -55,6 +67,24 @@
                             </div>
                             <div class="form_section">
                                 <div class="form_section_title">
+                                    <label>상품 사이즈</label>
+                                </div>
+                                <div class="form_section_content">
+                                    <input name="gdsSize" value="<c:out value="${goodsInfo.gdsSize}"/>" disabled>
+                                </div>
+                            </div>
+                            
+                            <div class="form_section">
+                                <div class="form_section_title">
+                                    <label>상품 색상</label>
+                                </div>
+                                <div class="form_section_content">
+                                    <input name="gdsColor" value="<c:out value="${goodsInfo.gdsColor}"/>" disabled>
+                                </div>
+                            </div>
+                            
+                            <div class="form_section">
+                                <div class="form_section_title">
                                     <label>상품 가격</label>
                                 </div>
                                 <div class="form_section_content">
@@ -77,6 +107,17 @@
                                     <textarea name="상품 내용" id="goodsContents_textarea" disabled>${goodsInfo.gdsDes}</textarea>
                                 </div>
                             </div>
+                            <div class="form_section">
+                    			<div class="form_section_title">
+                    				<label>상품 이미지</label>
+                    			</div>
+                    			<div class="form_section_content">
+
+									<div id="uploadReslut">
+																		
+									</div>
+                    			</div>
+                    		</div>
 
                             <div class="btn_section">
 								<button id="cancelBtn" class="btn">상품 목록</button>
@@ -107,23 +148,53 @@
 
             });
             
-            /* 목록 이동 버튼 */
-        	$("#cancelBtn").on("click", function(e){
-        		e.preventDefault();
-        		$("#moveForm").submit();	
-        	});
-            
-        	/* 수정 페이지 이동 */
-        	$("#modifyBtn").on("click", function(e){
-        		e.preventDefault();
-        		let addInput = '<input type="hidden" name="gdsNum" value="${goodsInfo.gdsNum}">';
-        		$("#moveForm").append(addInput);
-        		$("#moveForm").attr("action", "/admin/goodsModify");
-        		$("#moveForm").submit();
-        	});	
+            /* 이미지 정보 호출 */
+    		let gdsNum = '<c:out value="${goodsInfo.gdsNum}"/>';
+    		let uploadReslut = $("#uploadReslut");		
+			
+			$.getJSON("/getAttachList", {gdsNum : gdsNum}, function(arr){
+				
+				if(arr.length === 0){
+					
+					let str = "";
+					str += "<div id='result_card'>";
+					str += "<img src='/resources/img/goodsNoImage.png'>";
+					str += "</div>";
+					
+					uploadReslut.html(str);	
+					
+					return;
+				}
+				
+				let str = "";
+				let obj = arr[0];	
+				
+				let fileCallPath = encodeURIComponent(obj.uploadPath + "/s_" + obj.uuid + "_" + obj.fileName);
+				str += "<div id='result_card'";
+				str += "data-path='" + obj.uploadPath + "' data-uuid='" + obj.uuid + "' data-filename='" + obj.fileName + "'";
+				str += ">";
+				str += "<img src='/display?fileName=" + fileCallPath +"'>";
+				str += "</div>";			
+				
+			});
             
         }); // $(document).ready
-
+		
+        /* 목록 이동 버튼 */
+    	$("#cancelBtn").on("click", function(e){
+    		e.preventDefault();
+    		$("#moveForm").submit();	
+    	});
+        
+    	/* 수정 페이지 이동 */
+    	$("#modifyBtn").on("click", function(e){
+    		e.preventDefault();
+    		let addInput = '<input type="hidden" name="gdsNum" value="${goodsInfo.gdsNum}">';
+    		$("#moveForm").append(addInput);
+    		$("#moveForm").attr("action", "/admin/goodsModify");
+    		$("#moveForm").submit();
+    	});	
+    	
     </script>
 
 </body>

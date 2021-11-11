@@ -8,6 +8,7 @@ import org.springframework.transaction.annotation.Transactional;
 import org.zerock.domain.CateVO;
 import org.zerock.domain.Criteria;
 import org.zerock.domain.GoodsVO;
+import org.zerock.domain.MemberVO;
 import org.zerock.mapper.AdminMapper;
 
 import lombok.extern.log4j.Log4j;
@@ -96,6 +97,21 @@ public class AdminServiceImpl implements AdminService {
 		
 		return adminMapper.goodsDelete(gdsNum);
 	}
-
+	
+	
+	/* 회원 관리*/
+	@Override
+	public List<MemberVO> memberList(Criteria cri) {
+		
+		log.info("(service)memberList......");
+		
+		return adminMapper.memberList(cri);
+	}
+	
+	/* 회원 전체 인원 */
+	public int memberGetTotal(Criteria cri) {
+		log.info("memberGetTotal().........");
+		return adminMapper.memberGetTotal(cri);
+	}
 	
 }
