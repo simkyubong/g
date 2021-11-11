@@ -5,6 +5,7 @@ import java.util.List;
 import org.zerock.domain.CateVO;
 import org.zerock.domain.Criteria;
 import org.zerock.domain.GoodsVO;
+import org.zerock.domain.MemberVO;
 
 public interface AdminService {
 	/* 상품 등록 */
@@ -30,5 +31,8 @@ public interface AdminService {
 	
 	/* 상품 정보 삭제 */
 	public int goodsDelete(int gdsNum);
+	
+	// 회원목록
+    public List<MemberVO> list() throws Exception;
 
 }

@@ -34,7 +34,7 @@
                             <a class="admin_list_04" href="/admin/orderManage">주문 관리</a>                            
                         </li>
                         <li>
-                            <a class="admin_list_05">회원 관리</a>                            
+                            <a class="admin_list_05" href="/admin/memberManage">회원 관리</a>                            
                         </li>                                                                                             
                     </ul>
                 </div>

@@ -314,6 +314,16 @@ public class AdminController {
 	/* 주문관리 페이지 접속 */
     @RequestMapping(value = "orderManage", method = RequestMethod.GET)
     public void orderManageGET() throws Exception{
+    	
         log.info("주문관리 페이지 접속");
+        
+    }
+    
+    /* 회원목록 관리 */
+    @RequestMapping(value = "memberManage", method = RequestMethod.GET)
+    public void memberManageGET() throws Exception{
+    	
+        log.info("멤버관리 페이지 접속");
+        
     }
 }

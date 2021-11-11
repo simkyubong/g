@@ -119,7 +119,6 @@
 							</select>
 						</p>
 						<div class="pdrAmount">
-<<<<<<< HEAD
 							<input type="number" value="1" min='0' max='50'
 								oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
 						</div>
@@ -327,7 +326,6 @@
 						<div class="pdrAmount">
 							<input type="number" value="1" min='0' max='50'
 								oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
-=======
 							<input type="text" value="1">
 							<div class="updown">
 								<a href="#"><img
@@ -595,7 +593,6 @@
 									src="http://img.echosting.cafe24.com/skin/base_ko_KR/product/btn_count_down.gif"
 									alt="수량감소" class="down"></a>
 							</div>
->>>>>>> branch 'master' of https://github.com/bangbangk/sally3.git
 						</div>
 					</div>
 

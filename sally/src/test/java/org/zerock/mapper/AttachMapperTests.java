@@ -18,7 +18,7 @@ public class AttachMapperTests {
 	@Test
 	public void getAttachListTests() {
 		
-		int gdsNum = 3125;
+		int gdsNum = 1;
 		
 		System.out.println("이미지 정보 : " + attachMapper.getAttachList(gdsNum));
 		

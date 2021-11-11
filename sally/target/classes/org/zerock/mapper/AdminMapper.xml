@@ -91,5 +91,14 @@
 		insert into tbl_image(gdsNum, fileName, uploadPath, uuid) values (#{gdsNum}, #{fileName}, #{uploadPath}, #{uuid})
 	
 	</insert>
+	
+	
+	<!-- 회원 목록 -->
+    <select id="getList" resultType="org.zerock.domain.MemberVO">
+    
+        select memberId, memberName, memberEmail, regDate
+        	from member
+    
+    </select>
 
 </mapper>
