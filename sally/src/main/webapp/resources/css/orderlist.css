@@ -53,13 +53,14 @@ h2{
     color: #555;
     padding: 10px 0;
     border: 1px solid #ccc;
-    background-color: #eeee;
+    background-color: rgba(247, 245, 245, 0.933);
 }
 
-.order_tab .on a{
-    color: #000;
+.order_tab li a.on{
+    color: #222;
     border-bottom: 0;
     background-color: #fff;
+    font-weight: 700;
 }
 
 fieldset{
@@ -80,6 +81,7 @@ legend{
     border: 1px solid #ccc;
     height: 30px;
     color: #333;
+    outline: none;
 }
 
 .order_period{
@@ -92,7 +94,7 @@ legend{
 
 .order_period a{
     display: block;
-    background-color: #eeee;
+    background-color: rgba(247, 245, 245, 0.933);
     color: #999;
     border: 1px solid #ccc;
     height: 20px;
@@ -118,6 +120,7 @@ legend{
     background-color: #444;
     border: 0;
     color: #fff;
+    cursor: pointer;
 }
 
 .order_attention{
@@ -168,7 +171,7 @@ td{
 }
 
 .order_info_image{
-    width: 5%;
+    width: 10%;
 }
 
 .order_info_image img{
@@ -176,7 +179,13 @@ td{
 }
 
 .order_info_info{
-    width: 40%;
+    width: 35%;
+    text-align: left;
+    padding-left: 40px;
+}
+
+.order_info_info a{
+	color: #333;
 }
 
 .order_info_quantity{
