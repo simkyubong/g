@@ -519,3 +519,25 @@
   font-weight: bold;
   color: #ccc;
 }
+
+#goTop {
+  opacity: 0;
+  width: 50px;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+#goTop.visible {
+  opacity: 1;
+}
+
+#goTop a {
+  display: block;
+  color: #000;
+  font-size: 22px;
+  line-height: 30px;
+  text-align: center;
+  margin: 0 auto;
+}

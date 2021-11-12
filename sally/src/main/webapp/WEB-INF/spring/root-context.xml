@@ -16,7 +16,7 @@
 		<property name="driverClassName" value="net.sf.log4jdbc.sql.jdbcapi.DriverSpy"></property>
 		<property name="jdbcUrl" value="jdbc:log4jdbc:mysql://127.0.0.1:3306/sally?serverTimezone=Asia/Seoul"></property>
 		<property name="username" value="root"></property>
-		<property name="password" value="1111"></property>
+		<property name="password" value="1234"></property>
 	
 	</bean>	
 	

@@ -19,7 +19,9 @@ $(document).ready(
 							(ss > 9 ? '' : '0') + ss ].join('');
 				} else {
 					var yy = dateObj.getFullYear();
-					var mm = dateObj.getMonth() + 1 // getMonth()은 0,1,2,3,4,5,6,7,8,9,10,11이 되니 +1을 해줘야 함.
+					var mm = dateObj.getMonth() + 1 // getMonth()은
+					// 0,1,2,3,4,5,6,7,8,9,10,11이
+					// 되니 +1을 해줘야 함.
 					var dd = dateObj.getDate();
 
 					return [ yy, '/', (mm > 9 ? '' : '0') + mm, '/',
@@ -157,5 +159,34 @@ $(function() {
 				e.preventDefault();
 				return false;
 			});
+
+	// Top 버튼 이벤트
+	$('#goTop').on('click', function(e) {
+		$.smoothScroll({
+			easing : 'easeOutExpo',
+			speed : 1000
+		});
+
+		e.preventDefault();
+		return false;
+	});
+
+	$('.detailHead').each(function() {
+		let $window = $(window),
+		$header = $(this)
+
+		let sum = $header.offset().top + $header.outerHeight();
+		
+		$window.on('scroll', $.throttle(1000 / 15, function() {
+			if ($window.scrollTop() > sum) {
+				$('#goTop').addClass('visible');
+			} else {
+				$('#goTop').removeClass('visible');
+			}
+		}));
+
+		$window.trigger('scroll');
+
+	});
 
 });

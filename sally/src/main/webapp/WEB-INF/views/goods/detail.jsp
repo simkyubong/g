@@ -85,6 +85,7 @@
 				<img src="" alt=""> 상품 상세 설명
 			</div>
 		</div>
+		<!-- #productDetail End -->
 
 		<!-- 관련상품 -->
 		<div class="productRelated" id="productRelated">
@@ -97,8 +98,6 @@
 
 			<div class="pdrList">
 				<div class="pdrListIn">
-
-
 
 
 					<div class="box">
@@ -608,6 +607,7 @@
 				<a href="#">선택상품 같이구매</a> <a href="#">선택상품 장바구니 담기</a>
 			</div>
 		</div>
+		<!-- #productRelated End -->
 
 		<!-- 상품후기 -->
 		<div class="productReview" id="productReview">
@@ -668,6 +668,7 @@
 				</ul>
 			</div>
 		</div>
+		<!-- #productReview End -->
 
 		<!-- 상품문의 -->
 		<div class="productQna" id="productQna">
@@ -727,18 +728,26 @@
 						</c:if>
 					</ul>
 				</div>
+				<!-- .pdqPager End -->
 			</div>
+			<!-- .pdQna End -->
 
 		</div>
+		<!-- #productQna End -->
 
 	</section>
 	<!-- .detailBody End -->
+
+	<section class="detailTopBtn">
+		<div id="goTop">
+			<a href="#" class="up"><i class="xi-angle-up"></i></a>
+		</div>
+	</section>
 </div>
 <!-- #contents End -->
 
 
 <script src="/resources/js/product_detail.js"></script>
-<script src="/resources/js/product_qna.js"></script>
 <script src="/resources/js/product_slide_slick.js"></script>
 
 <%@include file="../include/include_footer.jsp"%>

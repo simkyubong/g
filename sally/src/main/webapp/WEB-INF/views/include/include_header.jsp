@@ -13,24 +13,40 @@
 <link rel="stylesheet" href="/resources/css/main_footer.css">
 <link rel="stylesheet" href="/resources/css/main_style2.css">
 <link rel="stylesheet" href="/resources/css/main_style_live_best.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link
+	href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+	rel="stylesheet">
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
 <link rel="stylesheet" href="/resources/css/css/reset.css">
 <link rel="stylesheet" href="/resources/css/css/style.css">
 
 
-	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-	
-	<!-- jQuery 연결 -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<!-- jQuery UI 연결 -->
-	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-	
-	<!-- slick -->
-	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-	
+<link rel="stylesheet" type="text/css"
+	href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<link rel="stylesheet"
+	href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" />
+
+<!-- jQuery 연결 -->
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- jQuery UI 연결 -->
+<link rel="stylesheet"
+	href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.7.1/jquery.smooth-scroll.min.js"></script>
+
+<!-- throttle, debounce 연결 -->
+<script
+	src='//cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js'></script>
+
+
+<!-- slick -->
+<script type="text/javascript"
+	src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
 
 </head>
 <body>
