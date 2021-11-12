@@ -13,12 +13,21 @@
 <link rel="stylesheet" href="resources/css/main_footer.css">
 <link rel="stylesheet" href="resources/css/main_style2.css">
 <link rel="stylesheet" href="resources/css/main_style_live_best.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
-<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<link rel="stylesheet" href="resources/css/sally_best.css">
+<link rel="stylesheet" href="resources/js/sally_best.js">
+ <!-- jQuery 연결 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- jQuery UI 연결 -->
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<!-- font -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
 
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="resources/js/sally_best.js"></script>
 </head>
 <body>
-	<div="wrap">
+	<div id="wrap">
 		<div id="header">
 			<div class="header_in">
 				<div class="header_banner">
@@ -216,4 +225,5 @@
 			</div>
 			<!-- header_int -->
 		</div>
+
 		<!-- header -->

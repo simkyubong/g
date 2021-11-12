@@ -321,7 +321,22 @@ public class AdminController {
     
     /* 회원목록 관리 */
     @RequestMapping(value = "memberManage", method = RequestMethod.GET)
-    public void memberManageGET() throws Exception{
+    public void memberManageGET(Criteria cri, Model model) throws Exception{
+    	
+    	log.info("회원 관리 페이지 접속");
+        
+        /* 회원 리스트 데이터 */
+		List list = adminService.memberList(cri);
+		log.info("회원 관리 페이지 접속="+list);
+		if(!list.isEmpty()) {
+			model.addAttribute("list", list);
+		} else {
+			model.addAttribute("list", "empty");
+			return;
+		}
+		
+		/* 페이지 인터페이스 데이터 */
+		model.addAttribute("pageMaker", new PageDTO(cri, adminService.memberGetTotal(cri)));
     	
         log.info("멤버관리 페이지 접속");
         

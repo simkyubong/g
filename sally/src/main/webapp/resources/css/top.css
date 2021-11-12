@@ -109,11 +109,6 @@ a{
     color: #555;
 }
 
-.menu_top li:first-child a{
-    color: #111;
-    font-weight: 700;
-}
-
 .item_list_menu{
     display: flex;
     justify-content: space-between;
@@ -233,4 +228,9 @@ a{
 
 .item_pager .on a{
     color: #222;
+}
+
+.menu_top li a.on{
+    color: rgb(0, 0, 0);
+    font-weight: 900;
 }

@@ -33,6 +33,9 @@ public interface AdminService {
 	public int goodsDelete(int gdsNum);
 	
 	// 회원목록
-    public List<MemberVO> list() throws Exception;
+    public List<MemberVO> memberList(Criteria cri);
+    
+    /* 회원 전체 인원 */
+	public int memberGetTotal(Criteria cri);
 
 }

@@ -3,27 +3,30 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="org.zerock.mapper.GoodsMapper">
-	<!-- 카테고리 -->
-	<select id="category" resultType="org.zerock.domain.CateVO">
-		WITH recursive cte AS (
-		SELECT cateName, cateCode, cateCodeRef, 1 AS level
-		FROM tbl_category
-		WHERE cateCodeRef IS null
-		UNION all
-		SELECT p.cateName, p.cateCode, p.cateCodeRef, 1 + LEVEL AS level
-		FROM tbl_category p
-		INNER JOIN cte
-		ON p.cateCodeRef = cte.cateCode
-		)
-		SELECT cateName, cateCode, cateCodeRef, LEVEL FROM cte;
-	</select>
-	
-	<!-- 상품 목록 --> 
+
+
+	<!-- 상품 목록 대분류 -->
+  	<select id="category" resultType="org.zerock.domain.GoodsVO">
+	select distinct
+		g.gdsNum, g.gdsName, c.cateName, c.cateParent, gdsPrice, gdsStock, gdsDes, gdsDate         
+	from tbl_goods g             
+	inner join tbl_cate2 c                      
+	where c.cateName = #{cateName}
+  	</select>
+
+
+	<!-- 상품 목록 소분류 --> 
 	<select id="list" resultType="org.zerock.domain.GoodsVO">
-	 select
-	  gdsNum, gdsName, cateCode, gdsSize, gdsColor, gdsPrice, gdsStock, gdsDes, gdsDate
-	    from tbl_goods
-	        order by gdsNum desc
+	select distinct
+	a.gdsNum, a.gdsName, a.gdsPrice, a.cateParent, a.gdsStock, a.gdsDate
+      from tbl_goods AS a
+      left join tbl_cate1 AS b on a.cateParent = b.cateName
+      left join tbl_cate2 AS c on b.cateName = c.cateName
+      where cateParent = #{cateParent}
 	</select>
-	
+	 
+	 
+
 </mapper>
+
+

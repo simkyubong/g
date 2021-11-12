@@ -11,28 +11,28 @@
 		<div class="f1">
 			<ul>
 				<li>
-					<h3>[ COMPANY (주)Sally ]</h3>
+					<h3>COMPANY (주)Sally </h3>
 					<p>
-						<b>owner</b> 김샐리 <b>tel</b> 1655-5555 <br> <b>business no</b>
-						201-82-55555 <br> <b>mail order license</b> 제2016-울산삼산-00555호
-						[사업자정보확인] <br> <b>personal info manager</b> 김
+						<b>owner</b> 김샐리 <b>tel</b> 1600-5555 <br> <b>business no</b>
+						201-82-55555 <br> <b>mail order license</b> 제2010-울산삼산-00555호
+						[사업자정보확인] <br> <b>personal info manager</b> Sallykim
 						(master@sally.com) <br> <b>address</b> [133110] 울산광역시 남구 삼산동
 						101-55 Sally <br> copyright © (주)Sally all rights reserved /
 						published by plain design <br>
 					</p>
 				</li>
 				<li>
-					<h3>C/S CENTER</h3>
-					<p>1644-7351</p>
+					<h3>C/S CENTER </h3>
+					<p>1655-5555</p>
 					<p>
-						MON-FRI AM10:00 - PM17:00 <br> LUNCH PM12:00 - PM13:00 <br>
+						MON-FRI AM10:00 - PM17:00 <br> LUNCH PM 12:00 - PM 13:30 <br>
 						SAT/SUN/HOLIDAY OFF
 					</p>
 				</li>
 				<li>
 					<h3>BANK ACCOUNT</h3>
 					<p>
-						신한 100-025-30000 <br> 국민 300000-05-005555 <br> 농협
+						신한 : 100-025-30000 <br> 국민 : 300000-05-555555 <br> 농협 :
 						301-0101-5555-55 <br> 예금주 : (주)Sally
 					</p>
 				</li>
@@ -91,3 +91,4 @@
 </wrap>
 </body>
 </html>
+

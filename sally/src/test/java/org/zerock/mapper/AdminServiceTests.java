@@ -29,7 +29,7 @@ public class AdminServiceTests {
 		GoodsVO goods = new GoodsVO();
 		// 상품 정보
 		goods.setGdsName("service 테스트");
-		goods.setCateCode("202001");
+		goods.setCateParent("202001");
 		goods.setCateName("20000");
 		goods.setGdsPrice(20000);
 		goods.setGdsStock(300);

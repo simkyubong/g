@@ -59,12 +59,30 @@
                                     </div>
                                     <div class="cate_wrap">
                                         <span>2차분류</span>
-                                        <select class="cate2" value="<c:out value="${goodsInfo.cateCode}"/>" disabled>
-                                            <option value="none">${goodsInfo.cateCode}</option>
+                                        <select class="cate2" value="<c:out value="${goodsInfo.cateParent}"/>" disabled>
+                                            <option value="none">${goodsInfo.cateParent}</option>
                                         </select>
                                     </div>
                                 </div>
                             </div>
+                            <div class="form_section">
+                                <div class="form_section_title">
+                                    <label>상품 사이즈</label>
+                                </div>
+                                <div class="form_section_content">
+                                    <input name="gdsSize" value="<c:out value="${goodsInfo.gdsSize}"/>" disabled>
+                                </div>
+                            </div>
+                            
+                            <div class="form_section">
+                                <div class="form_section_title">
+                                    <label>상품 색상</label>
+                                </div>
+                                <div class="form_section_content">
+                                    <input name="gdsColor" value="<c:out value="${goodsInfo.gdsColor}"/>" disabled>
+                                </div>
+                            </div>
+                            
                             <div class="form_section">
                                 <div class="form_section_title">
                                     <label>상품 가격</label>

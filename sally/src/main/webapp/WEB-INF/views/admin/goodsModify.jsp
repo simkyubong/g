@@ -37,23 +37,41 @@
                     				<label>상품 카테고리</label>
                     			</div>
                     			<div class="form_section_content">
-	                    			<div class="cate_wrap">
-										<span>1차 분류</span>
-										<select class="cate1" name="cateName">
-											<option value="none">선택</option>
-												<c:forEach var="goodsInfo" items="${cate2List}" varStatus="i">
-											         <option value="${cate2List.cateName}">${cate2List.cateName}</option>
-										    	</c:forEach>
-										</select>
-									</div>
-									<div class="cate_wrap">
-										<span>2차 분류</span>
-										<select class="cate2"  name="cateCode">
-											<option value="">선택</option>
-										</select>
-									</div>
-								 </div>							
-                    		</div>          
+                                    <div class="cate_wrap">
+                                        <span>1차분류</span>
+                                        <select class="cate1" value="<c:out value="${goodsInfo.cateName}"/>" >
+                                            <option value="none">${goodsInfo.cateName}</option>
+                                        </select>
+                                    </div>
+                                    <div class="cate_wrap">
+                                        <span>2차분류</span>
+                                        <select class="cate2" value="<c:out value="${goodsInfo.cateParent}"/>" >
+                                            <option value="">선택</option>
+                                        </select>
+                                    </div>
+                                </div>
+                    		</div>
+                    		
+                    		<div class="form_section">
+                                <div class="form_section_title">
+                                    <label>상품 사이즈</label>
+                                </div>
+                                <div class="form_section_content">
+                                    <input name="gdsSize" value="${goodsInfo.gdsSize}">
+                    				<span class="ck_warn gdsSize_warn">상품 사이즈를 입력해주세요.</span>
+                                </div>
+                            </div>
+                            
+                            <div class="form_section">
+                                <div class="form_section_title">
+                                    <label>상품 색상</label>
+                                </div>
+                                <div class="form_section_content">
+                                    <input name="gdsColor" value="${goodsInfo.gdsColor}">
+                    				<span class="ck_warn gdsColor_warn">상품 색상을 입력해주세요.</span>
+                                </div>
+                            </div>
+                            
                     		<div class="form_section">
                     			<div class="form_section_title">
                     				<label>상품 가격</label>

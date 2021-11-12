@@ -3,10 +3,34 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="org.zerock.mapper.OrderListMapper">
-	<!-- 주문조회 -->
+	<!-- 주문조회 - 전체-->
+	<select id="orderlistall" resultType="org.zerock.domain.OrderListVO">
+	select 
+	 	a.orderNumber, a.orderDate, b.gdsName, orderOption, orderQuantity, orderPrice, orderState
+	from tbl_orderlist a
+	inner join tbl_goods b
+	on a.gdsName = b.gdsName
+	</select>
+
+	<!-- 주문조회 - 주문처리상태-->
 	<select id="orderlist" resultType="org.zerock.domain.OrderListVO">
-	 select
-	   orderNumber, orderDate, gdsImg, gdsName, orderOption, orderQuantity, orderPrice, orderState
-	 from tbl_orderlist
+	select 
+	 	a.orderNumber, a.orderDate, b.gdsName, orderOption, orderQuantity, orderPrice, orderState
+	from tbl_orderlist a
+	inner join tbl_goods b
+	on a.gdsName = b.gdsName
+    where orderState = #{orderState}
+	</select>
+	
+	<!-- 주문조회 - 취소/반품/교환 -->
+	<select id="orderlistcs" resultType="org.zerock.domain.OrderListVO">
+	select 
+	 	a.orderNumber, a.orderDate, b.gdsName, orderOption, orderQuantity, orderPrice, orderState
+	from tbl_orderlist a
+	inner join tbl_goods b
+	on a.gdsName = b.gdsName
+    where orderState = '취소' or
+    orderState = '반품' or
+    orderState = '교환'
 	</select>
 </mapper>
