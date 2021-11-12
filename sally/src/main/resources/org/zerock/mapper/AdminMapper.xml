@@ -36,7 +36,7 @@
 	
 		select  a.gdsNum, a.gdsName, a.gdsPrice, a.cateParent, a.gdsStock, a.gdsDate
 		from tbl_goods AS a
-		left join tbl_cate2 AS e on a.cateParent = e.cateName;
+		left join tbl_cate2 AS e on a.cateParent = e.cateParent
 		
 		<!-- select  a.gdsNum, a.gdsName, a.gdsPrice, a.cateParent, a.gdsStock, a.gdsDate
 		from tbl_goods AS a
@@ -72,11 +72,11 @@
 	
 	
 	<!-- 상품 정보 수정 -->
-	<update id="goodsModify">
+	<update id="goodsModify" parameterType="hashmap">
 		
-		update tbl_goods set gdsName = #{gdsName}, cateName = ${cateName}, cateParent = ${cateParent}, gdsSize = ${gdsSize}, gdsColor = ${gdsColor},
+		update tbl_goods set gdsName = #{gdsName}, cateName = #{cateName}, cateParent = #{cateParent}, gdsColor = #{gdsColor}, gdsSize = #{gdsSize}, 
 			gdsPrice = #{gdsPrice}, gdsStock = #{gdsStock}, gdsDes = #{gdsDes}
-		where gdsNum = ${gdsNum}
+		where gdsNum = #{gdsNum}
 		
 	</update>
 	
@@ -115,5 +115,26 @@
   		</if>
   	
   	</select>
-
+  	
+  	<!-- 회원정보 조회 페이지 -->
+	<select id="memberGetDetail" resultType="org.zerock.domain.MemberVO">
+	
+		select * from member where memberId = #{memberId}
+	
+	</select>
+  	
+  	<!-- 회원 정보 수정 -->
+	<update id="memberModify" parameterType="hashmap">
+		
+		update member set memberId = #{memberId}, memberPw = #{memberPw}, memberName = #{memberName}, memberEmail = #{memberEmail}
+		where memberId = #{memberId}
+		
+	</update>
+	
+	<!-- 회원 정보 삭제 -->
+	<delete id="memberDelete">
+	
+		delete from member where memberId = #{memberId}
+	
+	</delete>
 </mapper>

@@ -31,18 +31,18 @@
 	                    				<td class="th_column_6">등록날짜</td>
 	                    			</tr>
 	                    		</thead>	
-	                    		<c:forEach items="${list}" var="list">
+	                    		<c:forEach items="${list}" var="goodsGetList">
 	                    		<tr>
-	                    			<td><c:out value="${list.gdsNum}"></c:out></td>
+	                    			<td><c:out value="${goodsGetList.gdsNum}"></c:out></td>
 	                    			<td>
-	                    				<a class="move" href='<c:out value="${list.gdsNum}"/>'>
-											<c:out value="${list.gdsName}"></c:out>
+	                    				<a class="move" href='<c:out value="${goodsGetList.gdsNum}"/>'>
+											<c:out value="${goodsGetList.gdsName}"></c:out>
 										</a>
 	                    			</td>
-	                    			<td><c:out value="${list.gdsPrice}"></c:out></td>
-	                    			<td><c:out value="${list.cateParent}"></c:out></td>
-	                    			<td><c:out value="${list.gdsStock}"></c:out></td>
-	                    			<td><fmt:formatDate value="${list.gdsDate}" pattern="yyyy-MM-dd"/></td>
+	                    			<td><c:out value="${goodsGetList.gdsPrice}"></c:out></td>
+	                    			<td><c:out value="${goodsGetList.cateParent}"></c:out></td>
+	                    			<td><c:out value="${goodsGetList.gdsStock}"></c:out></td>
+	                    			<td><fmt:formatDate value="${goodsGetList.gdsDate}" pattern="yyyy-MM-dd"/></td>
 	                    		</tr>
 	                    		</c:forEach>
 	                    	</table>
@@ -184,3 +184,4 @@
 </script>
 </body>
 </html>
+

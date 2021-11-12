@@ -36,17 +36,17 @@
                     			<div class="form_section_title">
                     				<label>상품 카테고리</label>
                     			</div>
-                    			<div class="form_section_content">
-                                    <div class="cate_wrap">
+                			    <div class="form_section_content">
+                                     <div class="cate_wrap">
                                         <span>1차분류</span>
-                                        <select class="cate1" value="<c:out value="${goodsInfo.cateName}"/>" >
-                                            <option value="none">${goodsInfo.cateName}</option>
+                                        <select class="cate1" name="cateName" value="<c:out value="${goodsInfo.cateName}"/>" >
+                                            <option value="${goodsInfo.cateName}">${goodsInfo.cateName}</option>
                                         </select>
                                     </div>
                                     <div class="cate_wrap">
                                         <span>2차분류</span>
-                                        <select class="cate2" value="<c:out value="${goodsInfo.cateParent}"/>" >
-                                            <option value="">선택</option>
+                                        <select class="cate2" name="cateCode" value="<c:out value="${goodsInfo.cateParent}"/>" >
+                                            <option value="${goodsInfo.cateParent}">${goodsInfo.cateParent}</option>
                                         </select>
                                     </div>
                                 </div>
@@ -99,7 +99,7 @@
                     				<span class="ck_warn gdsDes_warn">상품 설명를 입력해주세요.</span>
                     			</div>
                     		</div>
-                    		<input type="hidden" name='gdsNum' value="${goodsInfo.gdsNum}">
+                    		<input type="hidden" name="gdsNum" value="${goodsInfo.gdsNum}">
                    		</form>
                    			<div class="btn_section">
                    				<button id="cancelBtn" class="btn">취 소</button>

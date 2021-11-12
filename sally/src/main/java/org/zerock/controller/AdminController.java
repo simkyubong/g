@@ -32,7 +32,9 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.zerock.domain.Criteria;
 import org.zerock.domain.GoodsVO;
+import org.zerock.domain.MemberVO;
 import org.zerock.domain.PageDTO;
+import org.zerock.mapper.AttachMapper;
 import org.zerock.domain.AttachImageVO;
 import org.zerock.domain.CateVO;
 import org.zerock.service.AdminService;
@@ -341,4 +343,50 @@ public class AdminController {
         log.info("멤버관리 페이지 접속");
         
     }
+    
+    /* 회원 조회 페이지 */
+   	@GetMapping({"/memberDetail", "/memberModify"})
+	public void memberGetInfoGET(String memberId, Criteria cri, Model model) throws JsonProcessingException {
+		
+		log.info("memberGetInfo()........." + memberId);
+		
+		ObjectMapper mapper = new ObjectMapper();
+		
+				
+		
+		/* 목록 페이지 조건 정보 */
+		model.addAttribute("cri", cri);
+		
+		/* 조회 페이지 정보 */
+		model.addAttribute("memberInfo", adminService.memberGetDetail(memberId));
+		
+	}
+    
+    /* 회원 정보 수정 */
+    @PostMapping("/memberModify")
+	public String memberModifyPOST(MemberVO vo, RedirectAttributes rttr) {
+		
+		log.info("memberModifyPOST.........." + vo);
+		
+		int result = adminService.memberModify(vo);
+		
+		rttr.addFlashAttribute("modify_result", result);
+		
+		return "redirect:/admin/memberManage";		
+		
+	}
+    
+    /* 회원 정보 삭제 */
+	@PostMapping("/memberDelete")
+	public String memberDeletePOST(String memberId, RedirectAttributes rttr) {
+		
+		log.info("memberDeletePOST..........");
+		
+		String result = adminService.memberDelete(memberId);
+		
+		rttr.addFlashAttribute("delete_result", result);
+		
+		return "redirect:/admin/memberManage";
+		
+	}
 }

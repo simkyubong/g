@@ -4,21 +4,33 @@ import java.util.List;
 
 import javax.inject.Inject;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.zerock.domain.AttachImageVO;
 import org.zerock.domain.GoodsVO;
+import org.zerock.mapper.AttachMapper;
 import org.zerock.service.GoodsService;
+
+import lombok.extern.log4j.Log4j;
 
 @Controller
 @RequestMapping("/goods/*")
+@Log4j
 public class GoodsController {
 	
 	 @Inject
 	 GoodsService service;
-
+	 
+	 @Autowired
+		private AttachMapper attachMapper;
 	 
 	//상품 목록 대분류
 	 @RequestMapping(value = "/category", method = RequestMethod.GET)
@@ -39,5 +51,16 @@ public class GoodsController {
 	  list = service.list(cateParent);
 	  model.addAttribute("list", list);
 	 }
+	 
+	 
+	/* 이미지 정보 반환 */
+	@GetMapping(value="/getAttachList", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+	public ResponseEntity<List<AttachImageVO>> getAttachList(int gdsNum){
+		
+		log.info("getAttachList.........." + gdsNum);
+		
+		return new ResponseEntity<List<AttachImageVO>>(attachMapper.getAttachList(gdsNum), HttpStatus.OK);
+		
+	}
 	 
 }

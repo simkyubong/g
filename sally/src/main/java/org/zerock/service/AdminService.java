@@ -32,10 +32,19 @@ public interface AdminService {
 	/* 상품 정보 삭제 */
 	public int goodsDelete(int gdsNum);
 	
-	// 회원목록
+	/* 회원목록 */
     public List<MemberVO> memberList(Criteria cri);
     
     /* 회원 전체 인원 */
 	public int memberGetTotal(Criteria cri);
+	
+	/* 회원 정보 조회 페이지 */
+	public MemberVO memberGetDetail(String memberId);
+	
+	/* 회원 정보 수정 */
+	public int memberModify(MemberVO vo);
+	
+	/* 회원 정보 삭제 */
+	public String memberDelete(String memberId);
 
 }

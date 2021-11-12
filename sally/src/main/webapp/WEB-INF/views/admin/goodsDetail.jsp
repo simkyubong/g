@@ -177,6 +177,11 @@
 				str += "</div>";			
 				
 			});
+			
+			/* 이미지 정보 호출 */
+			let gdsNum = '<c:out value="${goodsInfo.gdsNum}"/>';
+			let uploadReslut = $("#uploadReslut");
+
             
         }); // $(document).ready
 		

@@ -49,10 +49,7 @@ public class GoodsVO {
 	/* 이미지 정보 */
 	private List<AttachImageVO> imageList;
 
-	public void setCateParent(String cateParent2) {
-		// TODO Auto-generated method stub
-		
-	}
+	
 
 	
 	

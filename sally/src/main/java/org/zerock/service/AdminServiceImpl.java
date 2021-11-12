@@ -114,4 +114,32 @@ public class AdminServiceImpl implements AdminService {
 		return adminMapper.memberGetTotal(cri);
 	}
 	
+	/* 회원 정보 조회 페이지 */
+	@Override
+	public MemberVO memberGetDetail(String memberId) {
+		
+		log.info("(service)memberGetDetail......." + memberId);
+		
+		return adminMapper.memberGetDetail(memberId);
+	}
+	
+	/* 상품 정보 수정 */
+	@Override
+	public int memberModify(MemberVO vo) {
+		
+		log.info("memberModify........");
+		
+		return adminMapper.memberModify(vo);
+		
+	}
+	
+	/* 회원 정보 삭제 */
+	@Override
+	public String memberDelete(String memberId) {
+
+		log.info("memberDelete..........");
+		
+		return adminMapper.memberDelete(memberId);
+	}
+	
 }
