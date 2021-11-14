@@ -46,7 +46,7 @@
 			where (gdsName like concat ('%', #{keyword}, '%'))
 		</if>
 		order by gdsNum DESC
-		limit #{skip}, #{amount};	
+		limit #{skip}, #{amount}
 	
 	</select>
   	
