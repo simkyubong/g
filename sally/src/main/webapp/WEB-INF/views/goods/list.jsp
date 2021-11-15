@@ -1,12 +1,14 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-	<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-	<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
-<jsp:include page="../main_header.jsp"></jsp:include>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@include file="../include/include_header.jsp"%>
 <!DOCTYPE html>
 
+<html>
 <head>
 <meta charset="UTF-8">
 <link href="${path}/resources/css/top.css" rel="stylesheet"/>
+
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 <title>Insert title here</title>
 </head>
@@ -31,25 +33,25 @@
                 </ul>
             </div>
             -->
-            <div class="menu_top">
-                <c:forEach items="${list}" var="list" begin="1" end="1"> 
-                <h2>${list.cateCode}</h2>
+             <div class="menu_top">
+                <c:forEach items="${list}" var="list"> 
+                <h2>${list.cateParent}</h2>
                 </c:forEach>
                 <ul>
-                	<c:forEach items="${list}" var="list" begin="1" end="1"> 
-                	<c:if test="${list.cateCode eq 'TEE'|| list.cateCode eq 'BLOUSE'|| list.cateCode eq 'SHIRT' || list.cateCode eq 'KNIT'}">
+                	<c:forEach items="${list}" var="list"> 
+                	<c:if test="${list.cateParent eq 'TEE'|| list.cateParent eq 'BLOUSE'|| list.cateParent eq 'SHIRT' || list.cateParent eq 'KNIT'}">
                    		<%@include file="../include/cateList/top.jsp" %>
                    	</c:if>
-                   	<c:if test="${list.cateCode eq 'JACKET'|| list.cateCode eq 'CARDIGAN'|| list.cateCode eq 'COAT' || list.cateCode eq 'JUMPER'}">
+                   	<c:if test="${list.cateParent eq 'JACKET'|| list.cateParent eq 'CARDIGAN'|| list.cateParent eq 'COAT' || list.cateParent eq 'JUMPER'}">
                    		<%@include file="../include/cateList/outer.jsp" %>
                    	</c:if>
-                   	<c:if test="${list.cateCode eq 'DENIM'|| list.cateCode eq 'SLACKS'|| list.cateCode eq 'PANTS' || list.cateCode eq 'SHORT PANTS'}">
+                   	<c:if test="${list.cateParent eq 'DENIM'|| list.cateParent eq 'SLACKS'|| list.cateParent eq 'PANTS' || list.cateParent eq 'SHORT PANTS'}">
                    		<%@include file="../include/cateList/pants.jsp" %>
                    	</c:if>
-                   	<c:if test="${list.cateCode eq 'OPS'|| list.cateCode eq 'MINI'|| list.cateCode eq 'MIDI' || list.cateCode eq 'LONG'}">
+                   	<c:if test="${list.cateParent eq 'OPS'|| list.cateParent eq 'MINI'|| list.cateParent eq 'MIDI' || list.cateParent eq 'LONG'}">
                    		<%@include file="../include/cateList/ops&skirt.jsp" %>
                    	</c:if>
-                   	<c:if test="${list.cateCode eq 'HAIR'|| list.cateCode eq 'RING'|| list.cateCode eq 'EARRING' || list.cateCode eq 'BRACELET' || list.cateCode eq 'WATCH' || list.cateCode eq 'ETC'}">
+                   	<c:if test="${list.cateParent eq 'HAIR'|| list.cateParent eq 'RING'|| list.cateParent eq 'EARRING' || list.cateParent eq 'BRACELET' || list.cateParent eq 'WATCH' || list.cateParent eq 'ETC'}">
                    		<%@include file="../include/cateList/acc.jsp" %>
                    	</c:if>
                 	</c:forEach>
@@ -111,7 +113,7 @@
             </div>
         </div>
     </div>
-    <%@include file="../include/footer.jsp" %>
+<%@include file="../include/include_footer.jsp"%>
     
     <script>
 	    $('.menu_top li a').on('click', function(){
@@ -119,5 +121,5 @@
 	        $(this).addClass("on");
 	    })
     </script>
-    
-    <jsp:include page="../main_footer.jsp"></jsp:include>
+</body>
+</html>
