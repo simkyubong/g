@@ -20,7 +20,7 @@ public class MemberVO {
 		//회원 이메일
 		private String memberEmail;
 		
-		//등록일자
+		//가입일
 		private Date regDate;
 		
 		// 관리자 구분(0:일반사용자, 1:관리자)

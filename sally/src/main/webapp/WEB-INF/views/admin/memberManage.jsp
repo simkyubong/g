@@ -141,8 +141,8 @@
 		
 		e.preventDefault();
 		
-		moveForm.append("<input type='hidden' name='gdsNum' value='"+$(this).attr("href") + "'>");
-		moveForm.attr("action", "/admin/goodsDetail");
+		moveForm.append("<input type='hidden' name='memberId' value='"+$(this).attr("href") + "'>");
+		moveForm.attr("action", "/admin/memberDetail");
 		moveForm.submit();
 		
 		
