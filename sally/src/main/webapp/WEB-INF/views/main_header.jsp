@@ -1,7 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<link rel="stylesheet" type="text/css"
-	href="resources/css/layout.css?v=3">
+	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+    <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+	
+<link rel="stylesheet" type="text/css" href="resources/css/layout.css?v=3">
 
 <!DOCTYPE>
 <html>
@@ -79,12 +81,12 @@
 							</ul>
 							<ul class="h_category">
 								<li>
-									<a href="http://localhost:8080/goods/category?name=top">TOP
+									<a href="/goods/category?name=top">TOP
 								</a>
 									<div class="TOP_in">
 										<ul>
 											<li>
-												<a href="http://localhost:8080/goods/list?name=tee">Tee</a>
+												<a href="/goods/list?name=tee">Tee</a>
 											</li>
 											<li><a href="">BLOUSE</a></li>
 											<li><a href="">SHIRT</a></li>
@@ -155,13 +157,30 @@
 							</ul>
 							<!-- h_category -->
 							<ul class="h_joinBar">
-								<li class=""><a href="">LOGIN</a></li>
-								<li class=""><a href="">JOIN</a></li>
+								
+								<!-- 로그인 하지 않은 상태 -->
+				                <c:if test="${member == null }">
+				                    <div class="login_button"><a href="/member/login">Login</a></div>
+				                    <span><a href="/member/join">Join</a></span>                
+				                </c:if>    
+				                
+				                <!-- 로그인한 상태 -->
+				                <c:if test="${member != null }">
+				                	<c:if test="${member.adminCk == 1 }">
+				                        <div>
+				                        	<a href="/admin/main">관리자 페이지</a>
+				                        </div>
+				                    </c:if>
+				                    <div class="login_success_area">
+				                        <a id="gnb_logout_button" href="/member/logout.do">Logout</a>
+				                    </div>
+				                </c:if>
+				                
 								<li class="my_page">
 									<p>MYPAGE</p>
 									<div class="my_page_in">
 										<ul>
-											<li><a href="">주문내역조회</a></li>
+											<li><a href="/mypage/orderlistall">주문내역조회</a></li>
 											<li><a href="">관심상품</a></li>
 											<li><a href="">적립금내역</a></li>
 											<li><a href="">쿠폰내역조회</a></li>
@@ -176,7 +195,7 @@
 									<div class="board_in">
 										<ul>
 											<li>
-											<a href="http://localhost:8080/notice/list">NOTICE</a>
+											<a href="/notice/list">NOTICE</a>
 											</li>
 											<li><a href="">Q & A</a></li>
 											<li><a href="">REVIEW</a></li>
@@ -184,7 +203,7 @@
 										</ul>
 									</div> <!-- h_board -->
 								</li>
-								<li><a href=""></a></li>
+
 							</ul>
 							<!-- h_joinBar -->
 							<ul class="h_join_menu">
@@ -216,14 +235,8 @@
 								<!-- category_in -->
 							</ul>
 							<!-- h_join_menu -->
-						</div>
-						<!-- h_gnb -->
-					</div>
-					<!-- gnb_in -->
-				</div>
-				<!-- gnb -->
-			</div>
-			<!-- header_int -->
-		</div>
-
-		<!-- header -->
+						</div><!-- h_gnb -->
+					</div><!-- gnb_in -->
+				</div><!-- gnb -->
+			</div><!-- header_int -->
+		</div><!-- header -->

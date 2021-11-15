@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-	<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %> 
+	<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -99,6 +99,17 @@
                     				<span class="ck_warn gdsDes_warn">상품 설명를 입력해주세요.</span>
                     			</div>
                     		</div>
+                    		<div class="form_section">
+                    			<div class="form_section_title">
+                    				<label>상품 이미지</label>
+                    			</div>
+                    			<div class="form_section_content">
+									<input type="file" id ="fileItem" name='uploadFile' style="height: 30px;">
+									<div id="uploadResult">
+																		
+									</div>									
+                    			</div>
+                    		</div>
                     		<input type="hidden" name="gdsNum" value="${goodsInfo.gdsNum}">
                    		</form>
                    			<div class="btn_section">
@@ -155,12 +166,6 @@
 		$("#moveForm").submit();
 	});
 	
-	/* 수정 버튼 */
-	$("#modifyBtn").on("click", function(e){
-		e.preventDefault();
-		$("#modifyForm").submit();
-	});
-	
 	/* 삭제 버튼 */
 	$("#deleteBtn").on("click", function(e){
 		e.preventDefault();
@@ -171,6 +176,50 @@
 		moveForm.attr("method", "post");
 		moveForm.submit();
 	});
+	
+	/* 수정 버튼 */
+	$("#modifyBtn").on("click", function(e){
+		e.preventDefault();
+		$("#modifyForm").submit();
+	});
+	
+	/* 기존 이미지 출력 */
+	let gdsNum = '<c:out value="${goodsInfo.gdsNum}"/>';
+	let uploadResult = $("#uploadResult");
+	
+	$.getJSON("/getAttachList", {gdsNum : gdsNum}, function(arr){
+		
+		console.log(arr);
+		
+		if(arr.length === 0){
+			
+			
+			let str = "";
+			str += "<div id='result_card'>";
+			str += "<img src='/resources/img/goodsNoImage.png'>";
+			str += "</div>";
+			
+			uploadResult.html(str);				
+			return;
+		}
+		
+		let str = "";
+		let obj = arr[0];
+		
+		let fileCallPath = encodeURIComponent(obj.uploadPath + "/s_" + obj.uuid + "_" + obj.fileName);
+		str += "<div id='result_card'";
+		str += "data-path='" + obj.uploadPath + "' data-uuid='" + obj.uuid + "' data-filename='" + obj.fileName + "'";
+		str += ">";
+		str += "<img src='/display?fileName=" + fileCallPath +"'>";
+		str += "<div class='imgDeleteBtn' data-file='" + fileCallPath + "'>x</div>";
+		str += "<input type='hidden' name='imageList[0].fileName' value='"+ obj.fileName +"'>";
+		str += "<input type='hidden' name='imageList[0].uuid' value='"+ obj.uuid +"'>";
+		str += "<input type='hidden' name='imageList[0].uploadPath' value='"+ obj.uploadPath +"'>";				
+		str += "</div>";
+		
+		uploadResult.html(str);			
+		
+	});// GetJSON
  </script>
 </body>
 </html>

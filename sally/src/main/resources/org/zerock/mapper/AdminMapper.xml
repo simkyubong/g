@@ -100,7 +100,8 @@
     
         select memberId, memberName, memberEmail, regDate
         	from member
-    
+    	order by regDate DESC
+    	
     </select>
     
     <!-- 전체 회원 -->

@@ -20,13 +20,10 @@
 	select distinct
 	a.gdsNum, a.gdsName, a.gdsPrice, a.cateParent, a.gdsStock, a.gdsDate
       from tbl_goods AS a
-      left join tbl_cate1 AS b on a.cateParent = b.cateName
-      left join tbl_cate2 AS c on b.cateName = c.cateName
-      where cateParent = #{cateParent}
+	  left join tbl_cate2 AS c on a.cateParent = c.cateParent
+      where c.cateParent = #{cateParent};
 	</select>
 	 
 	 
 
 </mapper>
-
-
