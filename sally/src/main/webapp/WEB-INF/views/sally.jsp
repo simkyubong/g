@@ -631,12 +631,12 @@
 		<!-- tab-6 -->
 		<div class="sec2_btn">
 			<p class="sec2_btnR">
-				<a href=""> <img src="resources/cssimg/gnb_icon/prev_left1.png"
+				<a href=""> <img src="resources/css/img/gnb_icon/prev_left1.png"
 					alt="">
 				</a>
 			</p>
 			<p class="sec2_btnL">
-				<a href=""> <img src="resources/cssimg/gnb_icon/next_right1.png"
+				<a href=""> <img src="resources/css/img/gnb_icon/next_right1.png"
 					alt="">
 				</a>
 			</p>
