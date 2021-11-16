@@ -8,6 +8,8 @@ import org.zerock.domain.ProductVO;
 import org.zerock.domain.ReviewVO;
 
 public interface ProductMapper {// �������̽�
+	
+	
 	// 게시판 목록리스트(paging처리 안된거)
 	public List<ProductVO> getList();
 	// 게시판 목록리스트(paging처리 된거)

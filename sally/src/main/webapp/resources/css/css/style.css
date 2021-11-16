@@ -84,6 +84,7 @@
   min-width: 30px;
   border: 1px solid #ccc;
   text-align: center;
+  padding: 0 5px;
 }
 
 .detailHead .productInfo table td ul .selected a {
@@ -222,7 +223,7 @@
 .productRelated .pdrList .pdrListIn .box .pdrName a {
   color: #111;
   font-weight: bold;
-  margin: 0 0 5px;
+  margin: 0 5px;
 }
 
 .productRelated .pdrList .pdrListIn .box .pdrPrice {

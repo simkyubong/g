@@ -10,23 +10,25 @@
 	<section class="detailHead">
 		<!-- 상품 이미지 -->
 		<div class="dhImg">
-			<img
-				src="https://flymodel.co.kr/web/product/big/202106/0fe6be0bfa6de4a41f27193868ff0ce5.webp">
+			<img src="https://flymodel.co.kr/web/product/big/202106/0fe6be0bfa6de4a41f27193868ff0ce5.webp">
 		</div>
 		<div class="productInfo">
-			<h2>상품 이름</h2>
+			<h2>${goods.gdsName}</h2>
 
 			<table border="1px">
 				<tr>
 					<th>판매가</th>
-					<td class="price">26,000원</td>
+					<td class="price">
+						<fmt:formatNumber value="${goods.gdsPrice}" pattern="#,###"/>원
+					</td>
 				</tr>
 				<tr>
 					<th>컬러</th>
 					<td>
 						<ul class="color">
-							<li><a href="#">A</a></li>
-							<li><a href="#">B</a></li>
+						<c:forEach var="gdsColor" items="${goods.gdsColor.split(',')}">
+							<li><a href="#">${gdsColor}</a></li>
+						</c:forEach>
 						</ul>
 						<p>[필수] 옵션</p>
 					</td>
@@ -35,34 +37,34 @@
 					<th>사이즈</th>
 					<td>
 						<ul class="size">
-							<li><a href="#">S</a></li>
-							<li><a href="#">M</a></li>
-							<li><a href="#">L</a></li>
-							<li><a href="#">XL</a></li>
+						<c:forEach var="gdsSize" items="${goods.gdsSize.split(',')}">
+							<li><a href="#">${gdsSize}</a></li>
+						</c:forEach>
 						</ul>
 						<p>[필수] 옵션</p>
 					</td>
 				</tr>
 				<tr>
 					<th>수량</th>
-					<td class="mainAmount"><input type="number" value="1" min='0'
-						max='50'
-						oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+					<td class="mainAmount">
+						<input type="number" value="1" min='0' max='50' oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
 					</td>
 				</tr>
 			</table>
 
 			<div class="totalPrice">
 				<p>
-					<span style="font-weight: bold;">합계</span> <span> : </span> <span
-						class="productTotalPrice" style="font-weight: bold;">0</span> <span>원
-						(</span> <span class="productAmount">0</span> <span>개 )</span>
+					<span style="font-weight: bold;">합계</span>
+					<span> : </span>
+					<span class="productTotalPrice" style="font-weight: bold;">0</span>
+					<span>원 (</span> <span class="productAmount">0</span> <span>개 )</span>
 				</p>
 			</div>
 
 			<div class="buttons">
-				<a href="#" class="btnBuy">구매하기</a> <a href="#" class="btnCart">장바구니
-					담기</a> <a href="#" class="btnWish">찜하기</a>
+				<a href="#" class="btnBuy">구매하기</a>
+				<a href="#" class="btnCart">장바구니 담기</a>
+				<a href="#" class="btnWish">찜하기</a>
 			</div>
 
 		</div>
@@ -82,7 +84,7 @@
 			</ul>
 
 			<div class="pdMain">
-				<img src="" alt=""> 상품 상세 설명
+				<img src="${goods.gdsDes}" alt="상품 상세 설명">
 			</div>
 		</div>
 		<!-- #productDetail End -->
@@ -102,16 +104,23 @@
 
 					<div class="box">
 						<p class="pdrImg">
-							<a href="#"><img
-								src="https://flymodel.co.kr/web/product/medium/202109/6575e238444fd0a0bc399eb0e1aea836.gif"></a>
+							<a href="#"><img src="https://flymodel.co.kr/web/product/medium/202109/6575e238444fd0a0bc399eb0e1aea836.gif"></a>
 						</p>
 						<p class="pdrName">
-							<input type="checkbox"> <a href="#">A</a>
+							<input type="checkbox"><a href="#">A</a>
 						</p>
 						<p class="pdrPrice">00,000원</p>
-						<p class="pdrOption">
+						<p id="pdrOption1" class="pdrOption">
 							<select>
-								<option value="*">옵션선택</option>
+								<option value="*">옵션선택1</option>
+								<option value="**">-------------------</option>
+								<option value="AA">AA</option>
+								<option value="BB">BB</option>
+							</select>
+						</p>
+						<p id="pdrOption2" class="pdrOption">
+							<select>
+								<option value="*">옵션선택2</option>
 								<option value="**">-------------------</option>
 								<option value="AA">AA</option>
 								<option value="BB">BB</option>
@@ -604,7 +613,8 @@
 				<p class="next">다음으로</p>
 			</div>
 			<div class="pdrBtn">
-				<a href="#">선택상품 같이구매</a> <a href="#">선택상품 장바구니 담기</a>
+				<a href="#">선택상품 같이구매</a>
+				<a href="#">선택상품 장바구니 담기</a>
 			</div>
 		</div>
 		<!-- #productRelated End -->
@@ -622,6 +632,7 @@
 				<h3>REVIEW</h3>
 				<p class="st">후기를 확인하세요</p>
 				<ul class="rvList">
+				<c:if test="${reviewlist} != null">
 					<c:forEach var="reviewlist" items="${reviewlist}">
 						<li>
 							<div class="rvListIn">
@@ -643,28 +654,31 @@
 							</div>
 						</li>
 					</c:forEach>
+				</c:if>
 				</ul>
 			</div>
 
 			<div class="pdrPager">
 				<ul class="pagination">
+				<c:if test="${reviewlist} != null">
 					<c:if test="${rvpageMaker.prev}">
 						<li class="paginate_button prev"><a
-							href="/goods/detail?rvpageNum=${rvpageMaker.startPage-1}&rvamount=${rvpageMaker.rvcri.rvamount}#productReview">이전</a></li>
+							href="/goods/detail?gdsNum=${goods.gdsNum}&rvpageNum=${rvpageMaker.startPage-1}&rvamount=${rvpageMaker.rvcri.rvamount}#productReview">이전</a></li>
 					</c:if>
 					<c:forEach var="num" begin="${rvpageMaker.startPage}"
 						end="${rvpageMaker.endPage}">
 						<li
 							class="paginate_button page-item ${rvpageMaker.rvcri.rvpageNum==num?'active':''}">
 							<a
-							href="/goods/detail?rvpageNum=${num}&rvamount=${rvpageMaker.rvcri.rvamount}#productReview"
+							href="/goods/detail?gdsNum=${goods.gdsNum}&rvpageNum=${num}&rvamount=${rvpageMaker.rvcri.rvamount}#productReview"
 							class="page-link">${num}</a>
 						</li>
 					</c:forEach>
 					<c:if test="${rvpageMaker.next}">
 						<li class="paginate_button next"><a
-							href="/goods/detail?rvpageNum=${rvpageMaker.endPage+1}&rvamount=${rvpageMaker.rvcri.rvamount}#productReview">다음</a></li>
+							href="/goods/detail?gdsNum=${goods.gdsNum}&rvpageNum=${rvpageMaker.endPage+1}&rvamount=${rvpageMaker.rvcri.rvamount}#productReview">다음</a></li>
 					</c:if>
+				</c:if>
 				</ul>
 			</div>
 		</div>
@@ -690,6 +704,7 @@
 						<th class="t_date">작성일</th>
 						<th class="t_view">조회</th>
 					</tr>
+					<c:if test="${list} != null">
 					<c:forEach var="qnalist" items="${list}">
 						<tr class="pdQna_contentShow">
 							<td>${qnalist.bno}</td>
@@ -705,27 +720,30 @@
 							</td>
 						</tr>
 					</c:forEach>
+					</c:if>
 				</table>
 
 				<div class="pdqPager">
 					<ul class="pagination">
+					<c:if test="${list} != null">
 						<c:if test="${pageMaker.prev}">
 							<li class="paginate_button prev"><a
-								href="/goods/detail?pageNum=${pageMaker.startPage-1}&amount=${pageMaker.qcri.amount}#productQna">이전</a></li>
+								href="/goods/detail?gdsNum=${goods.gdsNum}&pageNum=${pageMaker.startPage-1}&amount=${pageMaker.qcri.amount}#productQna">이전</a></li>
 						</c:if>
 						<c:forEach var="num" begin="${pageMaker.startPage}"
 							end="${pageMaker.endPage}">
 							<li
 								class="paginate_button page-item ${pageMaker.qcri.pageNum==num?'active':''}">
 								<a
-								href="/goods/detail?pageNum=${num}&amount=${pageMaker.qcri.amount}#productQna"
+								href="/goods/detail?gdsNum=${goods.gdsNum}&pageNum=${num}&amount=${pageMaker.qcri.amount}#productQna"
 								class="page-link">${num}</a>
 							</li>
 						</c:forEach>
 						<c:if test="${pageMaker.next}">
 							<li class="paginate_button next"><a
-								href="/goods/detail?pageNum=${pageMaker.endPage+1}&amount=${pageMaker.qcri.amount}#productQna">다음</a></li>
+								href="/goods/detail?gdsNum=${goods.gdsNum}&pageNum=${pageMaker.endPage+1}&amount=${pageMaker.qcri.amount}#productQna">다음</a></li>
 						</c:if>
+					</c:if>
 					</ul>
 				</div>
 				<!-- .pdqPager End -->

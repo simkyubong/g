@@ -18,4 +18,6 @@ public class ProductVO {
 	private Date regdate;
 	// ��������
 	private int views;
+	// 상품 번호
+	private int gdsNum;
 }

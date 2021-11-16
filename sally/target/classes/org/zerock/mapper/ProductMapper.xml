@@ -3,6 +3,7 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="org.zerock.mapper.ProductMapper">
+
 	<select id="getList" resultType="org.zerock.domain.ProductVO">
 		<![CDATA[
 			select * from tbl_qna where bno > 0
@@ -19,8 +20,9 @@
 			) as tmp, tbl_qna as b
 			order by bno asc
 	) as qnalist
+	where gdsNum = #{gdsNum}
 	<![CDATA[
-	where rownum>(#{pageNum} - 1)*#{amount} and rownum<=#{pageNum} *#{amount}
+	and rownum>(#{pageNum} - 1)*#{amount} and rownum<=#{pageNum} *#{amount}
 	]]>
 	</select>
 	<select id="getTotalCount" resultType="int">
@@ -58,8 +60,9 @@
 			) as tmp, tbl_review as b
 			order by rno asc
 	) as reviewlist
+	where gdsNum = #{gdsNum}
 	<![CDATA[
-	where rownum>(#{rvpageNum} - 1)*#{rvamount} and rownum<=#{rvpageNum} *#{rvamount}
+	and rownum>(#{rvpageNum} - 1)*#{rvamount} and rownum<=#{rvpageNum} *#{rvamount}
 	]]>
 	</select>
 	<select id="getReviewTotalCount" resultType="int">

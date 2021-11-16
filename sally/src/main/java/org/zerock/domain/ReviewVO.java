@@ -16,4 +16,6 @@ public class ReviewVO {
 	private String reviewimg;
 	// 작성자
 	private String writer;
+	// 상품 번호
+	private int gdsNum;
 }

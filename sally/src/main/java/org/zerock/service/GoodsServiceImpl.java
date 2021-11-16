@@ -7,7 +7,6 @@ import org.springframework.stereotype.Service;
 import org.zerock.domain.GoodsVO;
 import org.zerock.mapper.GoodsMapper;
 
-import lombok.extern.log4j.Log4j;
 
 @Service
 public class GoodsServiceImpl implements GoodsService {
@@ -17,6 +16,12 @@ public class GoodsServiceImpl implements GoodsService {
 	
 	@Autowired
 	private GoodsMapper mapper;
+	
+	// 상품조회
+	@Override
+	public GoodsVO goodsDetail(int gdsNum) {
+		return mapper.goodsDetail(gdsNum);
+	}
 	
 	
 	// 상품 목록 대분류

@@ -9,8 +9,8 @@
   	<select id="category" resultType="org.zerock.domain.GoodsVO">
 	select distinct
 		g.gdsNum, g.gdsName, c.cateName, c.cateParent, gdsSize, gdsColor, gdsPrice, gdsStock, gdsDes, gdsDate   
-	from tbl_goods g             
-	inner join tbl_cate2 c         
+	from tbl_goods g
+	inner join tbl_cate2 c
     on g.cateParent = c.cateParent
 	where c.cateName = #{cateName}
   	</select>
@@ -24,7 +24,12 @@
 	  left join tbl_cate2 AS c on a.cateParent = c.cateParent
       where c.cateParent = #{cateParent}
 	</select>
-	 
-	 
+	
+	<!-- 상품 상세 -->
+	<select id="goodsDetail" resultType="org.zerock.domain.GoodsVO">
+	select gdsNum, gdsName, cateName, cateParent, gdsPrice, gdsColor, gdsSize, gdsStock, gdsDes, gdsDate
+    from tbl_goods
+    where gdsNum = #{gdsNum}
+	</select>
 
 </mapper>

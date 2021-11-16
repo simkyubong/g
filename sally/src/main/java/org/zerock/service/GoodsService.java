@@ -6,6 +6,8 @@ import org.zerock.domain.GoodsVO;
 
 public interface GoodsService {
 	
+	// 상품조회
+	public GoodsVO goodsDetail(int gdsNum);
 	
 	// 상품 목록 대분류
 	public List<GoodsVO> category(String cateName) throws Exception;
