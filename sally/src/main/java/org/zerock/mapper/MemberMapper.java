@@ -18,8 +18,10 @@ public interface MemberMapper {
     public void updateMember(MemberVO member);
     
     // 회원비밀번호 수정처리
-    public void updatePw(MemberVO memeber);
+    public void updatePw(MemberVO member);
     
+    // 회원 리스트
     public List<MemberVO> memberList();
  
 }
+

@@ -5,22 +5,17 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link rel="stylesheet" href="/resources/css/member/join.css">
+<link rel="stylesheet" href="/resources/css/member/update.css">
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
 <body>
 	<div class="wrapper">
-	<form id="join_form" method="post">
+	<form id="modify_form" method="post">
 		<div class="wrap">
-				<h2>회원가입</h2>
+				<h2>회원개인정보 수정</h2>
 				<div class="id_wrap">
 					<div class="id_name">아이디</div>
-					<div class="id_input_box">
-						<input class="id_input" name="memberId">
-					</div>
-					<span class="id_input_re_1">사용 가능한 아이디입니다.</span>
-					<span class="id_input_re_2">아이디가 이미 존재합니다.</span>
-					<span class="final_id_ck">아이디를 입력해주세요.</span>
+					<input class="id_input_box" class="form-control" type="text" id="memberId" name="memberId" value="${member.memberId}" readonly="readonly"/>
 				</div>
 				<div class="pw_wrap">
 					<div class="pw_name">비밀번호</div>
@@ -61,8 +56,8 @@
 						<div class="clearfix"></div>
 					</div>
 				</div>				
-				<div class="join_button_wrap">
-					<input type="button" class="join_button" value="가입하기">
+				<div class="modify_button_wrap">
+					<input type="button" class="modify_button" value="수정하기">
 				</div>
 			</div>
 		</form>
@@ -82,23 +77,13 @@
 
 	$(document).ready(function(){
 		//회원가입 버튼(회원가입 기능 작동)
-		$(".join_button").click(function(){
+		$(".modify_button").click(function(){
 			
 			 /* 입력값 변수 */
-	        var id = $('.id_input').val();                // id 입력란
 	        var pw = $('.pw_input').val();                // 비밀번호 입력란
 	        var pwck = $('.pwck_input').val();            // 비밀번호 확인 입력란
 	        var name = $('.user_input').val();            // 이름 입력란
 	        var mail = $('.mail_input').val();            // 이메일 입력란
-	        
-	        /* 아이디 유효성검사 */
-	        if(id == ""){
-	            $('.final_id_ck').css('display','block');
-	            idCheck = false;
-	        }else{
-	            $('.final_id_ck').css('display', 'none');
-	            idCheck = true;
-	        }
 	        
 	        /* 비밀번호 유효성 검사 */
 	        if(pw == ""){
@@ -136,41 +121,16 @@
 	        }
 	        
 	        /* 최종 유효성 검사 */
-	        if(idCheck&&idckCheck&&pwCheck&&pwckCheck&&pwckcorCheck&&nameCheck&&mailCheck){
+	        if(pwCheck&&pwckCheck&&pwckcorCheck&&nameCheck&&mailCheck){
 	 		
-	        	$("#join_form").attr("action", "/member/join");
-	            $("#join_form").submit();   
+	        	$("#modify_form").attr("action", "/member/update");
+	            $("#modify_form").submit();   
 	        } 
 	        
 	        return false; 
 		});
 	});
 	
-	//아이디 중복검사
-	$('.id_input').on("propertychange change keyup paste input", function(){
-
-		/* console.log("테스트");	 */
-		var memberId = $('.id_input').val();			// .id_input에 입력되는 값
-		var data = {memberId : memberId}				// '컨트롤에 넘길 데이터 이름' : '데이터(.id_input에 입력되는 값)'
-		
-		$.ajax({
-			type : "post",
-			url : "/member/memberIdChk",
-			data : data,
-			success : function(result){
-			 	//console.log("성공 여부" + result);
-				if(result != 'fail'){
-					$('.id_input_re_1').css("display","inline-block");
-					$('.id_input_re_2').css("display", "none");	
-					idckCheck = true;
-				} else {
-					$('.id_input_re_2').css("display","inline-block");
-					$('.id_input_re_1').css("display", "none");	
-					idckCheck = false;
-				}
-			}// success 종료
-		}); // ajax 종료	
-	});
 	
 	/* 비밀번호 확인 일치 유효성 검사 */
 	 
