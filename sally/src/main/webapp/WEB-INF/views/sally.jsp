@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+	<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+    <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <link rel="stylesheet" type="text/css"
 	href="resources/css/main/layout.css?v=3">
 
@@ -629,12 +631,12 @@
 		<!-- tab-6 -->
 		<div class="sec2_btn">
 			<p class="sec2_btnR">
-				<a href=""> <img src="resources/cssimg/gnb_icon/prev_left1.png"
+				<a href=""> <img src="resources/css/img/gnb_icon/prev_left1.png"
 					alt="">
 				</a>
 			</p>
 			<p class="sec2_btnL">
-				<a href=""> <img src="resources/cssimg/gnb_icon/next_right1.png"
+				<a href=""> <img src="resources/css/img/gnb_icon/next_right1.png"
 					alt="">
 				</a>
 			</p>
@@ -949,9 +951,25 @@
 		</div>
 	</div>
 
-</div>
-<!-- container -->
-</div>
-<!-- wrap  -->
+	</div><!-- container -->
+
+</div><!-- wrap  -->
+
+<script>
+ 
+    /* gnb_area 로그아웃 버튼 작동 */
+    $("#gnb_logout_button").click(function(){
+        //alert("버튼 작동");
+        $.ajax({
+            type:"POST",
+            url:"/member/logout.do",
+            success:function(data){
+                alert("로그아웃 성공");
+                document.location.reload();     
+            } 
+        }); // ajax 
+    });
+    
+</script>
 
 <jsp:include page="main_footer.jsp"></jsp:include>

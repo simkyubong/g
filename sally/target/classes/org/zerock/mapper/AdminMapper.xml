@@ -94,13 +94,21 @@
 	
 	</insert>
 	
+	<!-- 지정 상품 이미지 전체 삭제 --> 
+	<delete id="deleteImageAll">
+	
+		delete FROM tbl_image where gdsNum = #{gdsNum}
+	
+	</delete>
+	
 	
 	<!-- 회원 목록 -->
     <select id="memberList" resultType="org.zerock.domain.MemberVO">
     
         select memberId, memberName, memberEmail, regDate
         	from member
-    
+    	order by regDate DESC
+    	
     </select>
     
     <!-- 전체 회원 -->

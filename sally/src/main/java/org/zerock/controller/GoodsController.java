@@ -29,8 +29,7 @@ public class GoodsController {
 	 @Inject
 	 GoodsService service;
 	 
-	 @Autowired
-		private AttachMapper attachMapper;
+	
 	 
 	//상품 목록 대분류
 	 @RequestMapping(value = "/category", method = RequestMethod.GET)
@@ -52,15 +51,5 @@ public class GoodsController {
 	  model.addAttribute("list", list);
 	 }
 	 
-	 
-	/* 이미지 정보 반환 */
-	@GetMapping(value="/getAttachList", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
-	public ResponseEntity<List<AttachImageVO>> getAttachList(int gdsNum){
-		
-		log.info("getAttachList.........." + gdsNum);
-		
-		return new ResponseEntity<List<AttachImageVO>>(attachMapper.getAttachList(gdsNum), HttpStatus.OK);
-		
-	}
 	 
 }

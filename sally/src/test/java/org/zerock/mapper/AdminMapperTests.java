@@ -20,7 +20,7 @@ public class AdminMapperTests {
 	
 	/* 상품 등록 */
 	
-	@Test
+	/*@Test
 	public void goodsEnrollTest() throws Exception{
 		GoodsVO goods = new GoodsVO();
 		
@@ -34,7 +34,7 @@ public class AdminMapperTests {
 		System.out.println("Before GoodsVO :" + goods);
 		mapper.goodsEnroll(goods);
 		System.out.println("After GoodsVO :" + goods);
-	}
+	}*/
 	
 	
 	/* 카테고리 리스트 */
@@ -127,4 +127,14 @@ public class AdminMapperTests {
 		mapper.imageEnroll(vo);
 		
 	}*/
+	
+	/* 지정 상품 이미지 삭제 */
+	@Test
+	public void deleteImageAllTest() {
+		
+		int gdsNum = 12;
+		
+		mapper.deleteImageAll(gdsNum);
+		
+	}
 }
