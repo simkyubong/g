@@ -39,14 +39,17 @@
                 			    <div class="form_section_content">
                                      <div class="cate_wrap">
                                         <span>1차분류</span>
-                                        <select class="cate1" name="cateName" value="<c:out value="${goodsInfo.cateName}"/>" >
-                                            <option value="${goodsInfo.cateName}">${goodsInfo.cateName}</option>
+                                        <select class="cate1" name="cateName">
+											<option value="none">선택</option>
+												<c:forEach var="cateList" items="${cateList}" varStatus="i">
+											         <option value="${cateList.cateName}">${cateList.cateName}</option>
+										    	</c:forEach>
                                         </select>
                                     </div>
                                     <div class="cate_wrap">
                                         <span>2차분류</span>
-                                        <select class="cate2" name="cateCode" value="<c:out value="${goodsInfo.cateParent}"/>" >
-                                            <option value="${goodsInfo.cateParent}">${goodsInfo.cateParent}</option>
+                                        <select class="cate2" name="cateParent">
+                                           <option value="">선택</option>
                                         </select>
                                     </div>
                                 </div>
@@ -149,7 +152,7 @@
 				function(data){
 					for(var i=0;i<data.length;i++){		
 						//console.log(data[i].cateParent);
-						str+="<option value="+data[i].cateName+">"+data[i].cateName+"</option>"
+						str+="<option value="+data[i].cateParent+">"+data[i].cateParent+"</option>"
 					}
 					$(".cate2").html(str);
 		})// getJSON 끝

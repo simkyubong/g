@@ -91,8 +91,6 @@ public class AdminController {
     public void goodsEnrollGET(Model model) throws Exception{
         log.info("상품 등록 페이지 접속");
         
-        ObjectMapper objm = new ObjectMapper();
-        
         List list = adminService.cateList();
         
         
@@ -129,10 +127,10 @@ public class AdminController {
 		
 		log.info("goodsGetInfo()........." + gdsNum);
 		
-		ObjectMapper mapper = new ObjectMapper();
+		List list = adminService.cateList();
 		
 		/* 카테고리 리스트 데이터 */
-		model.addAttribute("cateList", mapper.writeValueAsString(adminService.cateList()));		
+		model.addAttribute("cateList", list);		
 		
 		/* 목록 페이지 조건 정보 */
 		model.addAttribute("cri", cri);
