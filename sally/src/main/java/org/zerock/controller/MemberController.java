@@ -30,7 +30,6 @@ public class MemberController {
 	public void joinGET() {
 		
 		log.info("회원가입 페이지 진입");
-				
 	}
 	
 	//회원가입
@@ -82,9 +81,10 @@ public class MemberController {
 	 /* 로그인 */
     @RequestMapping(value="login", method=RequestMethod.POST)
     public String loginPOST(HttpServletRequest request, MemberVO member, RedirectAttributes rttr) throws Exception{
-        
+    	log.info("loginPOST 진입");
     	HttpSession session = request.getSession();
     	MemberVO lvo = memberservice.memberLogin(member);
+    	log.info("loginPOST 진입="+lvo);
     	
     	if(lvo == null) {                                // 일치하지 않는 아이디, 비밀번호 입력 경우
             
@@ -100,7 +100,7 @@ public class MemberController {
     }
     
     /* 메인페이지 로그아웃 */
-    @RequestMapping(value="lotout.do", method=RequestMethod.GET)
+    @RequestMapping(value="logout", method=RequestMethod.GET)
     public String logoutMainGET(HttpServletRequest request) throws Exception{
         
         log.info("logoutMainGET메서드 진입");
@@ -111,19 +111,5 @@ public class MemberController {
         
         return "redirect:/sally";        
         
-    }
-    
-    /* 비동기방식 로그아웃 메서드 */
-    @RequestMapping(value="logout.do", method=RequestMethod.POST)
-    @ResponseBody
-    public void logoutPOST(HttpServletRequest request) throws Exception{
-        
-        log.info("비동기 로그아웃 메서드 진입");
-        
-        HttpSession session = request.getSession();
-        
-        session.invalidate();
-        
-    }
-		
+    }	
 }

@@ -20,29 +20,26 @@
 			</div>
 			<div class="best_item">
 				<ul>
-					<li>
-						<a href="">
-							<img src="/resources/css/img/navi/naviitem1.jpeg" alt="">	
-						</a>
-					</li>
-					<li><a href=""><img src="../top/tb2.webp" alt=""></a></li>
-					<li><a href=""><img src="../top/tb3.webp" alt=""></a></li>
-					<li><a href=""><img src="../top/tb4.webp" alt=""></a></li>
-					<li><a href=""><img src="../top/tb5.gif" alt=""></a></li>
-					<li><a href=""><img src="../top/tb6.webp" alt=""></a></li>
-					<li><a href=""><img src="../top/tb7.webp" alt=""></a></li>
-					<li><a href=""><img src="../top/tb8.webp" alt=""></a></li>
+					<c:forEach items="${category}" var="category" begin="0" end="7">
+						<li>
+							<div class="item_photo">
+								<a href="">
+								<img src="/resources/img/goods/${category.cateName}/${category.cateParent}1.webp" alt="">
+								</a>
+							</div>
+						</li>
+					</c:forEach>
 				</ul>
 			</div>
 
 
 			<!-- 카테고리 이름 출력-->
 			<div class="menu_top">
-				<c:forEach items="${category}" var="category" begin="1" end="1">
+				<c:forEach items="${category}" var="category" begin="0" end="0">
 					<h2>${category.cateName}</h2>
 				</c:forEach>
 				<ul>
-					<c:forEach items="${category}" var="category" begin="1" end="1">
+					<c:forEach items="${category}" var="category" begin="0" end="0">
 						<c:if test="${category.cateName eq 'TOP'}">
 							<%@include file="../include/cateList/top.jsp"%>
 						</c:if>
@@ -81,23 +78,59 @@
 					</div>
 				</div>
 				<div class="item">
-					<ul>
-						<c:forEach items="${category}" var="category">
-							<li>
-								<div class="item_photo">
-									<a href=""><img src="../top/t1.gif" alt=""></a>
-								</div>
-								<div class="item_text">
-									<p class="item_name">
-										<a href="">${category.gdsName}</a>
-									</p>
-									<p class="item_price">
-										<span>${category.gdsPrice}</span>원
-									</p>
-								</div>
-							</li>
-						</c:forEach>
-					</ul>
+                    <ul>  
+                    	<c:forEach items="${category}" var="category" begin="0" end="0">
+                        <li>
+                            <div class="item_photo">
+                                <a href="">
+                                	<img src="/resources/img/goods/${category.cateName}/${category.cateParent}1.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="item_text">
+                                <p class="item_name">
+                                    <a href="">${category.gdsName}</a>
+                                </p>
+                                <p class="item_price">
+                                    <span>${category.gdsPrice}</span>원
+                                </p>
+                            </div>
+                        </li>
+                        </c:forEach>
+                        <c:forEach items="${category}" var="category" begin="3" end="6">
+                        <li>
+                            <div class="item_photo">
+                                <a href="">
+                                	<img src="/resources/img/goods/${category.cateName}/${category.cateParent}1.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="item_text">
+                                <p class="item_name">
+                                    <a href="">${category.gdsName}</a>
+                                </p>
+                                <p class="item_price">
+                                    <span>${category.gdsPrice}</span>원
+                                </p>
+                            </div>
+                        </li>
+                        </c:forEach>
+                        <c:forEach items="${category}" var="category" begin="6">
+                        <li>
+                            <div class="item_photo">
+                                <a href="">
+                                	<img src="/resources/img/goods/${category.cateName}/${category.cateParent}1.webp" alt="">
+                                </a>
+                            </div>
+                            <div class="item_text">
+                                <p class="item_name">
+                                    <a href="">${category.gdsName}</a>
+                                </p>
+                                <p class="item_price">
+                                    <span>${category.gdsPrice}</span>원
+                                </p>
+                            </div>
+                        </li>
+                        </c:forEach>
+                    </ul>
 					<!--              
                     <div class="item_pager">
                         <div class="item_pager_in">

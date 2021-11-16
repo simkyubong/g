@@ -26,8 +26,7 @@
     <!-- 로그인 -->
       <select id="memberLogin" resultType="org.zerock.domain.MemberVO">
       
-         SELECT memberID, memberName, point FROM member where memberId = #{memberId} AND memberPw = #{memberPw}
+         SELECT memberID, memberName, point, adminCk FROM member where memberId = #{memberId} AND memberPw = #{memberPw}
       
       </select>
  </mapper>
- 
