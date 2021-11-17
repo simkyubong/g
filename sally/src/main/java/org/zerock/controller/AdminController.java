@@ -319,7 +319,7 @@ public class AdminController {
         
     }
     
-    /* 회원목록 관리 */
+    /* 회원목록 관리 페이지 */
     @RequestMapping(value = "memberManage", method = RequestMethod.GET)
     public void memberManageGET(Criteria cri, Model model) throws Exception{
     	

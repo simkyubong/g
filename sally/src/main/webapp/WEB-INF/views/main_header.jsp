@@ -172,6 +172,7 @@
 				                        </div>
 				                    </c:if>
 				                    <div class="login_success_area">
+				                    	<a id="gnb_modify_button" href="/member/update">Modify</a>
 				                        <a id="gnb_logout_button" href="/member/logout">Logout</a>
 				                    </div>
 				                </c:if>

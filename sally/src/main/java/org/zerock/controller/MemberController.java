@@ -111,5 +111,29 @@ public class MemberController {
         
         return "redirect:/sally";        
         
-    }	
+    }
+    
+    /* 회원정보 수정 페이지로 이동 */
+    /*@RequestMapping(value="/update", method = RequestMethod.GET)
+    public String registerUpdateView() throws Exception{
+    	
+    	return "member/Update";
+    }*/
+    
+    @RequestMapping(value = "/update", method = RequestMethod.GET)
+	public void updateGET() {
+		
+		log.info("회원정보 수정 페이지 진입");
+	}
+
+    @RequestMapping(value="/update", method = RequestMethod.POST)
+    public String registerUpdate(MemberVO member, HttpSession session) throws Exception{
+    	
+    	memberservice.updateMember(member);
+    	
+    	session.invalidate();
+    	
+    	return "redirect:/sally";
+    }
 }
+
