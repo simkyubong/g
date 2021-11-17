@@ -1,4 +1,5 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri = "http://java.sun.com/jsp/jstl/functions" prefix = "fn" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
@@ -24,7 +25,7 @@
 						<li>
 							<div class="item_photo">
 								<a href="">
-								<img src="/resources/img/goods/${category.cateName}/${category.cateParent}1.webp" alt="">
+								<img src="/resources/img/goods/${category.cateName}/${category.gdsName}.webp" alt="">
 								</a>
 							</div>
 						</li>
@@ -79,56 +80,22 @@
 				</div>
 				<div class="item">
                     <ul>  
-                    	<c:forEach items="${category}" var="category" begin="0" end="0">
-                        <li>
-                            <div class="item_photo">
-                                <a href="">
-                                	<img src="/resources/img/goods/${category.cateName}/${category.cateParent}1.webp" alt="">
-                                </a>
-                            </div>
-                            <div class="item_text">
-                                <p class="item_name">
-                                    <a href="">${category.gdsName}</a>
-                                </p>
-                                <p class="item_price">
-                                    <span>${category.gdsPrice}</span>원
-                                </p>
-                            </div>
-                        </li>
-                        </c:forEach>
-                        <c:forEach items="${category}" var="category" begin="3" end="6">
-                        <li>
-                            <div class="item_photo">
-                                <a href="">
-                                	<img src="/resources/img/goods/${category.cateName}/${category.cateParent}1.webp" alt="">
-                                </a>
-                            </div>
-                            <div class="item_text">
-                                <p class="item_name">
-                                    <a href="">${category.gdsName}</a>
-                                </p>
-                                <p class="item_price">
-                                    <span>${category.gdsPrice}</span>원
-                                </p>
-                            </div>
-                        </li>
-                        </c:forEach>
-                        <c:forEach items="${category}" var="category" begin="6">
-                        <li>
-                            <div class="item_photo">
-                                <a href="">
-                                	<img src="/resources/img/goods/${category.cateName}/${category.cateParent}1.webp" alt="">
-                                </a>
-                            </div>
-                            <div class="item_text">
-                                <p class="item_name">
-                                    <a href="">${category.gdsName}</a>
-                                </p>
-                                <p class="item_price">
-                                    <span>${category.gdsPrice}</span>원
-                                </p>
-                            </div>
-                        </li>
+                    	<c:forEach items="${category}" var="category"> 		
+	                        <li>
+	                            <div class="item_photo">
+	                                <a href="">
+	                                	<img src="/resources/img/goods/${category.cateName}/${category.gdsName}.webp" alt="">
+	                                </a>
+	                            </div>
+	                            <div class="item_text">
+	                                <p class="item_name">
+	                                    <a href="">${category.gdsName}</a>
+	                                </p>
+	                                <p class="item_price">
+	                                    <span>${category.gdsPrice}</span>원
+	                                </p>
+	                            </div>
+	                        </li>
                         </c:forEach>
                     </ul>
 					<!--              

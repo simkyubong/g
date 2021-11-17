@@ -1,11 +1,8 @@
 package org.zerock.domain;
 
-import lombok.Data;
-
-@Data
 public class PageDTO {
-	
-	/* 페이지 시작 번호 */
+   
+   /* 페이지 시작 번호 */
     private int pageStart;
     
     /* 페이지 끝 번호 */
@@ -49,9 +46,59 @@ public class PageDTO {
         
     }
 
-	public boolean isNext() {
-		return next;
-	}
+   public int getPageStart() {
+      return pageStart;
+   }
+
+   public void setPageStart(int pageStart) {
+      this.pageStart = pageStart;
+   }
+
+   public int getPageEnd() {
+      return pageEnd;
+   }
+
+   public void setPageEnd(int pageEnd) {
+      this.pageEnd = pageEnd;
+   }
+
+   public boolean isNext() {
+      return next;
+   }
+
+   public void setNext(boolean next) {
+      this.next = next;
+   }
+
+   public boolean isPrev() {
+      return prev;
+   }
+
+   public void setPrev(boolean prev) {
+      this.prev = prev;
+   }
+
+   public int getTotal() {
+      return total;
+   }
+
+   public void setTotal(int total) {
+      this.total = total;
+   }
+
+   public Criteria getCri() {
+      return cri;
+   }
+
+   public void setCri(Criteria cri) {
+      this.cri = cri;
+   }
+
+   @Override
+   public String toString() {
+      return "PageDTO [pageStart=" + pageStart + ", pageEnd=" + pageEnd + ", next=" + next + ", prev=" + prev
+            + ", total=" + total + ", cri=" + cri + "]";
+   }
     
     
 }

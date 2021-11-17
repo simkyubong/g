@@ -1,11 +1,8 @@
 package org.zerock.domain;
 
-import lombok.Data;
-
-@Data
 public class Criteria {
-	
-	/* 현재 페이지 번호 */
+   
+   /* 현재 페이지 번호 */
     private int pageNum;
     
     /* 페이지 표시 개수 */
@@ -37,25 +34,53 @@ public class Criteria {
         return type == null? new String[] {}:type.split("");
     }
 
-	public int getPageNum() {
-		return pageNum;
-	}
+   public int getPageNum() {
+      return pageNum;
+   }
 
-	public void setPageNum(int pageNum) {
-		this.pageNum = pageNum;
-		this.skip = (pageNum -1) * amount;
-	}
+   public void setPageNum(int pageNum) {
+      this.pageNum = pageNum;
+      this.skip = (pageNum -1) * amount;
+   }
 
-	public int getAmount() {
-		return amount;
-	}
+   public int getAmount() {
+      return amount;
+   }
 
-	public void setAmount(int amount) {
-		this.amount = amount;
-		this.skip = (pageNum -1) * amount;
-	}
+   public void setAmount(int amount) {
+      this.amount = amount;
+      this.skip = (pageNum -1) * amount;
+   }
 
-	
+   public int getSkip() {
+      return skip;
+   }
+
+   public void setSkip(int skip) {
+      this.skip = skip;
+   }
+
+   public String getType() {
+      return type;
+   }
+
+   public void setType(String type) {
+      this.type = type;
+   }
+
+   public String getKeyword() {
+      return keyword;
+   }
+
+   public void setKeyword(String keyword) {
+      this.keyword = keyword;
+   }
+
+   @Override
+   public String toString() {
+      return "Criteria [pageNum=" + pageNum + ", amount=" + amount + ", skip=" + skip + ", type=" + type
+            + ", keyword=" + keyword + "]";
+   }
     
     
     

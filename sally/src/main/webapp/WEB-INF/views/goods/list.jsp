@@ -67,7 +67,7 @@
                         <li>
                             <div class="item_photo">
                                 <a href="">
-                                	<img src="/resources/img/goods/${list.cateName}/${list.cateParent}.webp" alt="">
+                                	<img src="/resources/img/goods/${list.cateName}/${list.gdsName}.webp" alt="">
                                 </a>
                             </div>
                             <div class="item_text">
