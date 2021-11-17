@@ -84,7 +84,8 @@
 			</ul>
 
 			<div class="pdMain">
-				<img src="${goods.gdsDes}" alt="상품 상세 설명">
+				<img src="/resources/css/img/main/sub_01.jpg" alt="상품 상세 설명">
+				<%-- <img src="${goods.gdsDes}" alt="상품 상세 설명"> --%>
 			</div>
 		</div>
 		<!-- #productDetail End -->

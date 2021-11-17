@@ -110,6 +110,5 @@
 	        $(this).addClass("on");
 	    })
     </script>
-    <%@include file="../main_footer.jsp" %>
 </body>
 </html>

@@ -20,9 +20,9 @@
 			) as tmp, tbl_qna as b
 			order by bno asc
 	) as qnalist
-	where gdsNum = #{gdsNum}
+	
 	<![CDATA[
-	and rownum>(#{pageNum} - 1)*#{amount} and rownum<=#{pageNum} *#{amount}
+	where rownum>(#{pageNum} - 1)*#{amount} and rownum<=#{pageNum} *#{amount}
 	]]>
 	</select>
 	<select id="getTotalCount" resultType="int">
@@ -60,9 +60,8 @@
 			) as tmp, tbl_review as b
 			order by rno asc
 	) as reviewlist
-	where gdsNum = #{gdsNum}
 	<![CDATA[
-	and rownum>(#{rvpageNum} - 1)*#{rvamount} and rownum<=#{rvpageNum} *#{rvamount}
+	where rownum>(#{rvpageNum} - 1)*#{rvamount} and rownum<=#{rvpageNum} *#{rvamount}
 	]]>
 	</select>
 	<select id="getReviewTotalCount" resultType="int">

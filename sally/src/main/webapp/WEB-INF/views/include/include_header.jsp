@@ -50,7 +50,7 @@
 
 </head>
 <body>
-	<div="wrap">
+	<div id="wrap">
 		<div id="header">
 			<div class="header_in">
 				<div class="header_banner">
@@ -101,10 +101,10 @@
 								<li><a href="">당일발송</a></li>
 							</ul>
 							<ul class="h_category">
-								<li><a href="">TOP</a>
+								<li><a href="/goods/category?name=top">TOP </a>
 									<div class="TOP_in">
 										<ul>
-											<li><a href="">Tee</a></li>
+											<li><a href="/goods/list?name=tee">Tee</a></li>
 											<li><a href="">BLOUSE</a></li>
 											<li><a href="">SHIRT</a></li>
 											<li><a href="">KNIT</a></li>
@@ -174,13 +174,33 @@
 							</ul>
 							<!-- h_category -->
 							<ul class="h_joinBar">
-								<li class=""><a href="">LOGIN</a></li>
-								<li class=""><a href="">JOIN</a></li>
+
+								<!-- 로그인 하지 않은 상태 -->
+								<c:if test="${member == null }">
+									<div class="login_button">
+										<a href="/member/login">Login</a>
+									</div>
+									<span><a href="/member/join">Join</a></span>
+								</c:if>
+
+								<!-- 로그인한 상태 -->
+								<c:if test="${member != null }">
+									<c:if test="${member.adminCk == 1 }">
+										<div>
+											<a href="/admin/main">관리자 페이지</a>
+										</div>
+									</c:if>
+									<div class="login_success_area">
+										<a id="gnb_modify_button" href="/member/update">Modify</a> <a
+											id="gnb_logout_button" href="/member/logout">Logout</a>
+									</div>
+								</c:if>
+
 								<li class="my_page">
 									<p>MYPAGE</p>
 									<div class="my_page_in">
 										<ul>
-											<li><a href="">주문내역조회</a></li>
+											<li><a href="/mypage/orderlistall">주문내역조회</a></li>
 											<li><a href="">관심상품</a></li>
 											<li><a href="">적립금내역</a></li>
 											<li><a href="">쿠폰내역조회</a></li>
@@ -194,14 +214,14 @@
 									<p>BOARD</p>
 									<div class="board_in">
 										<ul>
-											<li><a href="">NOTICE</a></li>
+											<li><a href="/notice/list">NOTICE</a></li>
 											<li><a href="">Q & A</a></li>
 											<li><a href="">REVIEW</a></li>
 											<li><a href="">MODEL</a></li>
 										</ul>
 									</div> <!-- h_board -->
 								</li>
-								<li><a href=""></a></li>
+
 							</ul>
 							<!-- h_joinBar -->
 							<ul class="h_join_menu">

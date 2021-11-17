@@ -34,14 +34,15 @@
     where gdsNum = #{gdsNum}
 	</select>
 	
-	<!-- 상품 총 개수 -->
-	<select id="goodsGetTotal" resultType="int">
+
+ 	<!-- 상품 총 개수 -->
+<!-- 	<select id="goodsGetTotal" resultType="int">
 
   		select count(*) from tbl_goods
   		
 		<include refid="criteria"></include>
 		
-	</select>
+	</select> -->
 
 
 </mapper>

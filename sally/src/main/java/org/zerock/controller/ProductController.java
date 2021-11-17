@@ -1,6 +1,8 @@
 package org.zerock.controller;
 
 
+import java.util.List;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,6 +14,7 @@ import org.zerock.domain.QnaCriteria;
 import org.zerock.domain.QnaPageDTO;
 import org.zerock.domain.ReviewCriteria;
 import org.zerock.domain.ReviewPageDTO;
+import org.zerock.service.AdminService;
 import org.zerock.service.GoodsService;
 import org.zerock.service.ProductService;
 import org.zerock.service.ReviewService;
@@ -28,6 +31,7 @@ public class ProductController {
 	private GoodsService service;
 	private ProductService qnaservice;
 	private ReviewService rvservice;
+	private AdminService adminService;
 	
 	// 제품 상세페이지
 	//@RequestMapping(value = "/goods/detail", method = RequestMethod.GET)
@@ -53,6 +57,13 @@ public class ProductController {
 		model.addAttribute("pageMaker", new QnaPageDTO(cri,total));
 		
 		log.info(model);
+		
+		
+		
+		List adlist = adminService.cateList();
+		
+		/* 조회 페이지 정보 */
+		model.addAttribute("goodsInfo", adminService.goodsGetDetail(gdsNum));
 	}
 	
 	
